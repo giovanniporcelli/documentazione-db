@@ -1,0 +1,33 @@
+/* Larghezza massima pagina */
+.md-grid {
+  max-width: 1600px;
+}
+
+/* Elimina il margine del Table of Contents */
+.md-content {
+  max-width: none;
+}
+
+/* Tabelle scorrevoli orizzontalmente */
+.md-typeset__table {
+  width: 100%;
+  overflow-x: auto;
+  display: block;
+}
+
+.md-typeset table:not([class]) {
+  display: block;
+  overflow-x: auto;
+  font-size: 0.75rem;
+}
+
+/* Immagini SVG a piena larghezza */
+.md-typeset img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.md-sidebar {
+  width: 6.1rem;
+}

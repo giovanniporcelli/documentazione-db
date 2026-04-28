@@ -1,0 +1,21 @@
+site_name: Database Documentation
+site_description: Data Dictionary of application database
+
+theme:
+  name: material
+  language: en
+  palette:
+    primary: blue
+    accent: blue
+  features:
+    - navigation.tabs
+    - navigation.top
+    - search.highlight
+
+extra_css:
+  - stylesheets/extra.css
+
+nav:
+  - Home: index.md
+  - Database:
+    - Indice Tabelle: schema/README.md

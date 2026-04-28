@@ -1,0 +1,107 @@
+# HR_SELSTEPSHORTLISTSTEP
+
+## Description
+
+Step Type of the Selection Process visible in the Kanban Board - Step Type of the Selection Process visible in the Kanban Board  
+
+
+<details>
+<summary><strong>Table Definition</strong></summary>
+
+```sql
+-- Talentia Software - All right reserved
+-- Type: VIEW                     Name: HR_SELSTEPSHORTLISTSTEP
+-- Date: 09-04-2026 07:27:59 (UTC)
+-- 
+-- ChangeLogId: 00000000-0000-0000-0000-000000000000
+-- ChangeSetId: 5afe5f29-0f8e-446c-be57-48ec548b4606
+-- Original file name: C:\repos\Talentia-Software\hcm-core/DB/ProductDB/EDM\Schema\Views\HR_SELSTEPSHORTLISTSTEP.xml
+
+
+CREATE VIEW [HR_SELSTEPSHORTLISTSTEP]
+ ( ID, SELECTIONSTEP_ID, JOBVACANCY_ID, STEPTYPE_ID, SORT_ORDER, SHAREDIDENTIFIER, LISTAGENCY_ID, WORKFLOW_ID, INSERT_TIME, INSERT_USER, INSERT_CLIENT, UPDATE_TIME, UPDATE_USER, UPDATE_CLIENT, UPDATE_COUNT ) 
+ AS 
+( select ROW_NUMBER() OVER ( ORDER BY SELECTIONSTEP_ID ) as ID, * from (
+select 
+HR_SELECTIONSTEP.ID AS SELECTIONSTEP_ID,
+HR_APPLICANT.JOBVACANCY_ID, 
+HR_SELECTIONSTEP.STEPTYPE_ID as STEPTYPE_ID,
+STEPTYPE.SORT_ORDER AS SORT_ORDER,
+HR_SELECTIONSTEP.SHAREDIDENTIFIER, 
+HR_SELECTIONSTEP.LISTAGENCY_ID, 
+HR_SELECTIONSTEP.WORKFLOW_ID, 
+HR_SELECTIONSTEP.INSERT_TIME,
+HR_SELECTIONSTEP.INSERT_USER,
+HR_SELECTIONSTEP.INSERT_CLIENT,
+HR_SELECTIONSTEP.UPDATE_TIME,
+HR_SELECTIONSTEP.UPDATE_USER,
+HR_SELECTIONSTEP.UPDATE_CLIENT,
+HR_SELECTIONSTEP.UPDATE_COUNT
+FROM HR_SELECTIONSTEP
+INNER JOIN HR_APPLICANT ON HR_APPLICANT.ID = HR_SELECTIONSTEP.APPLICANT_ID
+INNER JOIN HR_CANDIDATE CANDIDATE WITH (NOLOCK) ON CANDIDATE.ID = HR_APPLICANT.CANDIDATE_ID AND CANDIDATE.IS_ANONYMIZED = 0
+LEFT OUTER JOIN TF_CODES STEPTYPE ON STEPTYPE.ID = HR_SELECTIONSTEP.STEPTYPE_ID AND STEPTYPE.ENTITY_ID = 'fc1f39a6-70c0-46cf-8179-2d752749b60a'
+
+
+UNION ALL
+
+SELECT 
+1 AS SELECTIONSTEP_ID,
+HR_JOBVACANCY.ID AS JOBVACANCY_ID, 
+1 as STEPTYPE_ID,
+1000 AS SORT_ORDER,
+HR_JOBVACANCY.SHAREDIDENTIFIER, 
+HR_JOBVACANCY.LISTAGENCY_ID, 
+HR_JOBVACANCY.WORKFLOW_ID, 
+HR_JOBVACANCY.INSERT_TIME,
+HR_JOBVACANCY.INSERT_USER,
+HR_JOBVACANCY.INSERT_CLIENT,
+HR_JOBVACANCY.UPDATE_TIME,
+HR_JOBVACANCY.UPDATE_USER,
+HR_JOBVACANCY.UPDATE_CLIENT,
+HR_JOBVACANCY.UPDATE_COUNT
+FROM HR_JOBVACANCY
+INNER JOIN HR_SHORTLISTEDCND ON HR_SHORTLISTEDCND.VACANCY_ID = HR_JOBVACANCY.ID) HR_SELECTIONSTEP )
+
+```
+
+</details>
+
+## Columns
+
+| Name | Type | Default | Nullable | Comment |
+| ---- | ---- | ------- | -------- | ------- |
+| ID | bigint |  | true | Indicates the unique identifier |
+| SELECTIONSTEP_ID | bigint |  | false | The identifier of the Selection Step record. |
+| JOBVACANCY_ID | bigint |  | false | The Identifier of the Job Vacancy record. |
+| STEPTYPE_ID | bigint |  | true | Step Type, for example First Interview, Second Interview, chosen from a catalog. |
+| SORT_ORDER | int |  | true | Priority |
+| SHAREDIDENTIFIER | nvarchar(255) |  | true | Shared Identifier |
+| LISTAGENCY_ID | bigint |  | true | The Identifier of List Agency. |
+| WORKFLOW_ID | bigint |  | true | Indicates the workflow unique identifier |
+| INSERT_TIME | datetime2 |  | false | Indicates the date and time of creation |
+| INSERT_USER | nvarchar(100) |  | false | Indicates the user who has created it |
+| INSERT_CLIENT | nvarchar(50) |  | false | Indicates the IP address from which it was created |
+| UPDATE_TIME | datetime2 |  | false | Indicates the date and time of last update operation |
+| UPDATE_USER | nvarchar(100) |  | false | Indicates the user who has executed last update |
+| UPDATE_CLIENT | nvarchar(50) |  | false | Indicates the IP address from which was executed last update |
+| UPDATE_COUNT | int |  | false | Indicates how many update was executed since its creation |
+
+## Referenced Tables
+
+| Name | Columns | Comment | Type |
+| ---- | ------- | ------- | ---- |
+| [HR_SELECTIONSTEP](HR_SELECTIONSTEP.md) | 28 | Selection Step - Indicates step in the selection process, for a selected candidate. Includes the date of the appointment, who will do the interview and the outcome.<br /> | BASIC TABLE |
+| [HR_APPLICANT](HR_APPLICANT.md) | 27 | Applicant - It’s an application for a vacancy by a candidate, regardless if internal or external.<br /> | BASIC TABLE |
+| [HR_CANDIDATE](HR_CANDIDATE.md) | 50 | External Candidate - External Candidate Entity.<br /> | BASIC TABLE |
+| [TF_CODES](TF_CODES.md) | 87 |  | BASIC TABLE |
+| [HR_JOBVACANCY](HR_JOBVACANCY.md) | 59 | Job Vacancy - Includes the Job, the candidate ideal profile, the text of the advert, economical and contractual conditions offered, Job location etc.<br /> | BASIC TABLE |
+| [HR_SHORTLISTEDCND](HR_SHORTLISTEDCND.md) | 117 | Shortlisted Candidates - Shortlisted candidates are those candidates, internal or external, to whom a Job offer for a specific Vacancy has been proposed. For each candidate, basic contractual and deployment terms and conditions are also specified.<br /> | BASIC TABLE |
+
+## Relations
+
+![er](HR_SELSTEPSHORTLISTSTEP.svg)
+
+---
+
+> Generated by [tbls](https://github.com/k1LoW/tbls)
