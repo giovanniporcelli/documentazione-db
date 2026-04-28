@@ -1,0 +1,1185 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Data Dictionary of application database">
+      
+      
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>HR_Z_IL_FILE_10_99Z - Database Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#hr_z_il_file_10_99z" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Database Documentation" class="md-header__button md-logo" aria-label="Database Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Database Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              HR_Z_IL_FILE_10_99Z
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../" class="md-tabs__link">
+          
+  
+  
+  Database
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Database Documentation" class="md-nav__button md-logo" aria-label="Database Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Database Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Database
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Database
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Indice Tabelle
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#description" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Description
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#columns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Columns
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#constraints" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Constraints
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#indexes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Indexes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#relations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Relations
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="hr_z_il_file_10_99z">HR_Z_IL_FILE_10_99Z</h1>
+<h2 id="description">Description</h2>
+<p>SDL Staging Table 10 99 Z - Zucchetti - Staging table for the Smart Data Load, flow 10 99 - Employees  </p>
+<h2 id="columns">Columns</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th>Nullable</th>
+<th>Parents</th>
+<th>Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LEGALIDENTIFIERTYPE_ID</td>
+<td>nvarchar(2)</td>
+<td></td>
+<td>true</td>
+<td></td>
+<td>The Identifier of the Document Type record.</td>
+</tr>
+<tr>
+<td>PRIMARYLEGALIDENTIFIER</td>
+<td>nvarchar(50)</td>
+<td></td>
+<td>true</td>
+<td></td>
+<td>An identifier issued to a person by a government organization. For example, a social insurance number or driver's license number. The schemeName typically would be used to reference the type of identifier (e.g., SSN, NC Drivers License) and the schemeAgencyID would be used to identify the issuing agency as necessary.</td>
+</tr>
+<tr>
+<td>COMPANY_ID</td>
+<td>nvarchar(16)</td>
+<td></td>
+<td>true</td>
+<td></td>
+<td>The related Company.</td>
+</tr>
+<tr>
+<td>EMPLOYEEID</td>
+<td>nvarchar(12)</td>
+<td></td>
+<td>true</td>
+<td></td>
+<td>Identifier of the Worker. Depending on the type of data representation, it could be the same as the Contract Id or an Employee Number which can stay fixed while the contract number changes.</td>
+</tr>
+<tr>
+<td>FAMILYNAME</td>
+<td>nvarchar(80)</td>
+<td></td>
+<td>true</td>
+<td></td>
+<td>Contains a non-given name. This is an inherited name or one representing a family relationship or in some cultural contexts a Place Name (where someone is from). In some cultural contexts, a single family name is typical, while in others there may be multiple family names..</td>
+</tr>
+<tr>
+<td>MAIDENNAME</td>
+<td>nvarchar(80)</td>
+<td></td>
+<td>true</td>
+<td></td>
+<td>A previous family name, such as a maiden name, which is a family name prior to marriage and assuming a spouse's name.</td>
+</tr>
+<tr>
+<td>NICKNAME</td>
+<td>nvarchar(80)</td>
+<td></td>
+<td>true</td>
+<td></td>
+<td>Nickname</td>
+</tr>
+<tr>
+<td>FIRSTNAME</td>
+<td>nvarchar(80)</td>
+<td></td>
+<td>true</td>
+<td></td>
+<td>The Person's given, or first, name.</td>
+</tr>
+<tr>
+<td>FORMATTEDNAME</td>
+<td>nvarchar(161)</td>
+<td></td>
+<td>true</td>
+<td></td>
+<td>This is the complete name of a person, made up of the constituent parts (i.e. Family Name, Given Name). The formatCode is an optional attribute which specifies the applicable format. In the case of the Formatted Name of a person, some example formatCodes could be: ''Family Name, Given Name'', ''Given Name Middle Initial Family Name'' or ''First Initial. Family Name''.</td>
+</tr>
+<tr>
+<td>GENDER_ID</td>
+<td>nvarchar(1)</td>
+<td></td>
+<td>true</td>
+<td></td>
+<td>A code specifying gender. This list includes NotSpecified, which is different from the OAGIS gender list.</td>
+</tr>
+<tr>
+<td>BIRTHDATE</td>
+<td>nvarchar(10)</td>
+<td></td>
+<td>true</td>
+<td></td>
+<td>The date on which the person was born.</td>
+</tr>
+<tr>
+<td>BIRTHCITY</td>
+<td>nvarchar(50)</td>
+<td></td>
+<td>true</td>
+<td></td>
+<td>Indicates the City where a person was born.</td>
+</tr>
+<tr>
+<td>BIRTHCOUNTRYSUB</td>
+<td>nvarchar(25)</td>
+<td></td>
+<td>true</td>
+<td></td>
+<td>Indicates the County where a person was born.</td>
+</tr>
+<tr>
+<td>BIRTHCOUNTRY_ID</td>
+<td>nvarchar(16)</td>
+<td></td>
+<td>true</td>
+<td></td>
+<td>Country of Birth</td>
+</tr>
+<tr>
+<td>WORKEMAILADDRESS</td>
+<td>nvarchar(50)</td>
+<td></td>
+<td>true</td>
+<td></td>
+<td>Work Email Address.</td>
+</tr>
+<tr>
+<td>MARITALSTATUS_ID</td>
+<td>nvarchar(16)</td>
+<td></td>
+<td>true</td>
+<td></td>
+<td>A set of codes classifying a person's marital status. This is an HR-XML Open List. Standard effective dating and a certified date are available as attributes. Enumerated values are: Domestic Partner Divorced Married Unreported Separated Unmarried Widowed Legally Separated.</td>
+</tr>
+<tr>
+<td>CODDRIVINGLICENCECODE</td>
+<td>nvarchar(16)</td>
+<td></td>
+<td>true</td>
+<td></td>
+<td>Driving License Number</td>
+</tr>
+<tr>
+<td>MILITARY_STATUS_ID</td>
+<td>nvarchar(16)</td>
+<td></td>
+<td>true</td>
+<td></td>
+<td>A code classifiying a person's current or past military status. Depending on the use case and applicable law, employers may need to track a varity of different information regarding a person's current or military status. Under applicable law, current or prior military personnel may be entitled to certain employment preferences.</td>
+</tr>
+<tr>
+<td>ETHNICITY_ID</td>
+<td>nvarchar(6)</td>
+<td></td>
+<td>true</td>
+<td></td>
+<td>A code classifying a person on the basis of their ethnicity. Ethnicity pertains to having common racial, cultural, religious, or linguistic characteristics. Ethnicity classifications may be relevant under government labor or fair employment practice regulations. For example, under U.S. record keeping rules for federal Contractors employers may require reporting of data with respect to whether or not a person is of Hispanic or Latino ethnicity, a classification which encompass persons of Mexican, Puerto Rican, Cuban, Central or South American, or other Spanish culture or origin, regardless of race.</td>
+</tr>
+<tr>
+<td>CITIZENSHIP_ID</td>
+<td>nvarchar(16)</td>
+<td></td>
+<td>true</td>
+<td></td>
+<td>The Identifier of the Citizenship record.</td>
+</tr>
+<tr>
+<td>CITIZENSHIP_EFFECTIVEFROM</td>
+<td>nvarchar(10)</td>
+<td></td>
+<td>true</td>
+<td></td>
+<td>The validity start date for an historical situation.</td>
+</tr>
+<tr>
+<td>CITIZENSHIP_ISPRIMARY</td>
+<td>nvarchar(5)</td>
+<td></td>
+<td>true</td>
+<td></td>
+<td>This flag indicates if the assignment is primary or not.</td>
+</tr>
+<tr>
+<td>ADDRESSES_PRIMARYINDICATOR</td>
+<td>nvarchar(5)</td>
+<td></td>
+<td>true</td>
+<td></td>
+<td>Flag indicating if the assignment is primary or not.</td>
+</tr>
+<tr>
+<td>ADDRESSTYPECODE_ID</td>
+<td>nvarchar(4)</td>
+<td></td>
+<td>true</td>
+<td></td>
+<td>The Identifier of the Address Type record.</td>
+</tr>
+<tr>
+<td>ADDRESSES_EFFECTIVEFROM</td>
+<td>nvarchar(10)</td>
+<td></td>
+<td>true</td>
+<td></td>
+<td>The validity start date for an historical situation.</td>
+</tr>
+<tr>
+<td>ADDRESSLINE1</td>
+<td>nvarchar(120)</td>
+<td></td>
+<td>true</td>
+<td></td>
+<td>The first line of the Address.</td>
+</tr>
+<tr>
+<td>ADDRESSCITY_ID</td>
+<td>nvarchar(500)</td>
+<td></td>
+<td>true</td>
+<td></td>
+<td>The Identifier of the City record.</td>
+</tr>
+<tr>
+<td>ADDRESSCOUNTRYSUB_ID</td>
+<td>nvarchar(23)</td>
+<td></td>
+<td>true</td>
+<td></td>
+<td>In countries where it applies, indicates the province of the city of an address.</td>
+</tr>
+<tr>
+<td>ADDRESSCOUNTRY_ID</td>
+<td>nvarchar(16)</td>
+<td></td>
+<td>true</td>
+<td></td>
+<td>The Identifier of the Country record.</td>
+</tr>
+<tr>
+<td>ADDRESSZIPCODE</td>
+<td>nvarchar(8)</td>
+<td></td>
+<td>true</td>
+<td></td>
+<td>ZIP code of the Address.</td>
+</tr>
+<tr>
+<td>CONTACTS_PRIMARYINDICATOR</td>
+<td>nvarchar(5)</td>
+<td></td>
+<td>true</td>
+<td></td>
+<td>Flag indicating if the assignment is primary or not.</td>
+</tr>
+<tr>
+<td>PERSONALPHONENUMBER</td>
+<td>nvarchar(20)</td>
+<td></td>
+<td>true</td>
+<td></td>
+<td>Personal phone number.</td>
+</tr>
+<tr>
+<td>PERSONALMOBILENUMBER</td>
+<td>nvarchar(20)</td>
+<td></td>
+<td>true</td>
+<td></td>
+<td>Personal mobile phone number.</td>
+</tr>
+<tr>
+<td>OTHERPHONENUMBER</td>
+<td>nvarchar(20)</td>
+<td></td>
+<td>true</td>
+<td></td>
+<td>An additional phone number which is neither the main personal or work number.</td>
+</tr>
+<tr>
+<td>PERSONALEMAILADDRESS</td>
+<td>nvarchar(50)</td>
+<td></td>
+<td>true</td>
+<td></td>
+<td>Personal e-mail address.</td>
+</tr>
+<tr>
+<td>COMPANYREL_EFFECTIVEFROM</td>
+<td>nvarchar(10)</td>
+<td></td>
+<td>true</td>
+<td></td>
+<td>The company relationship start date.</td>
+</tr>
+<tr>
+<td>HIREDATE</td>
+<td>nvarchar(10)</td>
+<td></td>
+<td>true</td>
+<td></td>
+<td>The date on which the associated person was hired. Some contexts and situations may require fine-grain distinctions. See Original Hire Date, Duty Entry Date.</td>
+</tr>
+<tr>
+<td>COMPANYASSIGN_EFFECTIVEFROM</td>
+<td>nvarchar(10)</td>
+<td></td>
+<td>true</td>
+<td></td>
+<td>The validity start date for an historical situation.</td>
+</tr>
+<tr>
+<td>CONTRACTTYPE_ID</td>
+<td>nvarchar(16)</td>
+<td></td>
+<td>true</td>
+<td></td>
+<td>The Identifier of the Contract Type record.</td>
+</tr>
+<tr>
+<td>STARTREASON_ID</td>
+<td>nvarchar(16)</td>
+<td></td>
+<td>true</td>
+<td></td>
+<td>The Identifier of the Start Reason record.</td>
+</tr>
+<tr>
+<td>ADJUSTEDHIREDATE</td>
+<td>nvarchar(10)</td>
+<td></td>
+<td>true</td>
+<td></td>
+<td>A hire date that has been modified for a particular reason. Typically, this would not be the actual date of hire, but the date on which the person is treated as having been hired for pay or benefits purposes.</td>
+</tr>
+<tr>
+<td>PROBATIONPERIODENDDATE</td>
+<td>nvarchar(10)</td>
+<td></td>
+<td>true</td>
+<td></td>
+<td>The End Date of the Probation Period. Normally calculated from the Start Date of the Contract plus the Probation Period Length.</td>
+</tr>
+<tr>
+<td>ENDREASON_ID</td>
+<td>nvarchar(16)</td>
+<td></td>
+<td>true</td>
+<td></td>
+<td>The Identifier of the End Reason record.</td>
+</tr>
+<tr>
+<td>COMPANYREL_EFFECTIVETO</td>
+<td>nvarchar(10)</td>
+<td></td>
+<td>true</td>
+<td></td>
+<td>The company relationship end date.</td>
+</tr>
+<tr>
+<td>JOBCLASSASSIGN_EFFECTIVEFROM</td>
+<td>nvarchar(10)</td>
+<td></td>
+<td>true</td>
+<td></td>
+<td>The validity start date for an historical situation.</td>
+</tr>
+<tr>
+<td>JOBCLASS_ID</td>
+<td>nvarchar(16)</td>
+<td></td>
+<td>true</td>
+<td></td>
+<td>The Identifier of the Job Class record.</td>
+</tr>
+<tr>
+<td>JOBCLASSASSIGN_EFFECTIVETO</td>
+<td>nvarchar(10)</td>
+<td></td>
+<td>true</td>
+<td></td>
+<td>The validity end date for an historical situation.</td>
+</tr>
+<tr>
+<td>EMPLSTATUS_EFFECTIVEFROM</td>
+<td>nvarchar(10)</td>
+<td></td>
+<td>true</td>
+<td></td>
+<td>The validity start date for an historical situation.</td>
+</tr>
+<tr>
+<td>STATUS_ID</td>
+<td>nvarchar(16)</td>
+<td></td>
+<td>true</td>
+<td></td>
+<td>Employment Status</td>
+</tr>
+<tr>
+<td>EMPLSTATUS_EFFECTIVETO</td>
+<td>nvarchar(10)</td>
+<td></td>
+<td>true</td>
+<td></td>
+<td>The validity end date for an historical situation.</td>
+</tr>
+<tr>
+<td>CONTRACTASSIGN_EFFECTIVEFROM</td>
+<td>nvarchar(10)</td>
+<td></td>
+<td>true</td>
+<td></td>
+<td>The validity start date for an historical situation.</td>
+</tr>
+<tr>
+<td>LABOURAGREEMENT_ID</td>
+<td>nvarchar(16)</td>
+<td></td>
+<td>true</td>
+<td></td>
+<td>The Identifier of the Labor Agreement record.</td>
+</tr>
+<tr>
+<td>CONTRACTLEVEL_ID</td>
+<td>nvarchar(35)</td>
+<td></td>
+<td>true</td>
+<td></td>
+<td>The Identifier of the Contract Level record.</td>
+</tr>
+<tr>
+<td>CONTRACTASSIGN_EFFECTIVETO</td>
+<td>nvarchar(10)</td>
+<td></td>
+<td>true</td>
+<td></td>
+<td>The validity end date for an historical situation.</td>
+</tr>
+<tr>
+<td>WORKERTYPE_ID</td>
+<td>nvarchar(16)</td>
+<td></td>
+<td>true</td>
+<td></td>
+<td>The identifier of the Worker Type record.</td>
+</tr>
+<tr>
+<td>LOCATIONASSIGN_EFFECTIVEFROM</td>
+<td>nvarchar(10)</td>
+<td></td>
+<td>true</td>
+<td></td>
+<td>The validity start date for an historical situation.</td>
+</tr>
+<tr>
+<td>LOCATION_ID</td>
+<td>nvarchar(35)</td>
+<td></td>
+<td>true</td>
+<td></td>
+<td>The Identifier of the Location record.</td>
+</tr>
+<tr>
+<td>LOCATIONASSIGN_EFFECTIVETO</td>
+<td>nvarchar(10)</td>
+<td></td>
+<td>true</td>
+<td></td>
+<td>The validity end date for an historical situation.</td>
+</tr>
+<tr>
+<td>WRKSCHEDASSGN_EFFECTIVEFROM</td>
+<td>nvarchar(10)</td>
+<td></td>
+<td>true</td>
+<td></td>
+<td>The validity start date for an historical situation.</td>
+</tr>
+<tr>
+<td>WRKTIMEPATTERN_ID</td>
+<td>nvarchar(16)</td>
+<td></td>
+<td>true</td>
+<td></td>
+<td>The Identifier of the Working Time Pattern record.</td>
+</tr>
+<tr>
+<td>FTEPERCENTAGE</td>
+<td>nvarchar(7)</td>
+<td></td>
+<td>true</td>
+<td></td>
+<td>Full Time Equivalent percentage.</td>
+</tr>
+<tr>
+<td>WRKSCHEDASSGN_EFFECTIVETO</td>
+<td>nvarchar(10)</td>
+<td></td>
+<td>true</td>
+<td></td>
+<td>The validity end date for an historical situation.</td>
+</tr>
+<tr>
+<td>CSTCNTRASSIGN_EFFECTIVEFROM</td>
+<td>nvarchar(10)</td>
+<td></td>
+<td>true</td>
+<td></td>
+<td>The validity start date for an historical situation.</td>
+</tr>
+<tr>
+<td>COSTCENTER_ID</td>
+<td>nvarchar(35)</td>
+<td></td>
+<td>true</td>
+<td></td>
+<td>The Identifier of the Company Relationship record.</td>
+</tr>
+<tr>
+<td>ISPRIMARY</td>
+<td>nvarchar(5)</td>
+<td></td>
+<td>true</td>
+<td></td>
+<td>This flag indicates if the assignment is primary or not.</td>
+</tr>
+<tr>
+<td>ASSIGNPERCENTAGE</td>
+<td>nvarchar(7)</td>
+<td></td>
+<td>true</td>
+<td></td>
+<td>Assignment Percentage.</td>
+</tr>
+<tr>
+<td>CSTCNTRASSIGN_EFFECTIVETO</td>
+<td>nvarchar(10)</td>
+<td></td>
+<td>true</td>
+<td></td>
+<td>The validity end date for an historical situation.</td>
+</tr>
+<tr>
+<td>PERSON_LISTAGENCY_ID</td>
+<td>int</td>
+<td></td>
+<td>false</td>
+<td></td>
+<td>The Identifier of List Agency.</td>
+</tr>
+<tr>
+<td>PERSON_SHAREDIDENTIFIER</td>
+<td>nvarchar(60)</td>
+<td></td>
+<td>true</td>
+<td></td>
+<td>Shared Identifier</td>
+</tr>
+<tr>
+<td>COMPANYREL_LISTAGENCY_ID</td>
+<td>int</td>
+<td></td>
+<td>false</td>
+<td></td>
+<td>The Identifier of List Agency.</td>
+</tr>
+<tr>
+<td>COMPANYREL_SHAREDIDENTIFIER</td>
+<td>nvarchar(60)</td>
+<td></td>
+<td>true</td>
+<td></td>
+<td>Shared Identifier</td>
+</tr>
+<tr>
+<td>IS_WT_AVAILABLE</td>
+<td>int</td>
+<td></td>
+<td>false</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>ID</td>
+<td>bigint</td>
+<td></td>
+<td>false</td>
+<td></td>
+<td>Indicates the unique identifier</td>
+</tr>
+<tr>
+<td>FLOW_ID</td>
+<td>bigint</td>
+<td></td>
+<td>true</td>
+<td><a href="../HR_Z_IMPORTHEADER/">HR_Z_IMPORTHEADER</a></td>
+<td>Flow identifier.</td>
+</tr>
+<tr>
+<td>STATUS</td>
+<td>char</td>
+<td></td>
+<td>true</td>
+<td></td>
+<td>Payload processing status. Possible values: I - inserted; X - executed.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="constraints">Constraints</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PK_HR_Z_IL_FILE_10_99Z</td>
+<td>PRIMARY KEY</td>
+<td>CLUSTERED, unique, part of a PRIMARY KEY constraint, [ ID ]</td>
+</tr>
+<tr>
+<td>FK_Z_10_99Z_HR_Z_HEADER</td>
+<td>FOREIGN KEY</td>
+<td>FOREIGN KEY(FLOW_ID) REFERENCES HR_Z_IMPORTHEADER(ID) ON UPDATE NO_ACTION ON DELETE CASCADE</td>
+</tr>
+</tbody>
+</table>
+<h2 id="indexes">Indexes</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PK_HR_Z_IL_FILE_10_99Z</td>
+<td>CLUSTERED, unique, part of a PRIMARY KEY constraint, [ ID ]</td>
+</tr>
+<tr>
+<td>IDX_Z_10_99</td>
+<td>NONCLUSTERED, [ IS_WT_AVAILABLE, ID ]</td>
+</tr>
+</tbody>
+</table>
+<h2 id="relations">Relations</h2>
+<p><img alt="er" src="../HR_Z_IL_FILE_10_99Z.svg" /></p>
+<hr />
+<blockquote>
+<p>Generated by <a href="https://github.com/k1LoW/tbls">tbls</a></p>
+</blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.top", "search.highlight"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

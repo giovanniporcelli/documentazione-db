@@ -1,0 +1,940 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Data Dictionary of application database">
+      
+      
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>HR_KANBANBOARD_SELSTEP - Database Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#hr_kanbanboard_selstep" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Database Documentation" class="md-header__button md-logo" aria-label="Database Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Database Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              HR_KANBANBOARD_SELSTEP
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../" class="md-tabs__link">
+          
+  
+  
+  Database
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Database Documentation" class="md-nav__button md-logo" aria-label="Database Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Database Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Database
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Database
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Indice Tabelle
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#description" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Description
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#columns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Columns
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#referenced-tables" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Referenced Tables
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#relations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Relations
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="hr_kanbanboard_selstep">HR_KANBANBOARD_SELSTEP</h1>
+<h2 id="description">Description</h2>
+<p>Details of the selection step in the Kanban Board - Details of the Selection Step in the Kanban Board.  </p>
+<details>
+<summary><strong>Table Definition</strong></summary>
+
+
+<pre><code class="language-sql">-- Talentia Software - All right reserved
+-- Type: VIEW                     Name: HR_KANBANBOARD_SELSTEP
+-- Date: 09-04-2026 07:27:59 (UTC)
+-- 
+-- ChangeLogId: 00000000-0000-0000-0000-000000000000
+-- ChangeSetId: 063d5336-4e20-4a5f-a0b1-6dc3fe44ef8e
+-- Original file name: C:\repos\Talentia-Software\hcm-core/DB/ProductDB/EDM\Schema\Views\HR_KANBANBOARD_SELSTEP.xml
+
+
+CREATE VIEW [HR_KANBANBOARD_SELSTEP]
+ ( ID, SELECTIONSTEP_ID, APPLICANT_ID, JOBVACANCYOUTLSTEP_ID, SELECTIONPROCESSTMPSTEPS_ID, JOBVACANCY_ID, STEPNAME, APPLICANT_FORMATTEDNAME, APPLICANT_THUMBNAIL, REVIEWER_THUMBNAIL, REVIEWER_FORMATTEDNAME, STEPTYPE_ID, STEPTYPEORIGINAL_ID, STARTDATE, STATUS_ID, ENDDATE, STARTDATE_CONFIRMED, OUTCOME_ID, OUTCOME_ICON, OUTCOME_ICONCOLOR, COMMENT, CANDIDATESTATUS_ID, IS_ANONYMIZED, SHAREDIDENTIFIER, LISTAGENCY_ID, WORKFLOW_ID, INSERT_TIME, INSERT_USER, INSERT_CLIENT, UPDATE_TIME, UPDATE_USER, UPDATE_CLIENT, UPDATE_COUNT ) 
+ AS 
+( select ROW_NUMBER() OVER ( ORDER BY SELECTIONSTEP_ID ) as ID, 
+* from (select 
+    HR_SELECTIONSTEP.ID as SELECTIONSTEP_ID, 
+    HR_SELECTIONSTEP.APPLICANT_ID, 
+    (CASE WHEN (HR_JOBVACANCY.SELECTIONPROCESSTEMPLATE_ID IS NOT NULL AND HR_SELECTIONSTEP.JOBVACANCYOUTLSTEP_ID IS NULL) THEN 2 ELSE HR_SELECTIONSTEP.JOBVACANCYOUTLSTEP_ID END) AS JOBVACANCYOUTLSTEP_ID, 
+    HR_SELECTIONPROCESSTMPSTEPS.ID AS SELECTIONPROCESSTMPSTEPS_ID,
+    HR_APPLICANT.JOBVACANCY_ID AS JOBVACANCY_ID,
+    (CASE WHEN (HR_JOBVACANCY.SELECTIONPROCESSTEMPLATE_ID IS NOT NULL AND HR_SELECTIONSTEP.JOBVACANCYOUTLSTEP_ID IS NULL) THEN 'Other' ELSE HR_SELECTIONPROCESSTMPSTEPS.NAME END) AS STEPNAME,
+    CANDIDATE.FORMATTEDNAME AS APPLICANT_FORMATTEDNAME, 
+    CANDIDATE.THUMBNAIL AS APPLICANT_THUMBNAIL,
+    HR_PERSON.THUMBNAIL AS REVIEWER_THUMBNAIL,
+    HR_PERSON.FORMATTEDNAME AS REVIEWER_FORMATTEDNAME,
+    (CASE WHEN (HR_JOBVACANCY.SELECTIONPROCESSTEMPLATE_ID IS NOT NULL AND HR_SELECTIONSTEP.JOBVACANCYOUTLSTEP_ID IS NULL) THEN 2 ELSE HR_SELECTIONSTEP.STEPTYPE_ID END) AS STEPTYPE_ID, 
+    HR_SELECTIONSTEP.STEPTYPE_ID AS STEPTYPEORIGINAL_ID,
+    HR_SELECTIONSTEP.STARTDATE AS STARTDATE, 
+    HR_SELECTIONSTEP.STEPSTATUS_ID AS STATUS_ID,
+    HR_SELECTIONSTEP.ENDDATE AS ENDDATE, 
+    (CASE WHEN HR_SELECTIONSTEP.STEPSTATUS_ID = 1156020 THEN HR_SELECTIONSTEP.STARTDATE ELSE NULL END) AS STARTDATE_CONFIRMED,
+    HR_SELECTIONSTEP.OUTCOME_ID AS OUTCOME_ID,
+    (CASE WHEN HR_SELECTIONSTEP.OUTCOME_ID = 1156023 THEN 'fad fa-check-circle' WHEN HR_SELECTIONSTEP.OUTCOME_ID = 1156024 THEN 'fad fa-exclamation-circle' ELSE NULL END) AS OUTCOME_ICON,
+    (CASE WHEN HR_SELECTIONSTEP.OUTCOME_ID = 1156023 THEN 276 WHEN HR_SELECTIONSTEP.OUTCOME_ID = 1156024 THEN 154 ELSE NULL END) AS OUTCOME_ICONCOLOR,  
+    HR_SELECTIONSTEP.NOTE AS COMMENT,
+    NULL AS CANDIDATESTATUS_ID,
+    CANDIDATE.IS_ANONYMIZED AS IS_ANONYMIZED,
+    HR_SELECTIONSTEP.SHAREDIDENTIFIER AS SHAREDIDENTIFIER, 
+    HR_SELECTIONSTEP.LISTAGENCY_ID AS LISTAGENCY_ID,    
+    HR_SELECTIONSTEP.WORKFLOW_ID AS WORKFLOWID,
+    HR_SELECTIONSTEP.INSERT_TIME AS INSERTTIME,
+    HR_SELECTIONSTEP.INSERT_USER AS INSERTUSER,
+    HR_SELECTIONSTEP.INSERT_CLIENT AS INSERTCLIENT,
+    HR_SELECTIONSTEP.UPDATE_TIME AS UPDATETIME,
+    HR_SELECTIONSTEP.UPDATE_USER AS UPDATEUSER,
+    HR_SELECTIONSTEP.UPDATE_CLIENT AS UPDATECLIENT,
+    HR_SELECTIONSTEP.UPDATE_COUNT AS UPDATECOUNT
+    from HR_SELECTIONSTEP
+    INNER JOIN HR_APPLICANT on HR_APPLICANT.ID = HR_SELECTIONSTEP.APPLICANT_ID
+    INNER JOIN HR_JOBVACANCY ON HR_APPLICANT.JOBVACANCY_ID = HR_JOBVACANCY.ID
+    LEFT OUTER JOIN HR_CANDIDATE_VIEW CANDIDATE ON HR_SELECTIONSTEP.CANDIDATE_ID = CANDIDATE.ID
+    LEFT OUTER JOIN HR_PERSON ON HR_SELECTIONSTEP.REVIEWER_ID = HR_PERSON.ID
+    LEFT OUTER JOIN HR_JOBVACANCYOUTLINESTEPS on HR_JOBVACANCYOUTLINESTEPS.ID = HR_SELECTIONSTEP.JOBVACANCYOUTLSTEP_ID
+    left outer join HR_SELECTIONPROCESSTMPSTEPS ON HR_SELECTIONPROCESSTMPSTEPS.ID = HR_JOBVACANCYOUTLINESTEPS.SELECTIONPROCESSTMPSTEP_ID
+
+    union all
+
+    SELECT
+    HR_SHORTLISTEDCND.ID AS SELECTIONSTEP_ID,
+    HR_APPLICANT.ID AS APPLICANT_ID,
+    1 AS JOBVACANCYOUTLSTEP_ID,
+    NULL AS SELECTIONPROCESSTMPSTEPS_ID,
+    HR_SHORTLISTEDCND.VACANCY_ID AS JOBVACANCY_ID,
+    'Job Offer' as STEPNAME,
+    CANDIDATE.FORMATTEDNAME AS APPLICANT_FORMATTEDNAME,
+    CANDIDATE.THUMBNAIL AS APPLICANT_THUMBNAIL,
+    NULL AS REVIEWER_THUMBNAIL,
+    NULL AS REVIEWER_FORMATTEDNAME,
+    1 as STEPTYPE_ID,
+    1 AS STEPTYPEORIGINAL_ID,
+    HR_SHORTLISTEDCND.HIREDATE AS STARTDATE, 
+    NULL AS STATUS_ID,
+    NULL AS ENDDATE, 
+    (CASE WHEN HR_SHORTLISTEDCND.CANDIDATESTATUS_ID &lt;&gt; 1109192 THEN HR_SHORTLISTEDCND.HIREDATE ELSE NULL END) AS STARTDATE_CONFIRMED,
+    HR_SHORTLISTEDCND.REJECTREASON_ID AS OUTCOME_ID,
+    (CASE WHEN HR_SHORTLISTEDCND.CANDIDATESTATUS_ID = 1109192 THEN 'fad fa-user-times' WHEN HR_SHORTLISTEDCND.CANDIDATESTATUS_ID = 1109193 THEN 'fad fa-user-clock' WHEN HR_SHORTLISTEDCND.CANDIDATESTATUS_ID = 1109194 THEN 'fad fa-user-check' ELSE NULL END) AS OUTCOME_ICON,
+    (CASE WHEN HR_SHORTLISTEDCND.CANDIDATESTATUS_ID = 1109192 THEN 154 WHEN HR_SHORTLISTEDCND.CANDIDATESTATUS_ID = 1109194 THEN 306 ELSE 9 END) AS OUTCOME_ICONCOLOR,
+    NULL AS COMMENT,
+    HR_SHORTLISTEDCND.CANDIDATESTATUS_ID AS CANDIDATESTATUS_ID,
+    CANDIDATE.IS_ANONYMIZED AS IS_ANONYMIZED,
+    HR_SHORTLISTEDCND.SHAREDIDENTIFIER AS SHAREDIDENTIFIER, 
+    HR_SHORTLISTEDCND.LISTAGENCY_ID AS LISTAGENCY_ID,
+    HR_SHORTLISTEDCND.WORKFLOW_ID AS WORKFLOWID,
+    HR_SHORTLISTEDCND.INSERT_TIME AS INSERTTIME,
+    HR_SHORTLISTEDCND.INSERT_USER AS INSERTUSER,
+    HR_SHORTLISTEDCND.INSERT_CLIENT AS INSERTCLIENT,
+    HR_SHORTLISTEDCND.UPDATE_TIME AS UPDATETIME,
+    HR_SHORTLISTEDCND.UPDATE_USER AS UPDATEUSER,
+    HR_SHORTLISTEDCND.UPDATE_CLIENT AS UPDATECLIENT,
+    HR_SHORTLISTEDCND.UPDATE_COUNT AS UPDATECOUNT
+    FROM HR_APPLICANT
+    INNER JOIN HR_SHORTLISTEDCND ON HR_SHORTLISTEDCND.APPLICANT_ID = HR_APPLICANT.ID
+    LEFT OUTER JOIN HR_CANDIDATE_VIEW CANDIDATE ON CANDIDATE.ID = HR_SHORTLISTEDCND.CANDIDATE_ID ) HR_SELECTIONSTEP )
+
+</code></pre>
+
+
+</details>
+
+<h2 id="columns">Columns</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th>Nullable</th>
+<th>Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td>bigint</td>
+<td></td>
+<td>true</td>
+<td>Indicates the unique identifier</td>
+</tr>
+<tr>
+<td>SELECTIONSTEP_ID</td>
+<td>bigint</td>
+<td></td>
+<td>false</td>
+<td>The identifier of the Selection Step record.</td>
+</tr>
+<tr>
+<td>APPLICANT_ID</td>
+<td>bigint</td>
+<td></td>
+<td>true</td>
+<td>The identifier of the Applicant record.</td>
+</tr>
+<tr>
+<td>JOBVACANCYOUTLSTEP_ID</td>
+<td>bigint</td>
+<td></td>
+<td>true</td>
+<td>The identifier of the Job Vacancy Outline Step record.</td>
+</tr>
+<tr>
+<td>SELECTIONPROCESSTMPSTEPS_ID</td>
+<td>bigint</td>
+<td></td>
+<td>true</td>
+<td>The identifier of the Selection Process Template Step record.</td>
+</tr>
+<tr>
+<td>JOBVACANCY_ID</td>
+<td>bigint</td>
+<td></td>
+<td>true</td>
+<td>The Identifier of the Job Vacancy record.</td>
+</tr>
+<tr>
+<td>STEPNAME</td>
+<td>nvarchar(255)</td>
+<td></td>
+<td>true</td>
+<td>The name of the selection step.</td>
+</tr>
+<tr>
+<td>APPLICANT_FORMATTEDNAME</td>
+<td>nvarchar(1024)</td>
+<td></td>
+<td>true</td>
+<td>Applicant Formatted Name</td>
+</tr>
+<tr>
+<td>APPLICANT_THUMBNAIL</td>
+<td>varbinary(MAX)</td>
+<td></td>
+<td>true</td>
+<td>Applicant Thumbnail</td>
+</tr>
+<tr>
+<td>APPLICANT_THUMBNAIL</td>
+<td>vector</td>
+<td></td>
+<td>true</td>
+<td></td>
+</tr>
+<tr>
+<td>REVIEWER_THUMBNAIL</td>
+<td>varbinary(MAX)</td>
+<td></td>
+<td>true</td>
+<td>Thumbnail of reviewer.</td>
+</tr>
+<tr>
+<td>REVIEWER_THUMBNAIL</td>
+<td>vector</td>
+<td></td>
+<td>true</td>
+<td></td>
+</tr>
+<tr>
+<td>REVIEWER_FORMATTEDNAME</td>
+<td>nvarchar(1024)</td>
+<td></td>
+<td>true</td>
+<td>Full name of the reviewer.</td>
+</tr>
+<tr>
+<td>STEPTYPE_ID</td>
+<td>bigint</td>
+<td></td>
+<td>true</td>
+<td>Step Type, for example First Interview, Second Interview, chosen from a catalog.</td>
+</tr>
+<tr>
+<td>STEPTYPEORIGINAL_ID</td>
+<td>bigint</td>
+<td></td>
+<td>true</td>
+<td></td>
+</tr>
+<tr>
+<td>STARTDATE</td>
+<td>datetime</td>
+<td></td>
+<td>true</td>
+<td>Start Date</td>
+</tr>
+<tr>
+<td>STATUS_ID</td>
+<td>bigint</td>
+<td></td>
+<td>true</td>
+<td>Selection step status.</td>
+</tr>
+<tr>
+<td>ENDDATE</td>
+<td>datetime</td>
+<td></td>
+<td>true</td>
+<td>End Date.</td>
+</tr>
+<tr>
+<td>STARTDATE_CONFIRMED</td>
+<td>datetime</td>
+<td></td>
+<td>true</td>
+<td>Start Date of Confirmed status for the  Selection Step.</td>
+</tr>
+<tr>
+<td>OUTCOME_ID</td>
+<td>bigint</td>
+<td></td>
+<td>true</td>
+<td>It’s the outcome of the selection step, chosen from a catalog of options.</td>
+</tr>
+<tr>
+<td>OUTCOME_ICON</td>
+<td>varchar(25)</td>
+<td></td>
+<td>true</td>
+<td>The icon of the Selection Step Outcome.</td>
+</tr>
+<tr>
+<td>OUTCOME_ICONCOLOR</td>
+<td>int</td>
+<td></td>
+<td>true</td>
+<td>The color of the Selection Step Outcome icon.</td>
+</tr>
+<tr>
+<td>COMMENT</td>
+<td>nvarchar(MAX)</td>
+<td></td>
+<td>true</td>
+<td>Comment field.</td>
+</tr>
+<tr>
+<td>CANDIDATESTATUS_ID</td>
+<td>bigint</td>
+<td></td>
+<td>true</td>
+<td>Candidate Status</td>
+</tr>
+<tr>
+<td>IS_ANONYMIZED</td>
+<td>int</td>
+<td></td>
+<td>true</td>
+<td>Indicates that the record is anonymous.</td>
+</tr>
+<tr>
+<td>SHAREDIDENTIFIER</td>
+<td>nvarchar(255)</td>
+<td></td>
+<td>true</td>
+<td>Shared Identifier</td>
+</tr>
+<tr>
+<td>LISTAGENCY_ID</td>
+<td>bigint</td>
+<td></td>
+<td>true</td>
+<td>The Identifier of List Agency.</td>
+</tr>
+<tr>
+<td>WORKFLOW_ID</td>
+<td>bigint</td>
+<td></td>
+<td>true</td>
+<td>Indicates the workflow unique identifier</td>
+</tr>
+<tr>
+<td>INSERT_TIME</td>
+<td>datetime2</td>
+<td></td>
+<td>false</td>
+<td>Indicates the date and time of creation</td>
+</tr>
+<tr>
+<td>INSERT_USER</td>
+<td>nvarchar(100)</td>
+<td></td>
+<td>false</td>
+<td>Indicates the user who has created it</td>
+</tr>
+<tr>
+<td>INSERT_CLIENT</td>
+<td>nvarchar(50)</td>
+<td></td>
+<td>false</td>
+<td>Indicates the IP address from which it was created</td>
+</tr>
+<tr>
+<td>UPDATE_TIME</td>
+<td>datetime2</td>
+<td></td>
+<td>false</td>
+<td>Indicates the date and time of last update operation</td>
+</tr>
+<tr>
+<td>UPDATE_USER</td>
+<td>nvarchar(100)</td>
+<td></td>
+<td>false</td>
+<td>Indicates the user who has executed last update</td>
+</tr>
+<tr>
+<td>UPDATE_CLIENT</td>
+<td>nvarchar(50)</td>
+<td></td>
+<td>false</td>
+<td>Indicates the IP address from which was executed last update</td>
+</tr>
+<tr>
+<td>UPDATE_COUNT</td>
+<td>int</td>
+<td></td>
+<td>false</td>
+<td>Indicates how many update was executed since its creation</td>
+</tr>
+</tbody>
+</table>
+<h2 id="referenced-tables">Referenced Tables</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Columns</th>
+<th>Comment</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../HR_SELECTIONSTEP/">HR_SELECTIONSTEP</a></td>
+<td>28</td>
+<td>Selection Step - Indicates step in the selection process, for a selected candidate. Includes the date of the appointment, who will do the interview and the outcome.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="../HR_APPLICANT/">HR_APPLICANT</a></td>
+<td>27</td>
+<td>Applicant - It’s an application for a vacancy by a candidate, regardless if internal or external.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="../HR_JOBVACANCY/">HR_JOBVACANCY</a></td>
+<td>59</td>
+<td>Job Vacancy - Includes the Job, the candidate ideal profile, the text of the advert, economical and contractual conditions offered, Job location etc.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="../HR_CANDIDATE_VIEW/">HR_CANDIDATE_VIEW</a></td>
+<td>53</td>
+<td></td>
+<td>VIEW</td>
+</tr>
+<tr>
+<td><a href="../HR_PERSON/">HR_PERSON</a></td>
+<td>56</td>
+<td>Person - Contains information identifying the person.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="../HR_JOBVACANCYOUTLINESTEPS/">HR_JOBVACANCYOUTLINESTEPS</a></td>
+<td>16</td>
+<td>Job Vacancy Outline Steps - In a Job Vacancy definition, the steps needed to select a candidate.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="../HR_SELECTIONPROCESSTMPSTEPS/">HR_SELECTIONPROCESSTMPSTEPS</a></td>
+<td>21</td>
+<td>Selection Process Template Steps - Selection Process Template Steps<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="../HR_SHORTLISTEDCND/">HR_SHORTLISTEDCND</a></td>
+<td>117</td>
+<td>Shortlisted Candidates - Shortlisted candidates are those candidates, internal or external, to whom a Job offer for a specific Vacancy has been proposed. For each candidate, basic contractual and deployment terms and conditions are also specified.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+</tbody>
+</table>
+<h2 id="relations">Relations</h2>
+<p><img alt="er" src="../HR_KANBANBOARD_SELSTEP.svg" /></p>
+<hr />
+<blockquote>
+<p>Generated by <a href="https://github.com/k1LoW/tbls">tbls</a></p>
+</blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.top", "search.highlight"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

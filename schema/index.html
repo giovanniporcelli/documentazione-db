@@ -1,0 +1,5300 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Data Dictionary of application database">
+      
+      
+      
+      
+        <link rel="prev" href="..">
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Indice Tabelle - Database Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#2026_04_01_application" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Database Documentation" class="md-header__button md-logo" aria-label="Database Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Database Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Indice Tabelle
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  
+  Database
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Database Documentation" class="md-nav__button md-logo" aria-label="Database Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Database Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Database
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Database
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Indice Tabelle
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Indice Tabelle
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#tables" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tables
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stored-procedures-and-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stored procedures and functions
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#relations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Relations
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#tables" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tables
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stored-procedures-and-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stored procedures and functions
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#relations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Relations
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="2026_04_01_application">2026_04_01_Application</h1>
+<h2 id="tables">Tables</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Columns</th>
+<th>Comment</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="HR_APPRCOMPSECROWANSW/">HR_APPRCOMPSECROWANSW</a></td>
+<td>15</td>
+<td>Appraisal Competency Section Row Answer - This entity stores the answers to questions which are associated to competencies.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_TAGS_ENTITIES/">TF_TAGS_ENTITIES</a></td>
+<td>15</td>
+<td>Entities Tag - The tags used for the specific entities<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_DW_CONSUMED_TOKENS/">TF_DW_CONSUMED_TOKENS</a></td>
+<td>13</td>
+<td>LLM consumed tokens - This entity would return the consumed tokens x iteration, divided into request, response and total consumed tokens<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_LANGUAGES/">TF_LANGUAGES</a></td>
+<td>14</td>
+<td>Smart Translator Languages - This entity contains the Smart Translator Languages<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_EPR_PACKAGE_RANGES/">TF_EPR_PACKAGE_RANGES</a></td>
+<td>13</td>
+<td>Sequence ranges associated to a package - Package Ranges<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_ARCA24ST_CANDIDATE/">HR_ARCA24ST_CANDIDATE</a></td>
+<td>96</td>
+<td>Arca24 Staging Table Candidate - Staging table for data coming from Arca24 - Candidate data.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_LOCATIONASSIGNMENT/">HR_LOCATIONASSIGNMENT</a></td>
+<td>17</td>
+<td>Location Assignment - Indicates which Company's Location the employee has a Contract with. It is not necessarily equal to the Working Location.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_LOCATION/">HR_LOCATION</a></td>
+<td>17</td>
+<td>Location - The location of a Company.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_BLCONTEXT_TYPES/">TF_BLCONTEXT_TYPES</a></td>
+<td>14</td>
+<td>Context types - List of all possible context types<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_POSITION/">HR_POSITION</a></td>
+<td>18</td>
+<td>Position - A single or specific instance of a job in the context of an Organizational Structure.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_LICENSES/">TF_LICENSES</a></td>
+<td>11</td>
+<td></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_SECSTORED_FILTER_CATALOG/">TF_SECSTORED_FILTER_CATALOG</a></td>
+<td>12</td>
+<td>Security SQL condition catalog - Catalog of SQL security conditions used by the multi-role security system<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_APP_PARAMETERS_ENTITIES/">TF_APP_PARAMETERS_ENTITIES</a></td>
+<td>33</td>
+<td>Application Parameters Entities - Application Parameters Entities<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_WFRT_SUBJECTS/">TF_WFRT_SUBJECTS</a></td>
+<td>18</td>
+<td></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_NAV_PRO_CFGS_QUI_ACTIONS/">TF_NAV_PRO_CFGS_QUI_ACTIONS</a></td>
+<td>13</td>
+<td>Navigation Profile Configurations Quick Actions - Navigation Profile Configurations Quick Actions<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_ARCA24ST_EVALUATION/">HR_ARCA24ST_EVALUATION</a></td>
+<td>58</td>
+<td>Arca24 Staging Table: Evaluation - Staging table for data coming from Arca24 - Evaluation data.</td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_WFSTAGE_ROLES/">TF_WFSTAGE_ROLES</a></td>
+<td>11</td>
+<td>Workflow Stage Roles - Workflow Stage Roles<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_INDEX_CATEGORIES/">TF_INDEX_CATEGORIES</a></td>
+<td>11</td>
+<td>Index Categories - TF_INDEX_CATEGORIES<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_COMPINPOINTSPARTICIPANTS/">HR_COMPINPOINTSPARTICIPANTS</a></td>
+<td>15</td>
+<td>Compensation in Points grid participants  - Participants in the Compensation in Points grid</td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_COMPANYACCOUNTABILITY/">HR_COMPANYACCOUNTABILITY</a></td>
+<td>19</td>
+<td>Company to Company Accountabilities - This Entity represents the hierarchical relationship between Companies in the same Group. Used for example to represent a relationship between an Holding and depending companies.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_DATA_LOADER_EXPORT/">TF_DATA_LOADER_EXPORT</a></td>
+<td>6</td>
+<td></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_TIMESHEETDAY/">HR_TIMESHEETDAY</a></td>
+<td>29</td>
+<td>Timesheet Day - The timesheet day entity<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_EMPLOYMENTSTATUS/">HR_EMPLOYMENTSTATUS</a></td>
+<td>23</td>
+<td>Employment Status - Used to identify in which stage the Company Relationship is, Active-Non Active-Temporary Leave, etc.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_DW_NAMED_ENTITY_ITEMS/">TF_DW_NAMED_ENTITY_ITEMS</a></td>
+<td>12</td>
+<td>Named Entity Items - Named Entity Items<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_BLRULES_PROPERTIES/">TF_BLRULES_PROPERTIES</a></td>
+<td>15</td>
+<td></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_ADV_GRID_RENDER_VALUES/">TF_ADV_GRID_RENDER_VALUES</a></td>
+<td>21</td>
+<td>Advanced Datagrid Renderer Value - Advanced Datagrid Renderer Value<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_ADDITIONALTERMS/">HR_ADDITIONALTERMS</a></td>
+<td>17</td>
+<td>Additional Contract Terms - Used to record Additional Terms of the Contract<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_BLRELATIONS_CUSTOM/">TF_BLRELATIONS_CUSTOM</a></td>
+<td>22</td>
+<td></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_FOLLOWING_ENTITIES/">TF_FOLLOWING_ENTITIES</a></td>
+<td>11</td>
+<td>Following Entities - The Following Entities.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_SEC_ALTERN_VISIBILITY/">TF_SEC_ALTERN_VISIBILITY</a></td>
+<td>7</td>
+<td></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_BLENTITIES_VIEW/">TF_BLENTITIES_VIEW</a></td>
+<td>29</td>
+<td>BL entities - Business Logic Entities<br /></td>
+<td>VIEW</td>
+</tr>
+<tr>
+<td><a href="HR_SALARYREVIEWPARTSNAPSHOT/">HR_SALARYREVIEWPARTSNAPSHOT</a></td>
+<td>24</td>
+<td>Salary Review Participant Snapshot - For each participant, this entity takes a snapshot of relevant attributes at the reference date specified in the Salary Program. For “standalone” setup, this table gets normally imported.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_JOBEDUCATION/">HR_JOBEDUCATION</a></td>
+<td>17</td>
+<td>Job Education - This entity allows defining the education requirements for the specific job.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_TRANSLATIONS_TO_EXCLUDE/">TF_TRANSLATIONS_TO_EXCLUDE</a></td>
+<td>6</td>
+<td></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_STAGING_EXTPAYLOAD/">HR_STAGING_EXTPAYLOAD</a></td>
+<td>14</td>
+<td>External Payload Staging Table - Staging table that stores payloads coming from external applications.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_ARCA24ST_INTVIEW_REQUEST/">HR_ARCA24ST_INTVIEW_REQUEST</a></td>
+<td>22</td>
+<td>Arca24 Staging Table: Interview Request - Staging table for data coming from Arca24 - Interview Request data.</td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_COURSECREDITS/">HR_COURSECREDITS</a></td>
+<td>27</td>
+<td>Course Credits - This entity contains the credits of the course.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_DATA_LOADER_TEMPLATES/">TF_DATA_LOADER_TEMPLATES</a></td>
+<td>41</td>
+<td>Data Loader Templates - Data Loader Templates<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_PERSONSINDACATO/">HR_PERSONSINDACATO</a></td>
+<td>16</td>
+<td>Union Membership - Union Membership<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_WEAK_DEPENDENCIES/">TF_WEAK_DEPENDENCIES</a></td>
+<td>13</td>
+<td>Weak Dependencies - Weak Dependencies<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_SECFILTER_CONDITIONS/">TF_SECFILTER_CONDITIONS</a></td>
+<td>13</td>
+<td>Security Filter Conditions - Security Filter Conditions<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_PAYSLIPDELIVERYMETHOD/">HR_PAYSLIPDELIVERYMETHOD</a></td>
+<td>15</td>
+<td>Pay Slip Delivery Method - Indicates how the payslip is delivered to the employee.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_MAINTENANCE_LOGS/">TF_MAINTENANCE_LOGS</a></td>
+<td>9</td>
+<td>Maintenance Logs - Captures detailed records of individual maintenance activities performed.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_ABSPLANEVENTREASON/">HR_ABSPLANEVENTREASON</a></td>
+<td>14</td>
+<td>Absence Plan Event Reason - Contains the association between absence plan and absence event reason.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_QST_QUESTIONNAIRES/">TF_QST_QUESTIONNAIRES</a></td>
+<td>38</td>
+<td>Questionnaires Definitions - Questionnaires Definitions<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_PUBLICSPEAKINGEVENTS/">HR_PUBLICSPEAKINGEVENTS</a></td>
+<td>17</td>
+<td>Public Speaking Events - List of Public Events where the person attended as a Speaker.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_VARIABLEITEMS/">HR_VARIABLEITEMS</a></td>
+<td>22</td>
+<td>Variable Items - List of Variable Items.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_GENERICNOTES/">HR_GENERICNOTES</a></td>
+<td>18</td>
+<td>Person Additional Notes - It is the entity that contains the person's additional information.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_TIMESHEETDAY_ATTR/">HR_TIMESHEETDAY_ATTR</a></td>
+<td>13</td>
+<td>Timesheet Day Attributes - The Timesheet Day Attribute associative table.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_PAGES_LINKSETS/">TF_PAGES_LINKSETS</a></td>
+<td>12</td>
+<td>Pages link set - Pages link sets<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_APPRAISALCYCLE/">HR_APPRAISALCYCLE</a></td>
+<td>36</td>
+<td>Appraisal Cycle - This Entity allows defining a container of Appraisals that make sense on a specific period for a given employee set.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_ARCA24ST_STEPS/">HR_ARCA24ST_STEPS</a></td>
+<td>19</td>
+<td>ARCA24 Staging Table: Steps - Staging table for data coming from ARCA24 - Steps data.</td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_TEMPORARY_DOCUMENTS/">TF_TEMPORARY_DOCUMENTS</a></td>
+<td>9</td>
+<td></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_APPRCYCLEVALIDATIONLOG/">HR_APPRCYCLEVALIDATIONLOG</a></td>
+<td>17</td>
+<td>Appraisal Cycle Validation Log - Validation logs of an appraisal cycle<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_SHORTLISTEDCND/">HR_SHORTLISTEDCND</a></td>
+<td>117</td>
+<td>Shortlisted Candidates - Shortlisted candidates are those candidates, internal or external, to whom a Job offer for a specific Vacancy has been proposed. For each candidate, basic contractual and deployment terms and conditions are also specified.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_DW_CONSUMED_TOKENS_CITS/">TF_DW_CONSUMED_TOKENS_CITS</a></td>
+<td>9</td>
+<td>LLM consumed tokens citations - LLM consumed tokens citations<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_SHARED_REQUESTS/">TF_SHARED_REQUESTS</a></td>
+<td>16</td>
+<td>Shared Requests - The Shared Requests.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_EVENT_INSTANCES/">TF_EVENT_INSTANCES</a></td>
+<td>22</td>
+<td>Event Instances - The Event Instances.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_CODIFICATIONS/">TF_CODIFICATIONS</a></td>
+<td>26</td>
+<td>Codifications - List of Codifications.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_ORGUNITASSIGNMENT/">HR_ORGUNITASSIGNMENT</a></td>
+<td>21</td>
+<td>Organizational Deployment - Is the position or designation of the person within the given organization. Examples are Director, Software Engineer, Purchasing Manager etc.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_ORGUNIT/">HR_ORGUNIT</a></td>
+<td>16</td>
+<td>Organizational Unit - Organizational units are functional units in an Group. They can cross several Legal entities (Companies) and are normally designed around specific Functions or Types of Activities.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_USERGROUPS/">TF_USERGROUPS</a></td>
+<td>28</td>
+<td>User Groups - User Groups<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_TRANSLATIONS/">TF_TRANSLATIONS</a></td>
+<td>17</td>
+<td>Data Translations Loader - Translations Loader<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_LIKES/">TF_LIKES</a></td>
+<td>12</td>
+<td>Likes - The Likes.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_APPRGUIDELINE/">HR_APPRGUIDELINE</a></td>
+<td>16</td>
+<td>Appraisal Guideline - This entity contains the appraisals guidelines.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_LOCATIONATTRIBUTES/">HR_LOCATIONATTRIBUTES</a></td>
+<td>46</td>
+<td>Location Attributes - Contains required details about the properties of the location, like address, GPS coordinates etc.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_TAGS_USERS/">TF_TAGS_USERS</a></td>
+<td>11</td>
+<td>Users Tags - Users Tags<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_AUDITED_COLUMNS/">TF_AUDITED_COLUMNS</a></td>
+<td>16</td>
+<td></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_EPR_RECOVERY_DATA/">TF_EPR_RECOVERY_DATA</a></td>
+<td>12</td>
+<td></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_ROLE_GRANTS/">TF_ROLE_GRANTS</a></td>
+<td>18</td>
+<td>Role Grants - Role Grants<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_ARCA24ST_TOOL_REQUEST/">HR_ARCA24ST_TOOL_REQUEST</a></td>
+<td>21</td>
+<td>Arca24 Staging Table: Tool Request - Staging table for data coming from Arca24 - Tool Request data.</td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_MATRIX_GUIDELINES/">TF_MATRIX_GUIDELINES</a></td>
+<td>29</td>
+<td>Matrix Guidelines - Matrix Guidelines<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_CONSTPAYROLLITEMASSIGN/">HR_CONSTPAYROLLITEMASSIGN</a></td>
+<td>24</td>
+<td>Worker Payroll Item Assignment - CONSTPAYROLLASSIGNMENT<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_DW_CONSUMED_TOKENS_DET/">TF_DW_CONSUMED_TOKENS_DET</a></td>
+<td>7</td>
+<td>LLM consumed tokens details - This entity would log the details of each completion with the request and response.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_BLCONTEXT_VALUES/">TF_BLCONTEXT_VALUES</a></td>
+<td>12</td>
+<td>Context values - List of all possible context values<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_STRUCTURE/">HR_STRUCTURE</a></td>
+<td>27</td>
+<td>STRUCTURES - STRUCTURES<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_EQUIPMNTASSIGNMENT/">HR_EQUIPMNTASSIGNMENT</a></td>
+<td>18</td>
+<td>Equipment Assignment - Represents the history of Equipment Assignments associated to a specific Employee<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_DW_NOTIFICATION_LOGS/">TF_DW_NOTIFICATION_LOGS</a></td>
+<td>10</td>
+<td></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_WFSTAGE_RULES/">TF_WFSTAGE_RULES</a></td>
+<td>16</td>
+<td>Workflow Stage Rules - Workflow Stage Rules<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_INDEX_DOCUMENT_ENTITIES/">TF_INDEX_DOCUMENT_ENTITIES</a></td>
+<td>11</td>
+<td>Index Document Entities - TF_INDEX_DOCUMENT_ENTITIES<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_SCRIPTRULE_CATALOG/">TF_SCRIPTRULE_CATALOG</a></td>
+<td>23</td>
+<td>Script Rule Catalog - Script Rule Catalog<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_ADDITIONALWORKERINFO/">HR_ADDITIONALWORKERINFO</a></td>
+<td>17</td>
+<td>Additional information - Additional information<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_FOLLOWING_USERS/">TF_FOLLOWING_USERS</a></td>
+<td>11</td>
+<td>Followed Users - The Followed Users<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_AUTHENTICATION_PROVIDERS/">TF_AUTHENTICATION_PROVIDERS</a></td>
+<td>24</td>
+<td>Authentication provider - TF_AUTHENTICATION_PROVIDERS<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_STAGING_P_ANALYTIC_CR/">HR_STAGING_P_ANALYTIC_CR</a></td>
+<td>22</td>
+<td>External Payroll Worker Analytics - Staging table for comparison between Core and Payroll worker data.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_AUTOCOMPENSATIONINCREASES/">HR_AUTOCOMPENSATIONINCREASES</a></td>
+<td>23</td>
+<td>Automatic compensation increases - This table is useful to store the next increase amount when the points value is achieved at the expected increase date.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_TENANT_CONTEXT_ITEMS/">TF_TENANT_CONTEXT_ITEMS</a></td>
+<td>15</td>
+<td></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_WFRT_DRAFTS/">TF_WFRT_DRAFTS</a></td>
+<td>17</td>
+<td></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_NLP_PROVIDERS/">TF_NLP_PROVIDERS</a></td>
+<td>19</td>
+<td>Natural Language Processing Providers - Natural Language Processing Providers<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_TEXT_RESOURCES_VIEW/">TF_TEXT_RESOURCES_VIEW</a></td>
+<td>7</td>
+<td></td>
+<td>VIEW</td>
+</tr>
+<tr>
+<td><a href="HR_SALREVGUIDELINERANGES/">HR_SALREVGUIDELINERANGES</a></td>
+<td>16</td>
+<td>Salary Review Guideline Ranges - It’s the suggested salary increase range, from min to max.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_CALENDAR_RESOURCE_TYPES/">TF_CALENDAR_RESOURCE_TYPES</a></td>
+<td>30</td>
+<td>Calendar Resource Types - TF_CALENDAR_RESOURCE_TYPES<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_JOBGRID/">HR_JOBGRID</a></td>
+<td>17</td>
+<td>Job Grid - This entity allows defining the association between the job and grids that should be used during the job suitability assessment.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_PERSONSOCIALNETWORKS/">HR_PERSONSOCIALNETWORKS</a></td>
+<td>15</td>
+<td>Social Media Information - List of Social Media by which the person can be contacted (example: facebook, Twitter etc.).</td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_GRIEVANCES/">HR_GRIEVANCES</a></td>
+<td>25</td>
+<td>Grievances - List of grievances raised against a Person, in relation to behaviors, procedures or disciplinary actions.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_PAYSLIPSLAVEFLOW/">HR_PAYSLIPSLAVEFLOW</a></td>
+<td>26</td>
+<td>Payroll Data Flow - This entity will store the detail of employment payment sourced by a master payroll system.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_COURSEJOB/">HR_COURSEJOB</a></td>
+<td>13</td>
+<td>Suggested Course Jobs - This entity contains jobs suggested for the course.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_DW_INTENTS/">TF_DW_INTENTS</a></td>
+<td>63</td>
+<td>Intents - Intents<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_RECRUITMENTREQUEST/">HR_RECRUITMENTREQUEST</a></td>
+<td>30</td>
+<td>Recruitment Request - Details the request for new hires, like the Job the candidate profile, headcount and expected hiring date.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_WORKLOCATIONASSIGNMENT/">HR_WORKLOCATIONASSIGNMENT</a></td>
+<td>22</td>
+<td>Work Location Assignment - Indicates the Working Location, which does not necessarily correspond to the Contract Location.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_TIMETRACKERPROJECT/">HR_TIMETRACKERPROJECT</a></td>
+<td>27</td>
+<td>Time Tracker Project - Time Tracker Project<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_PARTYTYPE/">HR_PARTYTYPE</a></td>
+<td>25</td>
+<td>Party Type - This Entity represents all Types of Parties. Organizational Units, Legal entities etc, are Types of Party.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_COMPANYASSIGNMENT/">HR_COMPANYASSIGNMENT</a></td>
+<td>20</td>
+<td>Company Assignment - Contains the information about the Companies assigned to an employee during his contract.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_SECCONDITION_VALUES/">TF_SECCONDITION_VALUES</a></td>
+<td>10</td>
+<td>Security Condition Values - Security Condition Values<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_BLRELATIONS/">TF_BLRELATIONS</a></td>
+<td>22</td>
+<td></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_WFDELEGATIONS/">TF_WFDELEGATIONS</a></td>
+<td>25</td>
+<td>Workflow delegations - The workflow delegations.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_DWINTENT_EXECINTENT_LOGS/">TF_DWINTENT_EXECINTENT_LOGS</a></td>
+<td>20</td>
+<td>Intent Execution Logs - Digital Workplace Intent Execution Logs<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_REMUNERATIONPOINTSROWS/">HR_REMUNERATIONPOINTSROWS</a></td>
+<td>14</td>
+<td>Compensation in points rows - Defines the rows of the pay grid in points<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_PLACEHOLDERS/">TF_PLACEHOLDERS</a></td>
+<td>12</td>
+<td>Placeholders - Placeholders<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_SIGN_CERTIFICATES/">TF_SIGN_CERTIFICATES</a></td>
+<td>19</td>
+<td>Sign Certificates - Sign Certificates<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_TRAININGPOOL/">HR_TRAININGPOOL</a></td>
+<td>23</td>
+<td>Training Pool - This entity contains the training pool related to a training plan.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_APPRAISAL/">HR_APPRAISAL</a></td>
+<td>20</td>
+<td>Appraisal - Appraisal<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_ASSISTANT_INTENTS/">TF_ASSISTANT_INTENTS</a></td>
+<td>24</td>
+<td>Assistant intents entity - Assistant intents<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_QST_QUESTION_TYPES/">TF_QST_QUESTION_TYPES</a></td>
+<td>15</td>
+<td>Question types - Question types<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_APPRGUIDELINEDETAIL/">HR_APPRGUIDELINEDETAIL</a></td>
+<td>16</td>
+<td>Appraisal Guideline Details - This entity includes the definition of all the payout thresholds.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_TASKS_LOGGER/">TF_TASKS_LOGGER</a></td>
+<td>19</td>
+<td>Tasks Logger - TF_TASKS_LOGGER<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_EVENT_ACTIONS/">TF_EVENT_ACTIONS</a></td>
+<td>16</td>
+<td>Event Actions - The Event Actions.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="V_ORGANIZATIONREPORTS/">V_ORGANIZATIONREPORTS</a></td>
+<td>18</td>
+<td></td>
+<td>VIEW</td>
+</tr>
+<tr>
+<td><a href="HR_ORGUNITATTRIBUTES/">HR_ORGUNITATTRIBUTES</a></td>
+<td>21</td>
+<td>Organizational Unit Attributes - Contains required details about the properties of the organizational unit.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_LOCATIONCONTACTS/">HR_LOCATIONCONTACTS</a></td>
+<td>18</td>
+<td>Location Contacts - List of people (and their details) to contact for the location.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_COMPANYRELATIONSHIP/">HR_COMPANYRELATIONSHIP</a></td>
+<td>47</td>
+<td>Company Relationship - Provides key information about an employment contract associated with a staffing assignment or staffing resource.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="V_OTHERSTRUCTREPORTS/">V_OTHERSTRUCTREPORTS</a></td>
+<td>18</td>
+<td></td>
+<td>VIEW</td>
+</tr>
+<tr>
+<td><a href="TF_LINK_CATALOG/">TF_LINK_CATALOG</a></td>
+<td>15</td>
+<td>Link Catalog - The link catalog list<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_UI_APP_SCRIPT_PHASES/">TF_UI_APP_SCRIPT_PHASES</a></td>
+<td>11</td>
+<td>Application Script Phases - Application Script Phases<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_EXCHANGERATES/">HR_EXCHANGERATES</a></td>
+<td>18</td>
+<td>Exchange Rates - A dated list of exchange rates<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_EPR_USER_PACKAGES/">TF_EPR_USER_PACKAGES</a></td>
+<td>11</td>
+<td>User Packages - It associates a package with the users who are developing it<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_STAGING_PAYLOAD_DURATIONS/">HR_STAGING_PAYLOAD_DURATIONS</a></td>
+<td>12</td>
+<td>Staging Payload Retention Rules - List of retention policies, expressed in days, for a given flow code.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="V_PERSONTOPERSON/">V_PERSONTOPERSON</a></td>
+<td>18</td>
+<td></td>
+<td>VIEW</td>
+</tr>
+<tr>
+<td><a href="TF_ENTITY_HISTORY/">TF_ENTITY_HISTORY</a></td>
+<td>5</td>
+<td></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_CONTRACTASSIGNMENT/">HR_CONTRACTASSIGNMENT</a></td>
+<td>21</td>
+<td>Contract Assignment - Identifies attributes of a Company Relationship like the Collective Contract Agreement and the compensation Level.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_ADMINEVENTHEADER/">HR_ADMINEVENTHEADER</a></td>
+<td>22</td>
+<td>Administrative Event Header - Administrative Event Header.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_BLCS_CUSTOM/">TF_BLCS_CUSTOM</a></td>
+<td>16</td>
+<td></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_MATRIX_GUIDELINES_RANGES/">TF_MATRIX_GUIDELINES_RANGES</a></td>
+<td>21</td>
+<td>Matrix Guidelines Ranges - Matrix Guidelines Ranges<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="V_POSITIONREPORTS/">V_POSITIONREPORTS</a></td>
+<td>18</td>
+<td></td>
+<td>VIEW</td>
+</tr>
+<tr>
+<td><a href="TF_TENANT_CONTEXT/">TF_TENANT_CONTEXT</a></td>
+<td>9</td>
+<td>Tenant Context - Tenant Context<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_INDEX_FIELDS/">TF_INDEX_FIELDS</a></td>
+<td>12</td>
+<td>Index Fields - TF_INDEX_FIELDS<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_FONTS_FALLBACK/">TF_FONTS_FALLBACK</a></td>
+<td>15</td>
+<td></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_PLANOUTLINE/">HR_PLANOUTLINE</a></td>
+<td>27</td>
+<td>Individual Plan Outline - List of the individual activities that make up an individual plan.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_CHARTER_PRINT_PREFERENCES/">HR_CHARTER_PRINT_PREFERENCES</a></td>
+<td>23</td>
+<td>Charter print preferences - Allows to specify different print preferences of the charter.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_SALARYLINE/">HR_SALARYLINE</a></td>
+<td>25</td>
+<td>Salary Lines - Use this entity to store salary benchmarks useful for analysing your employee’s salaries against recommended market guidelines or internal policies.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TEAMHISTORY_VIEW/">TEAMHISTORY_VIEW</a></td>
+<td>19</td>
+<td>Team History View - This entity displays all the team members for a manager between specific dates.<br /></td>
+<td>VIEW</td>
+</tr>
+<tr>
+<td><a href="TF_WFPROCESSES/">TF_WFPROCESSES</a></td>
+<td>56</td>
+<td>Processes - Workflow Processes View<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_TRANSLATION_BCK/">TF_TRANSLATION_BCK</a></td>
+<td>17</td>
+<td></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TESTIMONIALUSERS_VIEW/">TESTIMONIALUSERS_VIEW</a></td>
+<td>7</td>
+<td></td>
+<td>VIEW</td>
+</tr>
+<tr>
+<td><a href="HR_PARTY/">HR_PARTY</a></td>
+<td>82</td>
+<td>Party - A generic Item that can be represented in a Structure.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_ENTITY_HISTORY_DETAILS/">TF_ENTITY_HISTORY_DETAILS</a></td>
+<td>6</td>
+<td></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_SCORECOMPONENTPROFILE/">HR_SCORECOMPONENTPROFILE</a></td>
+<td>21</td>
+<td>Score Component Profile - This entity collects all individual scores for each component from submitted Summary Reviews.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_AI_MODEL_PROVIDERS/">TF_AI_MODEL_PROVIDERS</a></td>
+<td>17</td>
+<td>AI Model Providers - AI Model Providers<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_WORKSCHEDULEASSIGNMENT/">HR_WORKSCHEDULEASSIGNMENT</a></td>
+<td>29</td>
+<td>Work Schedule Assignment - Is the Working Time Pattern to which an employee is assigned. Also indicates their FTE %.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_NOTIFICATION/">TF_NOTIFICATION</a></td>
+<td>47</td>
+<td>The Notifications. - Notifications<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_TIMESHEETDAYACTIVITIES/">HR_TIMESHEETDAYACTIVITIES</a></td>
+<td>20</td>
+<td>Timesheet Day Activities - The timesheet day activities entity.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_PERSONACCOUNTABILITY/">HR_PERSONACCOUNTABILITY</a></td>
+<td>19</td>
+<td>Person Accountabilities - This Entity represents "Relationships" between persons. Used for example to represent an alternative Person to Person reporting structure.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_CODES/">TF_CODES</a></td>
+<td>87</td>
+<td></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_ABSACCRUALPROJ_VIEW/">HR_ABSACCRUALPROJ_VIEW</a></td>
+<td>3</td>
+<td>Accural Projection - This entity calculates the projection amount useful for the accrual calculation engine<br /></td>
+<td>VIEW</td>
+</tr>
+<tr>
+<td><a href="HR_JOBGRIDCOMP/">HR_JOBGRIDCOMP</a></td>
+<td>14</td>
+<td>Job Grid Competency - This entity collects the grid competencies associated to a job.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_SECCUSTOM_STATEMENTS/">TF_SECCUSTOM_STATEMENTS</a></td>
+<td>19</td>
+<td></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_BATCH_RULES/">TF_BATCH_RULES</a></td>
+<td>19</td>
+<td>Handlers - Batch Rules<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_SAFE_API_CATALOG/">TF_SAFE_API_CATALOG</a></td>
+<td>19</td>
+<td>Safe API catalog - Catalog of safe web address to support API call within scripts<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_APPRAISALREVIEWCOMP_VIEW/">HR_APPRAISALREVIEWCOMP_VIEW</a></td>
+<td>25</td>
+<td></td>
+<td>VIEW</td>
+</tr>
+<tr>
+<td><a href="HR_COURSEOUTLINE/">HR_COURSEOUTLINE</a></td>
+<td>29</td>
+<td>Course Outline - This entity contains the activities related to a course.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_WFSTAGES_CONTEXTS/">TF_WFSTAGES_CONTEXTS</a></td>
+<td>10</td>
+<td>Workflow Stages Contexts - TF_WFSTAGES_CONTEXTS<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_APPRAISALREVIEWMATRIX_VIEW/">HR_APPRAISALREVIEWMATRIX_VIEW</a></td>
+<td>42</td>
+<td>Scores Matrix - With this entity, you can access all individual performance scores between two dates for a Person, across two set of columns representing X Score and Y Score. This entity is suitable to be used in a Matrix Wizard to create, for example, 9 box analytics.<br /></td>
+<td>VIEW</td>
+</tr>
+<tr>
+<td><a href="HR_TRAININGREQUESTCOSTS/">HR_TRAININGREQUESTCOSTS</a></td>
+<td>22</td>
+<td>Training Request Costs - This entity contains the costs related to a training request.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_PROFILE_CONTEXT/">TF_PROFILE_CONTEXT</a></td>
+<td>10</td>
+<td>Profile context - TF_PROFILE_CONTEXT<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_COMPANYATTRIBUTES/">HR_COMPANYATTRIBUTES</a></td>
+<td>29</td>
+<td>Company Attributes - Contains required details about the properties of the company.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_INDIVIDUALPLAN/">HR_INDIVIDUALPLAN</a></td>
+<td>33</td>
+<td>Individual Plan - Container of people who will be given activities to be completed.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_CALIBRATIONPOOL_STATS/">HR_CALIBRATIONPOOL_STATS</a></td>
+<td>3</td>
+<td></td>
+<td>VIEW</td>
+</tr>
+<tr>
+<td><a href="TF_ENTITYSET_DETAILS/">TF_ENTITYSET_DETAILS</a></td>
+<td>10</td>
+<td>Entity Set Details - TF_ENTITYSET_DETAILS<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_QST_QUESTIONS/">TF_QST_QUESTIONS</a></td>
+<td>37</td>
+<td>Questions Definitions - Questions Definitions<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_APPRINFORMEDREVIEWER/">HR_APPRINFORMEDREVIEWER</a></td>
+<td>17</td>
+<td>Appraisal Informed Reviewer - This entity contains information about the appraisal informed reviewer.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_CALENDAR_BHOURS_TYPES/">TF_CALENDAR_BHOURS_TYPES</a></td>
+<td>16</td>
+<td>Calendar Business Hours Types - TF_CALENDAR_BHOURS_TYPES<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_TIMETRACKERCUSTOMER/">HR_TIMETRACKERCUSTOMER</a></td>
+<td>22</td>
+<td>Customers - A collection of customers<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_CANDIDATE_VIEW/">HR_CANDIDATE_VIEW</a></td>
+<td>53</td>
+<td></td>
+<td>VIEW</td>
+</tr>
+<tr>
+<td><a href="HR_ORGUNITCONTACTS/">HR_ORGUNITCONTACTS</a></td>
+<td>18</td>
+<td>Organizational Unit Contacts - List of people (and their details) to contact for the organizational unit.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_LOCATIONSINCOMPANY/">HR_LOCATIONSINCOMPANY</a></td>
+<td>19</td>
+<td>Locations in Company - This Entity represents the hierarchical dependency of Locations with a Company.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_WFRT_LOGS/">TF_WFRT_LOGS</a></td>
+<td>21</td>
+<td></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_TRAININGREQUEST/">HR_TRAININGREQUEST</a></td>
+<td>36</td>
+<td>Training Request - description of entity training request<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_EVENT_FOLLOWUP_OUTPARAM/">TF_EVENT_FOLLOWUP_OUTPARAM</a></td>
+<td>15</td>
+<td>Event Followup Output Parameters - The Event Followup Output Parameters.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_CYCLEREVIEWERROLES/">HR_CYCLEREVIEWERROLES</a></td>
+<td>25</td>
+<td>Cycle Reviewers Roles - This entity contains the evaluation roles that will be involved for the specific cycle. For example: Peer, Manager and so on.</td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_EXTERNALFACT/">HR_EXTERNALFACT</a></td>
+<td>27</td>
+<td>External Fact - Use this catalogue to load external Facts, typically quantities, scores or amounts, optionally broken down by various HR dimensions (Company, Location, Job…). External data can be used for As Is analysis.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_STAGING_PAYROLL_ANALYTIC/">HR_STAGING_PAYROLL_ANALYTIC</a></td>
+<td>17</td>
+<td>External Payroll Person Analytics - Staging table for comparison between Core and Payroll person data.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_COSTBYLEARNER_VIEW/">HR_COSTBYLEARNER_VIEW</a></td>
+<td>11</td>
+<td></td>
+<td>VIEW</td>
+</tr>
+<tr>
+<td><a href="TF_DATASOURCES/">TF_DATASOURCES</a></td>
+<td>22</td>
+<td>Data Sources - Data Sources<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_UI_APP_SCRIPTS/">TF_UI_APP_SCRIPTS</a></td>
+<td>14</td>
+<td>Application Scripts - Application Scripts<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_COSTBYTRAININGREQUEST_VIEW/">HR_COSTBYTRAININGREQUEST_VIEW</a></td>
+<td>11</td>
+<td></td>
+<td>VIEW</td>
+</tr>
+<tr>
+<td><a href="TF_LINKGROUPS/">TF_LINKGROUPS</a></td>
+<td>18</td>
+<td>Link Configurations View - TF_LINKGROUPS<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_ABSENCEATTENDANCE/">HR_ABSENCEATTENDANCE</a></td>
+<td>17</td>
+<td>Time and Attendance Data - Use this entity to load using an SDL or a SOA flow actual Attendance (and Absence) data already processed by a Payroll.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_CONTRACTLEVELATTRIBUTES/">HR_CONTRACTLEVELATTRIBUTES</a></td>
+<td>27</td>
+<td>Contract Level Attributes - Contains required details about the properties of the contract level.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_MCP_TOOLS/">TF_MCP_TOOLS</a></td>
+<td>18</td>
+<td>MCP Tools - MCP tools available in HCM<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_INDIVIDUALSCORESBYCOMP_VIEW/">HR_INDIVIDUALSCORESBYCOMP_VIEW</a></td>
+<td>20</td>
+<td></td>
+<td>VIEW</td>
+</tr>
+<tr>
+<td><a href="TF_TENANT_PROPERTIES/">TF_TENANT_PROPERTIES</a></td>
+<td>17</td>
+<td>Tenant Properties - TF_TENANT_PROPERTIES<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_APP_PROPERTIES/">HR_APP_PROPERTIES</a></td>
+<td>15</td>
+<td>Application Properties - Application Properties<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_POOLACCOUNTABILITY/">HR_POOLACCOUNTABILITY</a></td>
+<td>19</td>
+<td>Salary Program Pool to Salary Program Pool  Accountabilities - This Entity represents the hierarchical relationship between Salary pool in the same Group. Used for example to represent a relationship between pools.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_BLCS/">TF_BLCS</a></td>
+<td>16</td>
+<td></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_FAMILYANDDEPENDENTS/">HR_FAMILYANDDEPENDENTS</a></td>
+<td>44</td>
+<td>Family and Dependents - People who have been nominated as Family Members or other Dependents<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_SIMULATIONSCENARIOS/">HR_SIMULATIONSCENARIOS</a></td>
+<td>32</td>
+<td>Simulation Scenario - A Scenario is a container of Participants including a selection of attributes, valid at a snapshot date and possibly effective dated hypothesis of change.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_INDIVIDUALSCORESMATRIX_VIEW/">HR_INDIVIDUALSCORESMATRIX_VIEW</a></td>
+<td>33</td>
+<td>Individual Scores Matrix - Individual Scores Matrix Description<br /></td>
+<td>VIEW</td>
+</tr>
+<tr>
+<td><a href="TF_INTEROP_SCENARIOS/">TF_INTEROP_SCENARIOS</a></td>
+<td>21</td>
+<td>Interoperability Scenarios - Interoperability Scenarios<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_DW_INTENT_CHANNELS/">TF_DW_INTENT_CHANNELS</a></td>
+<td>11</td>
+<td>Intent enabled channels - Intent enabled channels<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_BLRULE_CATALOG/">TF_BLRULE_CATALOG</a></td>
+<td>18</td>
+<td>BL Rule Catalog - BL Rule Catalog<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_SOA_LOGS/">TF_SOA_LOGS</a></td>
+<td>10</td>
+<td>SOA Logs - SOA Logs<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_EVENT_FOLLOWUP_TYPES/">TF_EVENT_FOLLOWUP_TYPES</a></td>
+<td>27</td>
+<td>Event Followup Types - The Types of the Event Followup.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_JOBVACKANBANSTEPS/">HR_JOBVACKANBANSTEPS</a></td>
+<td>18</td>
+<td>Job Vacancy Outline Steps visible in the Kanban Board - Job vacancy outline steps visible as Kanban Board status.<br /></td>
+<td>VIEW</td>
+</tr>
+<tr>
+<td><a href="HR_ACCOUNTABILITY/">HR_ACCOUNTABILITY</a></td>
+<td>18</td>
+<td>Accountability - This entity represents a relationship between two items.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_TASKS_LOGGER_DETAILS/">TF_TASKS_LOGGER_DETAILS</a></td>
+<td>17</td>
+<td>Tasks Logger Details - TF_TASKS_LOGGER_DETAILS<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_DATA_LOADER_TEXT_EXPORT/">TF_DATA_LOADER_TEXT_EXPORT</a></td>
+<td>2</td>
+<td></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_KANBANBOARD_SELSTEP/">HR_KANBANBOARD_SELSTEP</a></td>
+<td>35</td>
+<td>Details of the selection step in the Kanban Board - Details of the Selection Step in the Kanban Board.<br /></td>
+<td>VIEW</td>
+</tr>
+<tr>
+<td><a href="HR_SCORMREGISTRATIONS/">HR_SCORMREGISTRATIONS</a></td>
+<td>14</td>
+<td>Scorm Cloud Registrations - description of  entity Scorm Cloud Registrations<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_WTP_TOLERANCE/">HR_WTP_TOLERANCE</a></td>
+<td>18</td>
+<td>Working Time Patterns Tolerance - Working Time Pattern Tolerance for Clock In<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_WFDELEGATION_ITEMS/">TF_WFDELEGATION_ITEMS</a></td>
+<td>12</td>
+<td>Process categories - The process categories.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_BENCHMARKLINE/">HR_BENCHMARKLINE</a></td>
+<td>13</td>
+<td>Benchmark Line - A benchmark line is the associative of a simulation scenario and a salary line<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_CANDIDATE_CV_RX/">HR_CANDIDATE_CV_RX</a></td>
+<td>26</td>
+<td>Candidate's Curriculum Attachment - The Candidate's Curriculum Attachment<br /></td>
+<td>VIEW</td>
+</tr>
+<tr>
+<td><a href="TF_MODULES/">TF_MODULES</a></td>
+<td>15</td>
+<td>Modules - Licensed modules<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_DEFAULT_ENTITIES_PARAMS/">TF_DEFAULT_ENTITIES_PARAMS</a></td>
+<td>10</td>
+<td>Default Entities Params - Default Entities Params<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_OUCURRENTFIRSTLEVELS_VIEW/">HR_OUCURRENTFIRSTLEVELS_VIEW</a></td>
+<td>14</td>
+<td>Organisational Unit First Levels - Reports the Org. Units in the first "n" levels of the current version of the Organisational structure<br /></td>
+<td>VIEW</td>
+</tr>
+<tr>
+<td><a href="HR_COURSEPREREQUIREMENTS/">HR_COURSEPREREQUIREMENTS</a></td>
+<td>20</td>
+<td>Course Prerequirements - Contains the course prerequirements.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_WFSTAGES_ROLES_CATEGORIES/">TF_WFSTAGES_ROLES_CATEGORIES</a></td>
+<td>16</td>
+<td>Workflow Stages Roles Categories - Workflow Stages Roles Categories<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_JOBGRIDCOMPGAP/">HR_JOBGRIDCOMPGAP</a></td>
+<td>14</td>
+<td>Job Grid expected competency proficiency  - This entity enables a user to set a gap value from the expected proficiency for the competencies associated to the job grid. The value zero (0) indicates it is the expected proficiency.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_GENERIC_ENTITIES/">TF_GENERIC_ENTITIES</a></td>
+<td>108</td>
+<td></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_COMPANYCONTACTS/">HR_COMPANYCONTACTS</a></td>
+<td>18</td>
+<td>Company Contacts - List of people (and their details) to contact for the company.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_INDIVIDUALPLANENROLMENT/">HR_INDIVIDUALPLANENROLMENT</a></td>
+<td>36</td>
+<td>Individual Plan Enrolment - Enrolment of a person to an individual plan.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_TIMETRACKERPROJ_ACTIVITY/">HR_TIMETRACKERPROJ_ACTIVITY</a></td>
+<td>13</td>
+<td>Time Tracker Project Activities - This entity links the Time Tracker Projects and Activities<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_CHARTERPERSPECTIVEITEM/">HR_CHARTERPERSPECTIVEITEM</a></td>
+<td>21</td>
+<td>Charter Perspective Item - Charter Perspective Item<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_SELSTEPSHORTLISTSTEP/">HR_SELSTEPSHORTLISTSTEP</a></td>
+<td>15</td>
+<td>Step Type of the Selection Process visible in the Kanban Board - Step Type of the Selection Process visible in the Kanban Board<br /></td>
+<td>VIEW</td>
+</tr>
+<tr>
+<td><a href="TF_ENUMS/">TF_ENUMS</a></td>
+<td>11</td>
+<td></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_CALENDAR_DEFAULT_BHOURS/">TF_CALENDAR_DEFAULT_BHOURS</a></td>
+<td>18</td>
+<td>Calendar Default Business Hours - TF_CALENDAR_DEFAULT_BHOURS<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_REQUESTCOSTFINANCING/">HR_REQUESTCOSTFINANCING</a></td>
+<td>20</td>
+<td>Request Costs Financing - Contains the financed costs about training request.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_STAGING_PAYROLL_CONTRACT/">HR_STAGING_PAYROLL_CONTRACT</a></td>
+<td>17</td>
+<td></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_TEAMRATINGCOMPETENCIES/">HR_TEAMRATINGCOMPETENCIES</a></td>
+<td>9</td>
+<td>Competencies to be assessed of a Team - Competencies to be assessed of a Team<br /></td>
+<td>VIEW</td>
+</tr>
+<tr>
+<td><a href="HR_OTHERCOMPETENCIES/">HR_OTHERCOMPETENCIES</a></td>
+<td>13</td>
+<td>Other personal competencies - List of additional skills held by the person.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_FUNC_AREA_CUSTOM_AUTH/">TF_FUNC_AREA_CUSTOM_AUTH</a></td>
+<td>11</td>
+<td>TF_PROFILE_CUSTOM_AUTH - TF_PROFILE_CUSTOM_AUTH<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_WFRT_PROCESSES_ENTITIES/">TF_WFRT_PROCESSES_ENTITIES</a></td>
+<td>18</td>
+<td>Process Person - Workflow runtime process person view<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_SOAINCLUDES/">TF_SOAINCLUDES</a></td>
+<td>14</td>
+<td>SOA Includes - SOA Includes<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_EVENT_SUBSCRIPTION_RULES/">TF_EVENT_SUBSCRIPTION_RULES</a></td>
+<td>17</td>
+<td>Event Subscription Rules - The Event Subscription Rules.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_SECDIMENSION_EXCLUSIONS/">TF_SECDIMENSION_EXCLUSIONS</a></td>
+<td>10</td>
+<td>Security Dimension Exclusions - TF_SECDIMENSION_EXCLUSIONS<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_PERSONADDRESSES/">HR_PERSONADDRESSES</a></td>
+<td>32</td>
+<td>Address - Provides the information about the address or semantic address of an associated entity<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_BATCH_QUEUES/">TF_BATCH_QUEUES</a></td>
+<td>16</td>
+<td>Batch queues - Batch queues<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_SCHEDULES/">TF_SCHEDULES</a></td>
+<td>14</td>
+<td></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_CODIFICATIONS_CONTEXTS/">TF_CODIFICATIONS_CONTEXTS</a></td>
+<td>10</td>
+<td></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_TEAMRATINGQUESTIONS/">HR_TEAMRATINGQUESTIONS</a></td>
+<td>18</td>
+<td>Questions for evaluating a Team - Questions for evaluating a Team<br /></td>
+<td>VIEW</td>
+</tr>
+<tr>
+<td><a href="HR_OBJECTIVETEMPLATE/">HR_OBJECTIVETEMPLATE</a></td>
+<td>22</td>
+<td>Objective Template - Objective templates are examples/models that a user can start from when creating an Objective in a plan.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_CONTRACTTYPEASSIGNMENT/">HR_CONTRACTTYPEASSIGNMENT</a></td>
+<td>24</td>
+<td>Contract Type Assignment - Specifies the nature of the contract for an Employee, for example if it is Permanent or not.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_CYCLEPARTICIPANT/">HR_CYCLEPARTICIPANT</a></td>
+<td>17</td>
+<td>Cycle Participant - Contains the participants, meaning people evaluated, of an appraisal cycle.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_BENEFITSASSIGNMENT/">HR_BENEFITSASSIGNMENT</a></td>
+<td>29</td>
+<td>Benefits Assignment - Contains details of a benefit including the amount, interval and other related information.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_TIMESHEETDAYKPI/">HR_TIMESHEETDAYKPI</a></td>
+<td>5</td>
+<td></td>
+<td>VIEW</td>
+</tr>
+<tr>
+<td><a href="HR_V_JOBOUTANDSELSTEPS/">HR_V_JOBOUTANDSELSTEPS</a></td>
+<td>11</td>
+<td></td>
+<td>VIEW</td>
+</tr>
+<tr>
+<td><a href="TF_LINKS/">TF_LINKS</a></td>
+<td>20</td>
+<td>Linkgroups - TF_LINKS<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_ASSISTANT_RTPARAMS/">TF_ASSISTANT_RTPARAMS</a></td>
+<td>29</td>
+<td>Assistant intent runtime params entity - The entity that manage runtime parameters of each intent.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_CALENDAR/">HR_CALENDAR</a></td>
+<td>15</td>
+<td>Calendar - Calendar Entity<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_CANDIDATE/">HR_CANDIDATE</a></td>
+<td>50</td>
+<td>External Candidate - External Candidate Entity.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_LEARNER/">HR_LEARNER</a></td>
+<td>43</td>
+<td>Learner - This is the entity representing a person enrolled or candidate to a course.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_FAMILYANDDEPENDENTATTRS/">HR_FAMILYANDDEPENDENTATTRS</a></td>
+<td>20</td>
+<td>Family and Dependents Attributes - The attributes of Family Members or other Dependents<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_V_Z_MASTERRECORD/">HR_V_Z_MASTERRECORD</a></td>
+<td>24</td>
+<td></td>
+<td>VIEW</td>
+</tr>
+<tr>
+<td><a href="TF_ROLE_CATALOG/">TF_ROLE_CATALOG</a></td>
+<td>14</td>
+<td>Role Catalog - TF_ROLE_CATALOG<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_MAPPINGCODES/">HR_MAPPINGCODES</a></td>
+<td>15</td>
+<td>Mapping settings (system) - Used for sake of synchronization between HCM and Core HR.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_BLENTITIES_CUSTOM/">TF_BLENTITIES_CUSTOM</a></td>
+<td>33</td>
+<td></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_USER_NOTIFICATIONS/">TF_USER_NOTIFICATIONS</a></td>
+<td>13</td>
+<td>User Notifications - User Notifications<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_V_Z_MASTERRECORDHEAD/">HR_V_Z_MASTERRECORDHEAD</a></td>
+<td>8</td>
+<td></td>
+<td>VIEW</td>
+</tr>
+<tr>
+<td><a href="HR_SELECTIONPROCESSTEMPLATE/">HR_SELECTIONPROCESSTEMPLATE</a></td>
+<td>14</td>
+<td>Selection Process Template - This entity contains the selection process templates<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_TEMP_ENTITYSET_DETAILS/">TF_TEMP_ENTITYSET_DETAILS</a></td>
+<td>6</td>
+<td></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_WTPDAILYDETAILS/">HR_WTPDAILYDETAILS</a></td>
+<td>25</td>
+<td>WTP Daily Details - Contains all the daily details of a specific working time pattern.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_POOLAPPRAISAL/">HR_POOLAPPRAISAL</a></td>
+<td>13</td>
+<td>Pool Appraisal - Pool Appraisal consists of the relationship between Calibration Pool and Appraisal entity.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_V_Z_SHORTLISTEDCND/">HR_V_Z_SHORTLISTEDCND</a></td>
+<td>13</td>
+<td></td>
+<td>VIEW</td>
+</tr>
+<tr>
+<td><a href="TF_DW_INTENT_MESSAGES/">TF_DW_INTENT_MESSAGES</a></td>
+<td>16</td>
+<td>Intent action messages - Intent action messages<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_MENU/">TF_MENU</a></td>
+<td>12</td>
+<td>Menu - Entity TF_MENU<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_V_Z_SHORTLISTVERT/">HR_V_Z_SHORTLISTVERT</a></td>
+<td>10</td>
+<td></td>
+<td>VIEW</td>
+</tr>
+<tr>
+<td><a href="HR_ACCOUNTABILITYTYPE/">HR_ACCOUNTABILITYTYPE</a></td>
+<td>29</td>
+<td>Accountability Type - This entity represents a type of relationship between two types of items.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_TEXT_RESOURCES/">TF_TEXT_RESOURCES</a></td>
+<td>14</td>
+<td>Text resource - Text resource<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_FUNCTIONAL_AREA/">TF_FUNCTIONAL_AREA</a></td>
+<td>16</td>
+<td>Functional Area - Functional area<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_ICONS/">TF_ICONS</a></td>
+<td>14</td>
+<td>Icon - Icon<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_DEPENDENCY_PROVIDERS/">TF_DEPENDENCY_PROVIDERS</a></td>
+<td>14</td>
+<td></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_NOTIFICATION_FACTORY/">TF_NOTIFICATION_FACTORY</a></td>
+<td>5</td>
+<td></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_V_Z_USERS/">HR_V_Z_USERS</a></td>
+<td>11</td>
+<td></td>
+<td>VIEW</td>
+</tr>
+<tr>
+<td><a href="TF_PROPERTY_ENUMS/">TF_PROPERTY_ENUMS</a></td>
+<td>10</td>
+<td>Property Enumerable - Property Enumerable<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_COMPENSATION_CHANGE_LOG/">HR_COMPENSATION_CHANGE_LOG</a></td>
+<td>21</td>
+<td>Compensation Change Log - COMPENSATION_CHANGE_LOG<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_WFPROCESS_STAGE_CONTEXTS/">TF_WFPROCESS_STAGE_CONTEXTS</a></td>
+<td>10</td>
+<td>Workflow Process Stage Contexts - Workflow Process Stage Contexts<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_STAGING_PAYROLL_PERSON/">HR_STAGING_PAYROLL_PERSON</a></td>
+<td>13</td>
+<td>How to - How to<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_WTPDETAILSBYPERIOD/">HR_WTPDETAILSBYPERIOD</a></td>
+<td>20</td>
+<td>Working Time Pattern Details by Period - Working Time Pattern Details by Period<br /></td>
+<td>VIEW</td>
+</tr>
+<tr>
+<td><a href="HR_DAYSTIMELINE/">HR_DAYSTIMELINE</a></td>
+<td>15</td>
+<td>DAYSTIMELINE - DAYSTIMELINE<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_EPR_FAILED_VALIDATIONS/">TF_EPR_FAILED_VALIDATIONS</a></td>
+<td>16</td>
+<td>eProvisioning Failed Validations - eProvisioning Failed Validations<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_TIMETRACKERWORKERRATE/">HR_TIMETRACKERWORKERRATE</a></td>
+<td>14</td>
+<td>Time Tracker Worker Rate - Worker Rate for a Time Tracker Project<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_SCRIPT_SNIPPETS/">TF_SCRIPT_SNIPPETS</a></td>
+<td>12</td>
+<td>Script Snippets - Script Snippets<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_BLCS_VIEW/">TF_BLCS_VIEW</a></td>
+<td>11</td>
+<td>Blcs - Blcs<br /></td>
+<td>VIEW</td>
+</tr>
+<tr>
+<td><a href="HR_OTHERSTRUCTASSIGNMENT/">HR_OTHERSTRUCTASSIGNMENT</a></td>
+<td>22</td>
+<td>Other Structure Assignment - Is a deployment of a employee in a Structure which is an alternative to the Organizational Structure. Used for example, to represent Deployment by Project or Deployment in Simulated Structures.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_TEMP_ENTITYSETS/">TF_TEMP_ENTITYSETS</a></td>
+<td>9</td>
+<td></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_RESOLUTIONRULEINSTANCE/">HR_RESOLUTIONRULEINSTANCE</a></td>
+<td>14</td>
+<td>Actor Resolution Rules - This entity enables the definition of rules to calculate a user with a relationship to another person. Such rules can be used in multiple scenarios  like workflow, appraisal cycle etc.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_SELECTIONPROCESSTMPSTEPS/">HR_SELECTIONPROCESSTMPSTEPS</a></td>
+<td>21</td>
+<td>Selection Process Template Steps - Selection Process Template Steps<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_SOASCHEDULES/">TF_SOASCHEDULES</a></td>
+<td>21</td>
+<td>SOA Schedules - TF_SOASCHEDULES<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_POOLINPROGRAM/">HR_POOLINPROGRAM</a></td>
+<td>17</td>
+<td></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_INDIVIDUALACTION/">HR_INDIVIDUALACTION</a></td>
+<td>28</td>
+<td>Individual Action - Individual action with a type, a completion percentage and optionally a linked Entity that can be a workflow task of a course session enrolment.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_PERSONALPUBLICATIONS/">HR_PERSONALPUBLICATIONS</a></td>
+<td>18</td>
+<td>Personal Publications - List of a person’s Publications such as articles, books, abstracts, etc.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_EVENT_RULE_CATALOG/">TF_EVENT_RULE_CATALOG</a></td>
+<td>25</td>
+<td>Event Rule Catalog - The Event Rule Catalog.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_BLENTITY_MR_STATES_VIEW/">TF_BLENTITY_MR_STATES_VIEW</a></td>
+<td>8</td>
+<td></td>
+<td>VIEW</td>
+</tr>
+<tr>
+<td><a href="TF_WFSTAGES_ROLES_SUBJECTS/">TF_WFSTAGES_ROLES_SUBJECTS</a></td>
+<td>20</td>
+<td>Workflow Stages Roles Subjects - Workflow Stages Roles Subjects<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_INTEROP_RULES/">TF_INTEROP_RULES</a></td>
+<td>18</td>
+<td>Interoperability Rules - Interoperability Rules<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_PROFILE_GRANTS/">TF_PROFILE_GRANTS</a></td>
+<td>15</td>
+<td>Profile grant - TF_PROFILE_GRANT<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_SECFACTORY_STATEMENTS/">TF_SECFACTORY_STATEMENTS</a></td>
+<td>19</td>
+<td></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_BLENTITY_STATES_VIEW/">TF_BLENTITY_STATES_VIEW</a></td>
+<td>13</td>
+<td></td>
+<td>VIEW</td>
+</tr>
+<tr>
+<td><a href="HR_DEVICEASSIGNMENT/">HR_DEVICEASSIGNMENT</a></td>
+<td>21</td>
+<td>Device Assignment - Represents the history of Device Assignments associated to a specific Employee.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_SELECTIONSTEP/">HR_SELECTIONSTEP</a></td>
+<td>28</td>
+<td>Selection Step - Indicates step in the selection process, for a selected candidate. Includes the date of the appointment, who will do the interview and the outcome.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_CALENDAR_TYPES/">TF_CALENDAR_TYPES</a></td>
+<td>47</td>
+<td>Calendar Types - TF_CALENDAR_TYPES<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_RISKASSESSMENT/">HR_RISKASSESSMENT</a></td>
+<td>25</td>
+<td>Risk Assessment - This entity includes HR Risk annotations being them associated to a What If Scenario or not.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_CYCLEPARTICREVIEWER/">HR_CYCLEPARTICREVIEWER</a></td>
+<td>17</td>
+<td>Cycle Participant Reviewer - Contains reviewers/evaluators of cycle participants.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_CALENDARBYLOCATION/">HR_CALENDARBYLOCATION</a></td>
+<td>13</td>
+<td>Calendar by Location - This entity stores the link between a calendar and a location.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_COMMENTS/">TF_COMMENTS</a></td>
+<td>16</td>
+<td>Comments - The Comments.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_BLFIELDS_VIEW/">TF_BLFIELDS_VIEW</a></td>
+<td>21</td>
+<td>BL Fields View - Business Logic Fields View<br /></td>
+<td>VIEW</td>
+</tr>
+<tr>
+<td><a href="HR_MISCEMPLTERMINDUCTIONS/">HR_MISCEMPLTERMINDUCTIONS</a></td>
+<td>21</td>
+<td>Miscellaneous Employment Terms Inductions - Contains miscellaneous employment terms inductions related to the job.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_ABSEVENTCOMPULSORY/">HR_ABSEVENTCOMPULSORY</a></td>
+<td>20</td>
+<td>Compulsory Absence Event - This entity contains calendar events representing compulsory holidays.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_CORESLAVEANALYTICS/">HR_CORESLAVEANALYTICS</a></td>
+<td>12</td>
+<td>Core Slave Analytics - This entity is a container for Analytics build from IP Data.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_JOBVACANCY/">HR_JOBVACANCY</a></td>
+<td>59</td>
+<td>Job Vacancy - Includes the Job, the candidate ideal profile, the text of the advert, economical and contractual conditions offered, Job location etc.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_NOTIFICATION_TARGET/">TF_NOTIFICATION_TARGET</a></td>
+<td>14</td>
+<td>Notification Target - Notification Target<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_CHARTERTEMPLATES/">HR_CHARTERTEMPLATES</a></td>
+<td>14</td>
+<td>Charter Templates - Charter Templates<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_BATCHES/">TF_BATCHES</a></td>
+<td>42</td>
+<td>Batches - Batches<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_FEEDBACK/">HR_FEEDBACK</a></td>
+<td>25</td>
+<td>Received Feedback - This entity contains feedback received.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_BLPROPERTY_EXCEPTIONS_VIEW/">TF_BLPROPERTY_EXCEPTIONS_VIEW</a></td>
+<td>13</td>
+<td></td>
+<td>VIEW</td>
+</tr>
+<tr>
+<td><a href="TF_QST_ANSWERS/">TF_QST_ANSWERS</a></td>
+<td>22</td>
+<td>Answers Definitions - Answers Definitions<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_Z_FLOWDEFINITION/">HR_Z_FLOWDEFINITION</a></td>
+<td>20</td>
+<td>Zucchetti Flow Definition - Dictionary containing mappings between Zucchetti and HCM fields.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_BLRELATIONS_VIEW/">TF_BLRELATIONS_VIEW</a></td>
+<td>18</td>
+<td>Business Logic Relations View - Business Logic Relations View<br /></td>
+<td>VIEW</td>
+</tr>
+<tr>
+<td><a href="HR_SALARYDIMENSION/">HR_SALARYDIMENSION</a></td>
+<td>21</td>
+<td>Salary Analysis Dimensions - This entity catalogues all dimensions you can use in Scenarios typed “Salary Analysis” to cluster specific salaries by specific employment dimensions.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_WFRT_SIGN_REQUESTS/">TF_WFRT_SIGN_REQUESTS</a></td>
+<td>17</td>
+<td>E-Signature Requests - This entity includes all e-Signature packages created/initialized by a Workflow Process.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_BLRULES_VIEW/">TF_BLRULES_VIEW</a></td>
+<td>19</td>
+<td>Rules - Rules<br /></td>
+<td>VIEW</td>
+</tr>
+<tr>
+<td><a href="HR_ACCOUNTABILITYTYPEDIR/">HR_ACCOUNTABILITYTYPEDIR</a></td>
+<td>16</td>
+<td>Accountability Type Directives - Accountability Type Directives<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_ASSISTANT_INTENT_RTPARAMS/">TF_ASSISTANT_INTENT_RTPARAMS</a></td>
+<td>14</td>
+<td>Assistant runtime params - Runtime Parameter<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_APPLICANT/">HR_APPLICANT</a></td>
+<td>27</td>
+<td>Applicant - It’s an application for a vacancy by a candidate, regardless if internal or external.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_EVENT_SUBSCRIPTIONS/">TF_EVENT_SUBSCRIPTIONS</a></td>
+<td>12</td>
+<td>Event Subscriptions - The Event Subscriptions.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_WFSTAGES/">TF_WFSTAGES</a></td>
+<td>26</td>
+<td>Workflow Stages - Workflow Stages<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_MENU_CFGS/">TF_MENU_CFGS</a></td>
+<td>13</td>
+<td>Log Layers - Entity TF_MENU_CFGS<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_DATADICTIONARY_EXPLORER/">TF_DATADICTIONARY_EXPLORER</a></td>
+<td>16</td>
+<td>Data Dictionary Explorer   - TF_DATADICTIONARY_EXPLORER<br /></td>
+<td>VIEW</td>
+</tr>
+<tr>
+<td><a href="TF_LINK_CFGS/">TF_LINK_CFGS</a></td>
+<td>18</td>
+<td>Landing Topics - TF_LINK_CFGS<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_SESSIONCOSTS/">HR_SESSIONCOSTS</a></td>
+<td>21</td>
+<td>Session Costs - Session Costs<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_SECFILTER_CATALOG/">TF_SECFILTER_CATALOG</a></td>
+<td>12</td>
+<td>Security Filter Catalog - Security Filter Catalog<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_SESSIONOUTLINE/">HR_SESSIONOUTLINE</a></td>
+<td>45</td>
+<td>Session Content - This entity contains the session content / activities.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_STRUCTURELOG/">HR_STRUCTURELOG</a></td>
+<td>34</td>
+<td>Export Structure - Export changes of structure<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_DW_COMPPROMPTS_LKPVIEW/">TF_DW_COMPPROMPTS_LKPVIEW</a></td>
+<td>30</td>
+<td>Lookup LLM Completion Resources - Lookup LLM Completion Resources<br /></td>
+<td>VIEW</td>
+</tr>
+<tr>
+<td><a href="TF_EPR_PACKAGES/">TF_EPR_PACKAGES</a></td>
+<td>28</td>
+<td>Packages - Packages installed and in development<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_DW_INTENT_PARAMS_PAGEKEYS/">TF_DW_INTENT_PARAMS_PAGEKEYS</a></td>
+<td>10</td>
+<td>Intent Parameter Page Keys - Intent Parameter Page Keys<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_BLRULE_PARAMETER_CATALOG/">TF_BLRULE_PARAMETER_CATALOG</a></td>
+<td>17</td>
+<td>BL Rule Parameter Catalog - BL Rule Parameter Catalog<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_JOBVACANCYOUTLINESTEPS/">HR_JOBVACANCYOUTLINESTEPS</a></td>
+<td>16</td>
+<td>Job Vacancy Outline Steps - In a Job Vacancy definition, the steps needed to select a candidate.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_SOACOMPONENTS/">TF_SOACOMPONENTS</a></td>
+<td>21</td>
+<td>SOA Component - TF_SOACOMPONENTS<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_DOCUMENT_TEMPLATES/">TF_DOCUMENT_TEMPLATES</a></td>
+<td>48</td>
+<td>Document Template - Document Template<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_TIMETRACKERPROJECTTEAM/">HR_TIMETRACKERPROJECTTEAM</a></td>
+<td>14</td>
+<td>Time Tracker Team - Team<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_USER_PASSWORD_HISTORY/">TF_USER_PASSWORD_HISTORY</a></td>
+<td>4</td>
+<td></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_SDL_EXECUTIONS/">TF_SDL_EXECUTIONS</a></td>
+<td>31</td>
+<td>Duration - Duration of session in seconds<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_DW_INTENTS_VIEW/">TF_DW_INTENTS_VIEW</a></td>
+<td>63</td>
+<td>Digital Workplace Intents - Digital Workplace Intents<br /></td>
+<td>VIEW</td>
+</tr>
+<tr>
+<td><a href="TF_TEMP_INDEX_OPERATIONS/">TF_TEMP_INDEX_OPERATIONS</a></td>
+<td>12</td>
+<td></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_COMPENSATIONASSIGNMENT/">HR_COMPENSATIONASSIGNMENT</a></td>
+<td>34</td>
+<td>Compensation Assignment - Contains a remuneration amount and related metadata, including the interval or basis used to express the pay rate (per hour, day, week, month, etc.).<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_POSITIONACCOUNTABILITY/">HR_POSITIONACCOUNTABILITY</a></td>
+<td>19</td>
+<td>Position to Position Accountabilies - This Entity represents "Relationships" between positions. Used for example to represent a functional structure as opposed to an Organizational Structure.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_DW_PUSH_NOTIFICATION_LOG/">TF_DW_PUSH_NOTIFICATION_LOG</a></td>
+<td>15</td>
+<td>Digital Workplace Push Notifications Log - This entity contains the notification log related to the Digital workplace<br /></td>
+<td>VIEW</td>
+</tr>
+<tr>
+<td><a href="TF_THEME_SETTINGS/">TF_THEME_SETTINGS</a></td>
+<td>11</td>
+<td>Theme Settings - TF_THEME_SETTINGS<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_WFRESOURCE_CATEGORIES/">TF_WFRESOURCE_CATEGORIES</a></td>
+<td>11</td>
+<td>Workflow Resource Categories - Workflow Resource Categories<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_PERSONALTRAININGHISTORY/">HR_PERSONALTRAININGHISTORY</a></td>
+<td>16</td>
+<td>Training History - History of all relevant courses attended.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_ENTITYSETS_STATS_VIEW/">TF_ENTITYSETS_STATS_VIEW</a></td>
+<td>4</td>
+<td></td>
+<td>VIEW</td>
+</tr>
+<tr>
+<td><a href="HR_INDACTCHECKPOINTS/">HR_INDACTCHECKPOINTS</a></td>
+<td>15</td>
+<td>Individual Activity Checkpoints - Individual Activity Checkpoints<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_USER_PROFILES/">TF_USER_PROFILES</a></td>
+<td>12</td>
+<td>User profiles - User profiles<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_INTEROP_SCENARIOS_LKPVIEW/">TF_INTEROP_SCENARIOS_LKPVIEW</a></td>
+<td>19</td>
+<td>Lookup Interoperability Scenarios - Lookup Interoperability Scenarios<br /></td>
+<td>VIEW</td>
+</tr>
+<tr>
+<td><a href="HR_DISCIPLINARYEVENTS/">HR_DISCIPLINARYEVENTS</a></td>
+<td>26</td>
+<td>Disciplinary Events - The list of disciplinary events recorded for a Person, including Issuing Manager and outcome.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_COSTCENTER/">HR_COSTCENTER</a></td>
+<td>23</td>
+<td>Cost Center - A cost center is a department within a business to which costs can be allocated.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_APPLICATIONSEQUENCES/">HR_APPLICATIONSEQUENCES</a></td>
+<td>13</td>
+<td>Auto Numbering's Sequences - If Null, set the FieldName parameter as the last value from correct applicationSequence in DB +1, else use the last value of the application sequence of the corresponding application sequence key name.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_SOATRANSFORM/">TF_SOATRANSFORM</a></td>
+<td>16</td>
+<td>SOA Transform - SOA Transform<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_ENTITYSETS/">TF_ENTITYSETS</a></td>
+<td>34</td>
+<td>Entity Sets - TF_ENTITYSETS<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_FEEDBACKBYSTATUS/">HR_FEEDBACKBYSTATUS</a></td>
+<td>16</td>
+<td>Feedback by Status - Feedback by Status (entity description).<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_INTEROP_SCENARIOS_VIEW/">TF_INTEROP_SCENARIOS_VIEW</a></td>
+<td>20</td>
+<td></td>
+<td>VIEW</td>
+</tr>
+<tr>
+<td><a href="HR_OVERTIMEREQUEST/">HR_OVERTIMEREQUEST</a></td>
+<td>17</td>
+<td>Overtime Request - This entity contains data about a overtime request made from a person associated to a company relationship.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_ABSENCEEVENT/">HR_ABSENCEEVENT</a></td>
+<td>49</td>
+<td>Absence Event - Contains the absence events.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_AI_MODELS/">TF_AI_MODELS</a></td>
+<td>20</td>
+<td>AI models - AI models<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_TRAACTIVITYTYPES/">HR_TRAACTIVITYTYPES</a></td>
+<td>29</td>
+<td>Learning Activity Types - description of entity Activity Types<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_LINK_CFGS_VIEW/">TF_LINK_CFGS_VIEW</a></td>
+<td>18</td>
+<td>Link Configurations - TF_LINK_CFGS_VIEW<br /></td>
+<td>VIEW</td>
+</tr>
+<tr>
+<td><a href="TF_WIDGETS_GALLERY_CATEGORY/">TF_WIDGETS_GALLERY_CATEGORY</a></td>
+<td>12</td>
+<td>Widgets gallery category - TF_WIDGETS_GALLERY_CATEGORY<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_MULTIPLEXER_TYPES/">HR_MULTIPLEXER_TYPES</a></td>
+<td>13</td>
+<td>MULTIPLEXERTYPES - MULTIPLEXERTYPES DESCRIPTION<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_INTEROP_TYPES/">TF_INTEROP_TYPES</a></td>
+<td>31</td>
+<td>Interoperability Skills - Interoperability Skill Catalog<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_BLENTITIES/">TF_BLENTITIES</a></td>
+<td>33</td>
+<td>TF_BLENTITIES_LOOKUP - TF_BLENTITIES_LOOKUP<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_CALIBRATIONMODEL/">HR_CALIBRATIONMODEL</a></td>
+<td>16</td>
+<td>Calibration Model - Calibration models to calculate evaluation scores based on an expected distribution<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_COMPONENTS_CATALOG/">TF_COMPONENTS_CATALOG</a></td>
+<td>15</td>
+<td>Components Catalog - Entity TF_COMPONENTS_CATALOG<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_LINKGROUPS_VIEW/">TF_LINKGROUPS_VIEW</a></td>
+<td>18</td>
+<td>Linksets - Linksets<br /></td>
+<td>VIEW</td>
+</tr>
+<tr>
+<td><a href="HR_COURSE/">HR_COURSE</a></td>
+<td>47</td>
+<td>Course - This entity contains the catalogue of courses.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_SALARYGRADEASSIGNMENT/">HR_SALARYGRADEASSIGNMENT</a></td>
+<td>16</td>
+<td>Salary Grade Assignment - The history of Individual Salary Grades to which a specific worker has been assigned.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_PROFILE_ROLES/">TF_PROFILE_ROLES</a></td>
+<td>10</td>
+<td>Profile role - TF_PROFILE_ROLES<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_APPRAISALFORMPAYOUT/">HR_APPRAISALFORMPAYOUT</a></td>
+<td>23</td>
+<td>Appraisal Form Payout - This entity contains the payout configuration associated with an appraisal form.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_WFRT_SIGN_REQUEST_SIGNERS/">TF_WFRT_SIGN_REQUEST_SIGNERS</a></td>
+<td>20</td>
+<td>E-Signature Signers - This entity aggregates information about individuals who have been invited to sign one or more documents (for ex. contact data).<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_SECFILTER_CONTEXT/">TF_SECFILTER_CONTEXT</a></td>
+<td>10</td>
+<td>Security Filter Context - Security Filter Context<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_APPRAISALREVIEW/">HR_APPRAISALREVIEW</a></td>
+<td>43</td>
+<td>Appraisal Review - This entity stores the history of all individual appraisals.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_FINANCINGORGANIZATIONS/">HR_FINANCINGORGANIZATIONS</a></td>
+<td>20</td>
+<td>Financing Organization - Contains the financing organizations.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_LINKS_VIEW/">TF_LINKS_VIEW</a></td>
+<td>20</td>
+<td></td>
+<td>VIEW</td>
+</tr>
+<tr>
+<td><a href="TF_OAUTH_ACTIONS/">TF_OAUTH_ACTIONS</a></td>
+<td>14</td>
+<td>OAuth Actions - OAuth Actions<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_TRAININGCHECKLIST/">HR_TRAININGCHECKLIST</a></td>
+<td>20</td>
+<td>Training Checklist - This entity logs all activities due to setup/execute a Training Session.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_GENERAL_RULES/">TF_GENERAL_RULES</a></td>
+<td>76</td>
+<td>Resolution Rules - Catalogue of rules to resolve who is assigned to a specific function based on the selected person.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_STRUCTURESTAGINGTABLE/">HR_STRUCTURESTAGINGTABLE</a></td>
+<td>31</td>
+<td>Structure Staging Table - A staging table where Structures being imported are stored.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_LINKSETS_VIEW/">TF_LINKSETS_VIEW</a></td>
+<td>14</td>
+<td>Linksets - Linksets<br /></td>
+<td>VIEW</td>
+</tr>
+<tr>
+<td><a href="TF_LINKSETS/">TF_LINKSETS</a></td>
+<td>14</td>
+<td>Link sets - Link sets<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_EVENTDEF_MESSAGE_CHANNELS/">TF_EVENTDEF_MESSAGE_CHANNELS</a></td>
+<td>11</td>
+<td>Event definition message channels - Event definition message channels<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_CALIBRATIONMODELLEVEL/">HR_CALIBRATIONMODELLEVEL</a></td>
+<td>16</td>
+<td>Calibration Model Level - Calibration Model's levels<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_MENU_CFGS_VIEW/">TF_MENU_CFGS_VIEW</a></td>
+<td>13</td>
+<td>Menu Configurations View - TF_MENU_CFGS_VIEW<br /></td>
+<td>VIEW</td>
+</tr>
+<tr>
+<td><a href="TF_QST_QUESTIONTYPE_LAYOUTS/">TF_QST_QUESTIONTYPE_LAYOUTS</a></td>
+<td>15</td>
+<td>Question type layouts - Question type layouts<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_PROFILE_CATALOG/">TF_PROFILE_CATALOG</a></td>
+<td>24</td>
+<td>Profile catalog - TF_PROFILE_CATALOG<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_TEMP_INDEX_DETAILS/">TF_TEMP_INDEX_DETAILS</a></td>
+<td>5</td>
+<td></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_JOBVACEMPLOYMENTAGENCY/">HR_JOBVACEMPLOYMENTAGENCY</a></td>
+<td>13</td>
+<td>Job Vacancy Employment Agency - Employment agency associated with the job vacancy<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_Z_IMPORTHEADER/">HR_Z_IMPORTHEADER</a></td>
+<td>20</td>
+<td>Staging Table - Header staging table: it contains the inbound flow definitions, along with the web service definitions and the statistics for executions.</td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_MESSAGE_TEMPLATES/">TF_MESSAGE_TEMPLATES</a></td>
+<td>19</td>
+<td>Message templates - Message templates<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_MENU_VIEW/">TF_MENU_VIEW</a></td>
+<td>12</td>
+<td>TF_MENU_VIEW</td>
+<td>VIEW</td>
+</tr>
+<tr>
+<td><a href="HR_SESSIONCOSTFINANCING/">HR_SESSIONCOSTFINANCING</a></td>
+<td>21</td>
+<td>Session Costs Financing - Contains the financing rule about session by cost type.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_DW_INTENT_RAG_RESOURCES/">TF_DW_INTENT_RAG_RESOURCES</a></td>
+<td>10</td>
+<td>AI Agent RAG Resources - This entity would include the list of all indexed RAG resources used by an AI Agent.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_COMPETENCYPROFILE/">HR_COMPETENCYPROFILE</a></td>
+<td>17</td>
+<td>Competency Profile - This entity retrieves all the competencies for an employee that have been evaluated and submitted, that are included in a Section of the Appraisal with the flag  'include in profile' activated.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_TRAINSTRUCTORCONTACTS/">HR_TRAINSTRUCTORCONTACTS</a></td>
+<td>27</td>
+<td>Instructor Contacts - This entity stores the contacts of an external instructor.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_NAV_PROFILE_CFGS_VIEW/">TF_NAV_PROFILE_CFGS_VIEW</a></td>
+<td>22</td>
+<td>Navigation Profiles Configurations - Navigation Profiles Configurations<br /></td>
+<td>VIEW</td>
+</tr>
+<tr>
+<td><a href="TF_BLRULE_PARAMETERS_CUSTOM/">TF_BLRULE_PARAMETERS_CUSTOM</a></td>
+<td>16</td>
+<td></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_LEARNERACTIVITIES/">HR_LEARNERACTIVITIES</a></td>
+<td>35</td>
+<td>Learner Activities - This entity is child of a Learner and details all learning activities for an enrolled Learner.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_PERSONALTSCRIPTNAMES/">HR_PERSONALTSCRIPTNAMES</a></td>
+<td>30</td>
+<td>Names in alternate language - Use this entity  to store one or more versions of the Names in an alternate language<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_NAV_PROFILES_VIEW/">TF_NAV_PROFILES_VIEW</a></td>
+<td>12</td>
+<td>Navigation profiles - Navigation profiles<br /></td>
+<td>VIEW</td>
+</tr>
+<tr>
+<td><a href="TF_ASYNC_RULE_CATALOG/">TF_ASYNC_RULE_CATALOG</a></td>
+<td>19</td>
+<td>Async Rule Catalog - Async Rule Catalog<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_WEB_RESOURCES/">TF_WEB_RESOURCES</a></td>
+<td>25</td>
+<td>Web Resources - TF_WEB_RESOURCES<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_TEMP_RETRIEVE/">TF_TEMP_RETRIEVE</a></td>
+<td>2</td>
+<td></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_COSTCENTERACCOUNTABILITY/">HR_COSTCENTERACCOUNTABILITY</a></td>
+<td>19</td>
+<td>Cost Center to Cost Center Accountabilities - Representes the Cost Center associated to a specific Employee.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="DWH_ENTITY_INST_VISIBILITY/">DWH_ENTITY_INST_VISIBILITY</a></td>
+<td>6</td>
+<td></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_WFRULE_CATALOG/">TF_WFRULE_CATALOG</a></td>
+<td>19</td>
+<td>Workflow Rule Catalog - Workflow Rule Catalog<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_INSEECITY/">HR_INSEECITY</a></td>
+<td>18</td>
+<td>INSEE City - Contains the INSEE code. It is a numerical indexing code used by the French National Institute for Statistics and Economic Studies (INSEE) to identify various entities, including towns and regions.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_BATCH_INSTANCES/">TF_BATCH_INSTANCES</a></td>
+<td>37</td>
+<td>Batch instances - Batch Instances<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_CALIBRATIONPOOL/">HR_CALIBRATIONPOOL</a></td>
+<td>18</td>
+<td>Calibration Pool - Calibration Pool consists of the list of managers that need to perform a calibration cycle.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_PAGE_CFGS_VIEW/">TF_PAGE_CFGS_VIEW</a></td>
+<td>37</td>
+<td>TF_PAGES_CFGS_VIEW - TF_PAGES_CFGS_VIEW<br /></td>
+<td>VIEW</td>
+</tr>
+<tr>
+<td><a href="HR_PARTICEMPHYPOTHESIS/">HR_PARTICEMPHYPOTHESIS</a></td>
+<td>27</td>
+<td>Participant Employment Hypothesis - For each participant, includes the employment situation at the Scenario snapshot date and can include other effective dated Hypothesis, if a change is planned.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_CALENDAR_TYPES_RESOURCES/">TF_CALENDAR_TYPES_RESOURCES</a></td>
+<td>11</td>
+<td>Calendar Types Resources - TF_CALENDAR_TYPES_RESOURCES<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_PAGES_VIEW/">TF_PAGES_VIEW</a></td>
+<td>17</td>
+<td>Pages View - Pages View<br /></td>
+<td>VIEW</td>
+</tr>
+<tr>
+<td><a href="TF_SOAFLOWS/">TF_SOAFLOWS</a></td>
+<td>52</td>
+<td>SOA Flows - SOA Flows<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_ABSENCEPLAN/">HR_ABSENCEPLAN</a></td>
+<td>64</td>
+<td>Absence Plan - Contains the absence plans.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_STARTUP_FACTORY/">TF_STARTUP_FACTORY</a></td>
+<td>9</td>
+<td></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_QUICK_ACTIONS_VIEW/">TF_QUICK_ACTIONS_VIEW</a></td>
+<td>17</td>
+<td>Quick actions - Quick actions<br /></td>
+<td>VIEW</td>
+</tr>
+<tr>
+<td><a href="HR_PUBLICHOLIDAY/">HR_PUBLICHOLIDAY</a></td>
+<td>16</td>
+<td>Public Holiday - Includes all public holidays for a calendar.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_TEMP_RETRIEVE_DETAILS/">TF_TEMP_RETRIEVE_DETAILS</a></td>
+<td>3</td>
+<td></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_POSITIONATTRIBUTES/">HR_POSITIONATTRIBUTES</a></td>
+<td>26</td>
+<td>Position Attributes - Contains required details about the properties of the position.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_PROPERTY_GROUPS/">TF_PROPERTY_GROUPS</a></td>
+<td>13</td>
+<td>Property group - TF_PROPERTY_GROUPS<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_SECFILTER_STATEMENTS_VIEW/">TF_SECFILTER_STATEMENTS_VIEW</a></td>
+<td>14</td>
+<td></td>
+<td>VIEW</td>
+</tr>
+<tr>
+<td><a href="HR_TRAININGCENTER/">HR_TRAININGCENTER</a></td>
+<td>18</td>
+<td>Training Center - description of entity Training Center<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_MULTIPLEXER/">HR_MULTIPLEXER</a></td>
+<td>20</td>
+<td>MULTIPLEXER - MULTIPLEXER DESCRIPTION<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_SALARYGRADES/">HR_SALARYGRADES</a></td>
+<td>18</td>
+<td>Salary Grade - A salary grade contains a grade and an associated salary range.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_APPRAISALTYPEROLE/">HR_APPRAISALTYPEROLE</a></td>
+<td>14</td>
+<td></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_USER_PROPERTIES/">TF_USER_PROPERTIES</a></td>
+<td>14</td>
+<td>User Properties - TF_USER_PROPERTIES<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_LERNFORECASTCOSTS/">HR_LERNFORECASTCOSTS</a></td>
+<td>21</td>
+<td>Learner Forecast Costs - The currency of the course cost.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_CAREERASPIRATIONS/">HR_CAREERASPIRATIONS</a></td>
+<td>16</td>
+<td>Career Aspirations - Effective Dated Request for relocation.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_SECFILTERS_ADV_VIEW/">TF_SECFILTERS_ADV_VIEW</a></td>
+<td>14</td>
+<td>Security filters Adv - Security filters Adv<br /></td>
+<td>VIEW</td>
+</tr>
+<tr>
+<td><a href="HR_DOCTORDETAILS/">HR_DOCTORDETAILS</a></td>
+<td>29</td>
+<td>Doctor Details - Contains details of the doctor.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_EPR_PACKAGE_OBJECTS/">TF_EPR_PACKAGE_OBJECTS</a></td>
+<td>23</td>
+<td>eProvisioning  Package Objects - TF_EPR_PACKAGE_OBJECTS<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_STARTUP_TASKS/">TF_STARTUP_TASKS</a></td>
+<td>26</td>
+<td></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_SECURITY_OBJECT_TYPE/">TF_SECURITY_OBJECT_TYPE</a></td>
+<td>10</td>
+<td>Security Object Type - Security Object Type<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_SECTEMPORARY_STATEMENTS/">TF_SECTEMPORARY_STATEMENTS</a></td>
+<td>20</td>
+<td></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_WFRT_PROCESSES/">TF_WFRT_PROCESSES</a></td>
+<td>29</td>
+<td>Process Instances - Workflow Runtime Processes View<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_STRUCTUREVERSIONS/">HR_STRUCTUREVERSIONS</a></td>
+<td>18</td>
+<td>Structure Versions - If a Structure Type is "Versionable" a Structure of that Type can be multiple Versions over time.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_SECGRANTS_VIEW/">TF_SECGRANTS_VIEW</a></td>
+<td>14</td>
+<td>Security Grants - Security Grants<br /></td>
+<td>VIEW</td>
+</tr>
+<tr>
+<td><a href="TF_AI_SEARCH_PROVIDERS/">TF_AI_SEARCH_PROVIDERS</a></td>
+<td>18</td>
+<td>AI Search Providers - AI Search Providers<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_TEMP_SEARCH_DATA/">TF_TEMP_SEARCH_DATA</a></td>
+<td>6</td>
+<td></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_PROMPTS/">TF_PROMPTS</a></td>
+<td>17</td>
+<td>Prompt - TF_PROMPTS<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_APPRFORMSECTIONTYPE/">HR_APPRFORMSECTIONTYPE</a></td>
+<td>19</td>
+<td>Appraisal Form Section Type - Defines the form section parameters and also how to initialise the section content, specifying the initialisation rule.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_SECURITY_NAV_PROFILES_VIEW/">TF_SECURITY_NAV_PROFILES_VIEW</a></td>
+<td>12</td>
+<td></td>
+<td>VIEW</td>
+</tr>
+<tr>
+<td><a href="TF_LINKSETS_LINKS/">TF_LINKSETS_LINKS</a></td>
+<td>13</td>
+<td>Links - TF_LINKSETS_LINKS<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_QSTRT_QUESTIONNAIRES/">TF_QSTRT_QUESTIONNAIRES</a></td>
+<td>19</td>
+<td>Questionnaires - Questionnaires<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_WFRT_SIGNREQ_DOCUMENTS/">TF_WFRT_SIGNREQ_DOCUMENTS</a></td>
+<td>7</td>
+<td>E-Signature Documents - This entity includes the name of the documents included in the same E-Signature request.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_TRAINSTRUCTORSKILLS/">HR_TRAINSTRUCTORSKILLS</a></td>
+<td>13</td>
+<td>Instructor Skill - This entity stores the skills of an external instructor.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_SALARYPROGRAM/">HR_SALARYPROGRAM</a></td>
+<td>39</td>
+<td>Salary Program - A salary program includes all rules necessary to kick off a salary review process, including eligible people, reviewable items and budget rules.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_SDL_CHUNKS/">TF_SDL_CHUNKS</a></td>
+<td>17</td>
+<td>SDL Chunks - The chunk detail<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_WIDGETS_GALLERY_VIEW/">TF_WIDGETS_GALLERY_VIEW</a></td>
+<td>14</td>
+<td>Widgets Gallery - Widgets Gallery<br /></td>
+<td>VIEW</td>
+</tr>
+<tr>
+<td><a href="HR_LANGUAGESKILLS/">HR_LANGUAGESKILLS</a></td>
+<td>22</td>
+<td>Language Skills - A list of the Language Skills for a person, including their mother tongues and any foreign languages, with the associated proficiency level.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_Z_IL_FILE_10_99Z/">HR_Z_IL_FILE_10_99Z</a></td>
+<td>75</td>
+<td>SDL Staging Table 10 99 Z - Zucchetti - Staging table for the Smart Data Load, flow 10 99 - Employees<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_EXTAPP_RULE_CATALOG/">TF_EXTAPP_RULE_CATALOG</a></td>
+<td>17</td>
+<td>External Application Rule Catalog - External Application Rule Catalog<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_PERSONBANKDETAILS/">HR_PERSONBANKDETAILS</a></td>
+<td>28</td>
+<td>Bank Details - Manage the bank accounts details related to a Person. Multiple bank accounts can be stored. These may be used by the company to pay expenses or salary.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_SESSIONOUTLINECOSTS/">HR_SESSIONOUTLINECOSTS</a></td>
+<td>21</td>
+<td>Session Outline Costs - Session Outline Costs<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_DW_INTENT_RESOURCE_TYPES/">TF_DW_INTENT_RESOURCE_TYPES</a></td>
+<td>14</td>
+<td>Intent resource types - Intent resource types<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_COMPGRIDROWSCORE/">HR_COMPGRIDROWSCORE</a></td>
+<td>15</td>
+<td>Competency Grid Row Score - This entity allows setting a score for competencies within the grid.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_JOBACCOUNTABILITY/">HR_JOBACCOUNTABILITY</a></td>
+<td>19</td>
+<td>Job Profile to Job Profile Accountabilies - This Entity can be used to represent hierarchical relationship between Job Profiles, for example to represent Job Families.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_MODULE_CONSUMED_ITEMS/">TF_MODULE_CONSUMED_ITEMS</a></td>
+<td>12</td>
+<td>Module consumed items - Log of consumed module items<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_BLRULES/">TF_BLRULES</a></td>
+<td>17</td>
+<td></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_EVENT_DEFINITIONS/">TF_EVENT_DEFINITIONS</a></td>
+<td>50</td>
+<td>Event Definitions - The Event Definitions.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_TOPICS/">TF_TOPICS</a></td>
+<td>27</td>
+<td>Topics - Topics entity<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_INTEROP_SCENARIO_STEPS/">TF_INTEROP_SCENARIO_STEPS</a></td>
+<td>26</td>
+<td>Interoperability Scenarios Steps - Interoperability Scenarios Steps<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_TEMP_SEARCH/">TF_TEMP_SEARCH</a></td>
+<td>15</td>
+<td></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_Z_IMPORTPAYLOADS/">HR_Z_IMPORTPAYLOADS</a></td>
+<td>17</td>
+<td>Payload Staging Table - Payload staging table: it contains the imported payloads for a given entity.</td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_LERNACTIVFORECASTCOSTS/">HR_LERNACTIVFORECASTCOSTS</a></td>
+<td>22</td>
+<td>Learner Activity Forecast Costs - This entity details all forecast costs for an activity learner.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_PARTICIPANTINPOOL/">HR_PARTICIPANTINPOOL</a></td>
+<td>17</td>
+<td></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_ASYNC_TASKS/">TF_ASYNC_TASKS</a></td>
+<td>31</td>
+<td>Async Tasks - Async Tasks<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_INDIVIDUALABSALLOWANCE/">HR_INDIVIDUALABSALLOWANCE</a></td>
+<td>17</td>
+<td>Individual Absence Allowance - Contains the individual absence allowances.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_CFGS_CONTEXTS/">TF_CFGS_CONTEXTS</a></td>
+<td>12</td>
+<td>Configuration Contexts - TF_CFGS_CONTEXTS<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_ABSENCEEVENTDETAIL/">HR_ABSENCEEVENTDETAIL</a></td>
+<td>22</td>
+<td>Absence Event Detail - This entity includes the daily absence details.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_SALARYLINESPOT/">HR_SALARYLINESPOT</a></td>
+<td>17</td>
+<td>Salary Line Spots - Salary Line Spots<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_WFRT_SIGNREQ_INTEROPS/">TF_WFRT_SIGNREQ_INTEROPS</a></td>
+<td>6</td>
+<td>E-Signature Runtime Logs - This entity includes the reference to the interop runtimes that where created to get the signature. For the same request, more than one record can exist in case of reminders sent.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_DW_CHANNELS/">TF_DW_CHANNELS</a></td>
+<td>24</td>
+<td>Interoperability channels - Interoperability channels<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_POSITIONSINUNIT/">HR_POSITIONSINUNIT</a></td>
+<td>19</td>
+<td>Positions in Organizational Unit - This represents the relationship between Positions and Units.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_BLENTITY_CATEGORIES/">TF_BLENTITY_CATEGORIES</a></td>
+<td>11</td>
+<td>TF_BLENTITIES_CATEGORIES - TF_BLENTITIES_CATEGORIES<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_TRAININGCLASSROOM/">HR_TRAININGCLASSROOM</a></td>
+<td>21</td>
+<td>Training Classroom - description of entity Training Classroom<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_APPRCOMPONENTSCORE/">HR_APPRCOMPONENTSCORE</a></td>
+<td>25</td>
+<td>Appraisal Component Score - This entity stores the score for each component in an appraisal review. For example, an individual appraisal which will generate an overall performance assessment calculated as a weighted average of Objectives and Competencies will generate, for each review, at least three scores in this table: one for the overall performance and two partial scores for objectives and competencies respectively.</td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_OBJECT_TYPE_ACTION/">TF_OBJECT_TYPE_ACTION</a></td>
+<td>10</td>
+<td></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_WFROLES/">TF_WFROLES</a></td>
+<td>25</td>
+<td>Workflow Roles - Workflow Roles<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_COMPONENT_PROPERTIES/">TF_COMPONENT_PROPERTIES</a></td>
+<td>35</td>
+<td>Component Properties - TF_COMPONENT_PROPERTIES<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_DPAE/">HR_DPAE</a></td>
+<td>22</td>
+<td>DPAE - DPAE<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_COSTCENTERASSIGNMENT/">HR_COSTCENTERASSIGNMENT</a></td>
+<td>26</td>
+<td>Cost Center Assignment - Representes the Cost Center associated to a specific Employee.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_TAG_CATEGORIES/">TF_TAG_CATEGORIES</a></td>
+<td>17</td>
+<td>Tag Categories - The Tag Categories<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_FORECASTCOSTFINANCING/">HR_FORECASTCOSTFINANCING</a></td>
+<td>19</td>
+<td>Forecast Costs Financing - Contains the financed forecast costs.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_SURVEY/">HR_SURVEY</a></td>
+<td>26</td>
+<td>Survey - This datasource returns data relating to a survey.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_CAREERASPDETAILS/">HR_CAREERASPDETAILS</a></td>
+<td>17</td>
+<td>Career aspiration details - Reallocation preferences including Job and Location.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_COMPGRID/">HR_COMPGRID</a></td>
+<td>21</td>
+<td>Competency Grid - Defines a list of competencies and, optionally, enables a weight to be associated.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_OBJECTIVE/">HR_OBJECTIVE</a></td>
+<td>31</td>
+<td>Objectives - Objectives including targets, results and assignment rules.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_TRAINSTRUCTORSOCIAL/">HR_TRAINSTRUCTORSOCIAL</a></td>
+<td>15</td>
+<td>Instructor Social Contacts Portrait - This entity returns the social contacts of all instructors, internal and external.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_OBJASSIGNRULE/">HR_OBJASSIGNRULE</a></td>
+<td>15</td>
+<td>Objective Assignment Rule - With this entity it's possible to specify who an objective goes to.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_DW_INTENT_RESOURCES/">TF_DW_INTENT_RESOURCES</a></td>
+<td>49</td>
+<td>Intent resources - Intent resources<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_PROPERTY_ENUM_VALUES/">TF_PROPERTY_ENUM_VALUES</a></td>
+<td>13</td>
+<td>Property Enumerable Values - Property Enumerable Values<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_LEARNERCOSTS/">HR_LEARNERCOSTS</a></td>
+<td>21</td>
+<td>Learner Costs - This entity contains the costs related to a learner.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_PERSONCATEGORIAPROTETTA/">HR_PERSONCATEGORIAPROTETTA</a></td>
+<td>17</td>
+<td>Legal Category Status - Legal Category Status<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_MODULE_DETAILS/">TF_MODULE_DETAILS</a></td>
+<td>12</td>
+<td>Module details - Licensed module details<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_USER_PROVIDERS/">TF_USER_PROVIDERS</a></td>
+<td>14</td>
+<td>User authentication providers - The TF_USER_PROVIDERS Entity<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_SEC_ACL_LOG/">TF_SEC_ACL_LOG</a></td>
+<td>5</td>
+<td></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_SESSIONOUTCOSTFINANCING/">HR_SESSIONOUTCOSTFINANCING</a></td>
+<td>21</td>
+<td>Session Content Cost Financing - Contains the session content costs financing.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_QSTRT_ANSWERS/">TF_QSTRT_ANSWERS</a></td>
+<td>18</td>
+<td>Questions - Questions<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_ANALYTICS_TYPES/">TF_ANALYTICS_TYPES</a></td>
+<td>13</td>
+<td>Analytics Types - Analytics Types<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_SECURITY_NAV_PROFILES/">TF_SECURITY_NAV_PROFILES</a></td>
+<td>12</td>
+<td>Security Navigation Profiles - TF_SECURITY_NAV_PROFILES<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_SALARYPROGPOOL/">HR_SALARYPROGPOOL</a></td>
+<td>17</td>
+<td>Salary Program Pool - Identifies a group of people eligible to receive a salary review and the salary reviewer.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_MAIL_CONFIG/">TF_MAIL_CONFIG</a></td>
+<td>27</td>
+<td>TF_MAIL_CONFIG - TF_MAIL_CONFIG<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_EPR_OBJECT_DEPENDENCIES/">TF_EPR_OBJECT_DEPENDENCIES</a></td>
+<td>23</td>
+<td>eProvisioning  Object Dependencies - TF_EPR_OBJECT_DEPENDENCIES<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_COMPHISTORY/">HR_COMPHISTORY</a></td>
+<td>20</td>
+<td>Compensation History - A history of Compensation Changes<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_PARTYATTRIBUTES/">HR_PARTYATTRIBUTES</a></td>
+<td>80</td>
+<td>Party Attributes - Contains required details about the properties of the party.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_TEMP_SEARCH_DETAILS/">TF_TEMP_SEARCH_DETAILS</a></td>
+<td>6</td>
+<td></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_BLRULE_PARAMETERS/">TF_BLRULE_PARAMETERS</a></td>
+<td>16</td>
+<td></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_WFTRANSITIONS/">TF_WFTRANSITIONS</a></td>
+<td>31</td>
+<td>Workflow Transitions - Workflow Transitions<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_EXTENDED_ATTRIBUTES/">TF_EXTENDED_ATTRIBUTES</a></td>
+<td>108</td>
+<td></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_BATCH_INSTANCE_LOGS/">TF_BATCH_INSTANCE_LOGS</a></td>
+<td>12</td>
+<td>Batch Instance Logs - Batch Instance Logs<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_SEC_ACL/">TF_SEC_ACL</a></td>
+<td>6</td>
+<td></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_OBJECTIVEASSIGNEES/">HR_OBJECTIVEASSIGNEES</a></td>
+<td>16</td>
+<td>Objective Assignees - This entity contains the list of people that comes from the resolution of assignment rules for an objective.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_ACTFORECASTCOSTFINANCING/">HR_ACTFORECASTCOSTFINANCING</a></td>
+<td>20</td>
+<td>Activity Forecast Cost Financing - Contains the activity forecasted financed costs.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_ASYNC_TASK_LOGS/">TF_ASYNC_TASK_LOGS</a></td>
+<td>11</td>
+<td>Async Task Logs - Async Task Logs<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_APPROBJSECROW/">HR_APPROBJSECROW</a></td>
+<td>49</td>
+<td>Appraisal Objective Section Row - This entity collects the objective within an appraisal review objective section<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_ABSACCRUAL/">HR_ABSACCRUAL</a></td>
+<td>28</td>
+<td>Accrual - Contains the accruals.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_ACTIONS/">TF_ACTIONS</a></td>
+<td>11</td>
+<td>Actions - Actions<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_CONNECTIVE_PACKAGES/">TF_CONNECTIVE_PACKAGES</a></td>
+<td>12</td>
+<td></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_WIDGETS_CATEGORIES/">TF_WIDGETS_CATEGORIES</a></td>
+<td>13</td>
+<td>Widgets Category - TF_WIDGETS_CATEGORIES<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_SALARYPROGCOMPITEMS/">HR_SALARYPROGCOMPITEMS</a></td>
+<td>23</td>
+<td>Salary Program Compensation Item - This is the compensation item for the proposed new compensation amount.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_BLFIELDS_CUSTOM/">TF_BLFIELDS_CUSTOM</a></td>
+<td>22</td>
+<td></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_JOBASSIGNMENT/">HR_JOBASSIGNMENT</a></td>
+<td>21</td>
+<td>Job Assignment - Indicates the Job associated to a Person in the context of a specific Company Relationship.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_SECRULE_CATALOG/">TF_SECRULE_CATALOG</a></td>
+<td>15</td>
+<td>Security Rule Catalog - Security Rule Catalog<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_SESSION/">HR_SESSION</a></td>
+<td>47</td>
+<td>Session - This entity contains training session.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_DPAECONNECTORSINFO/">HR_DPAECONNECTORSINFO</a></td>
+<td>16</td>
+<td>URSSAF Connection Profile - Information about DPAE connection details.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_OBJECTIVEMETRIC/">HR_OBJECTIVEMETRIC</a></td>
+<td>29</td>
+<td>Objective Metric - This entity further describes an Objective with the Kpis that it will be measured by.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_ABSENCEDAILYACCRUAL/">HR_ABSENCEDAILYACCRUAL</a></td>
+<td>14</td>
+<td>Absence Daily Accrual - Daily details of taken from accrual.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_PAGE_CFGS_ACL/">TF_PAGE_CFGS_ACL</a></td>
+<td>13</td>
+<td>Page configuration's Access Control List - Page configuration's Access Control List<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_SURVEYPARTICIPANT/">HR_SURVEYPARTICIPANT</a></td>
+<td>17</td>
+<td>Survey Participant - Survey Participant entity description.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_STRUCTURETYPE/">HR_STRUCTURETYPE</a></td>
+<td>26</td>
+<td>Structure Type - A Structure Type define the semantics of all Structures in that type.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_COSTXPARTICIPANT/">HR_COSTXPARTICIPANT</a></td>
+<td>21</td>
+<td>Cost x Participant - For each scenario participant, normalises the individual Cost due to the planned hypothesis.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_COMPGRIDROW/">HR_COMPGRIDROW</a></td>
+<td>18</td>
+<td>Competency Grid Row - This represents the link between Competencies and Grid.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_TRANSPOSEDENTITY/">HR_TRANSPOSEDENTITY</a></td>
+<td>22</td>
+<td>Transposed Entity - When TransposeDatasource rule is active, the entities of the datasource of the process workflow are transpose in this entity<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_GDPRREQUEST/">HR_GDPRREQUEST</a></td>
+<td>19</td>
+<td>Personal Data Privacy Request - This entity manages requests to exercise rights around personal data privacy. With this entity, you can for example ask to anonymize data for terminated employees or audit data obsolescence.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_TEMP_SEC_ACL/">TF_TEMP_SEC_ACL</a></td>
+<td>7</td>
+<td></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_OBJECTIVEPLAN/">HR_OBJECTIVEPLAN</a></td>
+<td>20</td>
+<td>Objective Plan - This entity is a container where defining objectives with Targets, results and assignment rules.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_BATCH_QUEUES_NODES/">TF_BATCH_QUEUES_NODES</a></td>
+<td>10</td>
+<td></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_TIMESHEET/">HR_TIMESHEET</a></td>
+<td>17</td>
+<td>Timesheet - The timesheet entity.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_PERSONCITIZENSHIPS/">HR_PERSONCITIZENSHIPS</a></td>
+<td>18</td>
+<td>Citizenships - This Entity is used to manage multiple Citizenships of a Person. A specific validity period can be recorded for each record.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_SURVEYRECIPIENT/">HR_SURVEYRECIPIENT</a></td>
+<td>18</td>
+<td>Survey Recipient - This is used to store survey recipients data.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_AUDIT_DATADICTIONARY/">TF_AUDIT_DATADICTIONARY</a></td>
+<td>13</td>
+<td>Audit Data Dictionary logs - Audit Data Dictionary logs<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_OBJMETRICTARGET/">HR_OBJMETRICTARGET</a></td>
+<td>17</td>
+<td>Objective Metric Target - This entity is used to detail the Objective Metric targets.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_LEARNERCOSTFINANCING/">HR_LEARNERCOSTFINANCING</a></td>
+<td>19</td>
+<td>Actual Costs Financing - Contains the financed actual costs.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_TRASHAREDRESOURCES/">HR_TRASHAREDRESOURCES</a></td>
+<td>35</td>
+<td>Shared Resources - Digital shared resources, like web pages, SCORM contents, YouTube videos that can be used to build course content.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_QUICK_ACTIONS/">TF_QUICK_ACTIONS</a></td>
+<td>17</td>
+<td>Quick actions - Quick actions<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_TOPIC_ENTITIES/">TF_TOPIC_ENTITIES</a></td>
+<td>11</td>
+<td>Topic Entities - The Topic Entities.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_TRAINSTRUCTORS/">HR_TRAINSTRUCTORS</a></td>
+<td>33</td>
+<td>Instructor - This entity is used to represent all instructors.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_INTEROP_RUNTIME/">TF_INTEROP_RUNTIME</a></td>
+<td>33</td>
+<td>Interop Runtime - Interop Runtime<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_ANALYTICS/">TF_ANALYTICS</a></td>
+<td>29</td>
+<td>Analytics - Analytics<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_TEMPLATE_RESOURCE_TYPES/">TF_TEMPLATE_RESOURCE_TYPES</a></td>
+<td>14</td>
+<td>Template Resource Types - TF_TEMPLATE_RESOURCE_TYPES<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_PROXY_ACL/">TF_PROXY_ACL</a></td>
+<td>14</td>
+<td>Proxy ACL - Proxy ACL<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_SCENARIOPARTICIPANT/">HR_SCENARIOPARTICIPANT</a></td>
+<td>17</td>
+<td>Scenario Participant - A Scenario Participant is an individual participating in the scenario. If a new hire, it’s a simulated person without a link to any existing person in the HCM database.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_DW_CHANNELS_USERS/">TF_DW_CHANNELS_USERS</a></td>
+<td>13</td>
+<td>Digital workplace channels users - Digital workplace channels users<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_EXTENDED_ENTITIES/">TF_EXTENDED_ENTITIES</a></td>
+<td>111</td>
+<td></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_TRAININGPLAN/">HR_TRAININGPLAN</a></td>
+<td>26</td>
+<td>Training Plan - This entity will be a container for the Training Request<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_PARTYLOG/">HR_PARTYLOG</a></td>
+<td>22</td>
+<td>PARTYLOG - PARTYLOG<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_AUDIT_LOG/">TF_AUDIT_LOG</a></td>
+<td>10</td>
+<td>Audit Log - TF_AUDIT_LOG<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_DW_INTENTPAGES/">TF_DW_INTENTPAGES</a></td>
+<td>10</td>
+<td>Intent Pages - Intent Pages<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_TAG_CATEGORY_ENTITIES/">TF_TAG_CATEGORY_ENTITIES</a></td>
+<td>14</td>
+<td>Entities Tag Category  - The categories used on the specific entity<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_SECURITYQUESTIONS/">TF_SECURITYQUESTIONS</a></td>
+<td>9</td>
+<td></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_SALARYREVIEWPARTICIPANT/">HR_SALARYREVIEWPARTICIPANT</a></td>
+<td>14</td>
+<td>Salary Review Participant - Reference to a person or company relationship who is eligible for a salary review.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_USER_TIME_TRACKING/">TF_USER_TIME_TRACKING</a></td>
+<td>18</td>
+<td>User Time Tracking - Entity used to track user work time<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_SURVEYUSERPARTICIPANT/">HR_SURVEYUSERPARTICIPANT</a></td>
+<td>15</td>
+<td>Survey User Participant - This entity manages the confidentiality of anonymous surveys and contains the association between the answers provided and a specific user or person.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_QSTRT_CHOICES/">TF_QSTRT_CHOICES</a></td>
+<td>15</td>
+<td>Answers - Answers<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_WFRT_ACTORS/">TF_WFRT_ACTORS</a></td>
+<td>15</td>
+<td>Workflow Runtime Actors - TF_WFRT_ACTORS<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_AUDIT_SWITCH/">TF_AUDIT_SWITCH</a></td>
+<td>2</td>
+<td></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_OBJMETRICTEMPLATE/">HR_OBJMETRICTEMPLATE</a></td>
+<td>22</td>
+<td>Objective Metric Template - This entity further describes an Objective Template with the Kpi that it will be measured by.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_BLRULES_CUSTOM/">TF_BLRULES_CUSTOM</a></td>
+<td>17</td>
+<td></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_ACTIVITY_STREAM_TYPES/">TF_ACTIVITY_STREAM_TYPES</a></td>
+<td>14</td>
+<td>Activity Stream Types - Activity Stream Types<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_ACTIONTYPE_ADVSETTINGS/">HR_ACTIONTYPE_ADVSETTINGS</a></td>
+<td>18</td>
+<td>Activity Type Advanced Settings - Extended settings for the activity type.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_TSDAYACTIVITIES_ATTR/">HR_TSDAYACTIVITIES_ATTR</a></td>
+<td>13</td>
+<td>Timesheet Day Activity Attributes  - The associative table between a Timesheet Day Activity and its Time Tracker Activity Attributes.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_EDUCATIONHISTORY/">HR_EDUCATIONHISTORY</a></td>
+<td>30</td>
+<td>Education History - List of qualifications achieved by the person.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_DASHBOARD_ITEMS_HANDLERS/">TF_DASHBOARD_ITEMS_HANDLERS</a></td>
+<td>18</td>
+<td>Dashboard Items Handlers - Dashboard Items Handlers<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_COMPANY/">HR_COMPANY</a></td>
+<td>17</td>
+<td>Company - This Entity represents the Companies in the Group.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_TARGET/">HR_TARGET</a></td>
+<td>27</td>
+<td>Targets - A Simulation Scenario Target can be either a Decimal, Percentage, Long, Date or a discrete value from a Code Table. Is attached to a dimension like the Company, the Job or the Unit.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_CHARTERPERSPECTIVES/">HR_CHARTERPERSPECTIVES</a></td>
+<td>28</td>
+<td>Charter Perspectives - Charter Perspectives<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_AUDIT_TRIGGER/">TF_AUDIT_TRIGGER</a></td>
+<td>5</td>
+<td></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_APPROBJMETRIC/">HR_APPROBJMETRIC</a></td>
+<td>42</td>
+<td>Appraisal Objective Metric - description of entity appraisal objective metric<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_COURSE_PROCESSES/">HR_COURSE_PROCESSES</a></td>
+<td>17</td>
+<td>Course Processes - Course Processes<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_SALARYPROGPOOLBUDGET/">HR_SALARYPROGPOOLBUDGET</a></td>
+<td>25</td>
+<td>Salary Program Pool Budget - It’s the entity where the budget by salary pool is represented.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_INDEX_SEARCH_PROVIDERS/">TF_INDEX_SEARCH_PROVIDERS</a></td>
+<td>18</td>
+<td>Index Search Providers - TF_INDEX_SEARCH_PROVIDERS<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_JOBATTRIBUTES/">HR_JOBATTRIBUTES</a></td>
+<td>18</td>
+<td>Job Attributes - Contains details related to the job.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_CURRENCIES/">TF_CURRENCIES</a></td>
+<td>3</td>
+<td></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_EPR_PACKAGE_DELIVERABLES/">TF_EPR_PACKAGE_DELIVERABLES</a></td>
+<td>18</td>
+<td>Package deliverables - Package deliverables<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_ABSENTITLEMENTADJ/">HR_ABSENTITLEMENTADJ</a></td>
+<td>17</td>
+<td>Absence Entitlement Adjustment - Contains the absence entitlement adjustments.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_SEC_ADV_FILTERS_PROFILE/">TF_SEC_ADV_FILTERS_PROFILE</a></td>
+<td>16</td>
+<td>Advanced Security Profile Filters - Advanced Security Profile Filters<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_AUDIT/">TF_AUDIT</a></td>
+<td>34</td>
+<td>Audit - Audit<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_OFFBOARDINGDETAILS/">HR_OFFBOARDINGDETAILS</a></td>
+<td>34</td>
+<td>Off Boarding Details - This table is used to store the worker departure<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_APPRCOMPSECROW/">HR_APPRCOMPSECROW</a></td>
+<td>25</td>
+<td>Appraisal Competency Section Row - This entity represents a single competency review.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_CURRENCIES_RATES/">TF_CURRENCIES_RATES</a></td>
+<td>4</td>
+<td></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_BATCHES_SEQUENCES/">TF_BATCHES_SEQUENCES</a></td>
+<td>11</td>
+<td>Batch Sequence - Batch Sequence<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_GDPRAUDITREQUESTRESPONSE/">HR_GDPRAUDITREQUESTRESPONSE</a></td>
+<td>19</td>
+<td>GDPR Audit Request Response - This is the response to a request for data obsolescence and includes, by category of data, some information related to, for instance, how many records are managed in the database, what is the oldest date time a record was last updated, the oldest document reference date etc.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_MAIL_TEMPLATES/">TF_MAIL_TEMPLATES</a></td>
+<td>26</td>
+<td>Mail Templates - Mail Templates<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_ASSESMENTCOMPONENT/">HR_ASSESMENTCOMPONENT</a></td>
+<td>33</td>
+<td>Assessment Component - Assessment Component<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_APPROBJMETRICTARGET/">HR_APPROBJMETRICTARGET</a></td>
+<td>19</td>
+<td>Appraisal Objective Metric Target - description of entity appraisal objective metric target<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_PAGES/">TF_PAGES</a></td>
+<td>18</td>
+<td>Page - Entity TF_PAGES<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_PERSONCONTACTS/">HR_PERSONCONTACTS</a></td>
+<td>36</td>
+<td>Contact Information - Contact Information for the Person, including email addresses, phone numbers and social media accounts.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_BLPHYSICAL_TABLES/">TF_BLPHYSICAL_TABLES</a></td>
+<td>23</td>
+<td></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_TEMPLATE_RESOURCES/">TF_TEMPLATE_RESOURCES</a></td>
+<td>59</td>
+<td>Template Resources - Template Resources<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_BLFIELDS/">TF_BLFIELDS</a></td>
+<td>22</td>
+<td></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_EXTERNAL_APPLICATIONS/">TF_EXTERNAL_APPLICATIONS</a></td>
+<td>17</td>
+<td>External Applications - TF_EXTERNAL_APPLICATIONS<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_WFPROCESS_TYPES/">TF_WFPROCESS_TYPES</a></td>
+<td>37</td>
+<td>Workflow Process Types - Workflow Process Types<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_PARTYTYPECHARTERELEMENTS/">HR_PARTYTYPECHARTERELEMENTS</a></td>
+<td>14</td>
+<td>PARTYTYPECHARTERELEMENTS - PARTYTYPECHARTERELEMENTS<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_TOPIC_NAMED_USERS/">TF_TOPIC_NAMED_USERS</a></td>
+<td>12</td>
+<td>Topic Named Users - The Topic Named Users.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_OUTLINEINSTRUCTOR/">HR_OUTLINEINSTRUCTOR</a></td>
+<td>14</td>
+<td>Session Outline Teacher and Tutors - The entity where every activity in a session is linked to one or more instructor.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_LEARNERCREDITS/">HR_LEARNERCREDITS</a></td>
+<td>26</td>
+<td>Learner Credits - Contains the credits achieved by the learner.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_PARTICCOMPHYPOTHESIS/">HR_PARTICCOMPHYPOTHESIS</a></td>
+<td>32</td>
+<td>Participant Compensation Hypothesis - For each participant, includes the compensation situation at the Scenario snapshot date and can include other effective dated Hypothesis, if a change is planned.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_PREFTIMETRACKINGACT/">HR_PREFTIMETRACKINGACT</a></td>
+<td>17</td>
+<td>Preferred Time Tracking Activities - Preferred Time Tracking Activities<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_SEQUENCES/">TF_SEQUENCES</a></td>
+<td>9</td>
+<td></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_WIDGETS_GALLERY/">TF_WIDGETS_GALLERY</a></td>
+<td>14</td>
+<td>Widgets gallery - TF_WIDGETS_GALLERY<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_NAV_PROFILES/">TF_NAV_PROFILES</a></td>
+<td>12</td>
+<td>Navigation profiles - Navigation profiles<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_APPRAISALFORMSECTION/">HR_APPRAISALFORMSECTION</a></td>
+<td>83</td>
+<td>Appraisal Form Section - This entity contains the section definition within an appraisal form.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_APPRSCORECALIBRATION/">HR_APPRSCORECALIBRATION</a></td>
+<td>21</td>
+<td>Appraisal Score Calibration - Appraisal score calibration<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_EVENT_CHECKRULE_CATALOG/">TF_EVENT_CHECKRULE_CATALOG</a></td>
+<td>17</td>
+<td>Event CheckRule Catalog - The Event CheckRule Catalog.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_DW_INTENTPAGES_SNOOZES/">TF_DW_INTENTPAGES_SNOOZES</a></td>
+<td>10</td>
+<td>TF_DW_INTENTPAGES_SNOOZES</td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_ACTIVITY_STREAM/">TF_ACTIVITY_STREAM</a></td>
+<td>19</td>
+<td>Social Activity Stream - The Social Activity Stream<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_DW_COMPLETION_PROMPTS/">TF_DW_COMPLETION_PROMPTS</a></td>
+<td>29</td>
+<td>LLM Completion Resources - This catalog would return any reusable prompt or knowledge base fragment/indexed file folder that could be used by an AI agent to complete a response.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_PERSON/">HR_PERSON</a></td>
+<td>56</td>
+<td>Person - Contains information identifying the person.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_LEARNERACTIVITYCOSTS/">HR_LEARNERACTIVITYCOSTS</a></td>
+<td>22</td>
+<td>Learner Activity Costs - This entity contains the costs related to a learner activity.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_USERSTALENTIAECOSYSTEM/">HR_USERSTALENTIAECOSYSTEM</a></td>
+<td>16</td>
+<td>Talentia Ecosystem Users - Contains details of user access to Talentia Ecosystem products<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_QUEUE/">TF_QUEUE</a></td>
+<td>39</td>
+<td>Queue - Queue<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_APP_PARAMETERS/">TF_APP_PARAMETERS</a></td>
+<td>34</td>
+<td>Application Parameters - Application Parameters<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_PROPERTIES/">TF_PROPERTIES</a></td>
+<td>30</td>
+<td>Properties - Properties<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_WFRT_TASKS/">TF_WFRT_TASKS</a></td>
+<td>34</td>
+<td>Tasks - Workflow Runtime Tasks<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_COLLATERALSALARYREVITEM/">HR_COLLATERALSALARYREVITEM</a></td>
+<td>16</td>
+<td>Collateral Salary Review Items - Represents additional items that might be included as part of a salary review, like a promotion to a new Job Class or a change to the salary grade.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_USERGROUP_USERS/">TF_USERGROUP_USERS</a></td>
+<td>10</td>
+<td>User Group Users - User Group Users<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_TARGETSTEMPLATE/">HR_TARGETSTEMPLATE</a></td>
+<td>20</td>
+<td>Target Template - List of Target Models (like Turnover, Minimum Compensation Ratio, Average Job Suitability, etc.) that you might want to use in a Scenario to set goals.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_EMERGENCYCONTACTS/">HR_EMERGENCYCONTACTS</a></td>
+<td>30</td>
+<td>Emergency Contacts - An additional list of people that might be contacted for emergency reasons. Includes e-mail, address and type of relationship.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_APPRSECFIELDSCTX/">HR_APPRSECFIELDSCTX</a></td>
+<td>18</td>
+<td>Form settings exceptions by context - Form settings exceptions by context<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_COURSECOSTS/">HR_COURSECOSTS</a></td>
+<td>20</td>
+<td>Course Costs - Document Template<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_TAGS/">TF_TAGS</a></td>
+<td>17</td>
+<td>Tags - The tags can be used<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_PREVEMPLOYMENTHISTORY/">HR_PREVEMPLOYMENTHISTORY</a></td>
+<td>28</td>
+<td>Previous Employment History - This entity maintains the history of all the previous personal work experiences, including Job Title, Period, Employer and Location.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_JOBCLASSASSIGNMENT/">HR_JOBCLASSASSIGNMENT</a></td>
+<td>17</td>
+<td>Qualification Assignment - A Qualification assigned to the Employee.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_SHARED_RULE_CATALOG/">TF_SHARED_RULE_CATALOG</a></td>
+<td>19</td>
+<td>Shared Rule Catalog - The Shared Rule Catalog.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_SALARYREVIEWGUIDELINE/">HR_SALARYREVIEWGUIDELINE</a></td>
+<td>26</td>
+<td>Salary Review Guideline - This is a decision support tool for people in charge of a salary review. Represents a matrix with two dimensions on X and Y axis, representing an attribute of an employee. The cell is a min/max salary increase for each couple of attribute values.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_PROXY_ACL_PROFILES/">TF_PROXY_ACL_PROFILES</a></td>
+<td>10</td>
+<td>Proxy ACL Profiles - Profiles that can be impersonated by a proxy user<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_EPR_PACKAGE_DEPENDENCIES/">TF_EPR_PACKAGE_DEPENDENCIES</a></td>
+<td>15</td>
+<td>eProvisioning  Package Dependencies - TF_EPR_PACKAGE_DEPENDENCIES<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_WIDGETS/">TF_WIDGETS</a></td>
+<td>26</td>
+<td>Widget - TF_WIDGETS<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_ORGUNITACCOUNTABILITY/">HR_ORGUNITACCOUNTABILITY</a></td>
+<td>19</td>
+<td>Organizational Unit to Organizational Unit Accountabilities - This Entity is used to represent hierarchies between Organizational Units.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_INTEROP_PARENT_RUNTIME/">TF_INTEROP_PARENT_RUNTIME</a></td>
+<td>3</td>
+<td>Interop Parent Runtime - Interop Parent Runtime<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_ABSPLANCLASHRULES/">HR_ABSPLANCLASHRULES</a></td>
+<td>14</td>
+<td>Absence Plan Clash Rule - description of entity Absence Plan Clash Rule<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_WFSUBJECTS/">TF_WFSUBJECTS</a></td>
+<td>26</td>
+<td>Workflow Subjects - Workflow Subjects<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_PERSONMEDICALDETAILS/">HR_PERSONMEDICALDETAILS</a></td>
+<td>18</td>
+<td>Medical Details - Manage the medical details related to a Person.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_BATCHES_SEQUENCES_ITEMS/">TF_BATCHES_SEQUENCES_ITEMS</a></td>
+<td>16</td>
+<td>Batch Sequence Item - Batch Sequence Item<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_GDPRREQUESTINFORMATION/">HR_GDPRREQUESTINFORMATION</a></td>
+<td>13</td>
+<td>Data Privacy Request Areas of Interests - Represents all types of personal data which are subjects of the parent request.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_APPRAISALFORM/">HR_APPRAISALFORM</a></td>
+<td>41</td>
+<td>Appraisal Form - This entity stores the appraisal form model or template that will be used during an evaluation.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_COMPGRIDROWQST/">HR_COMPGRIDROWQST</a></td>
+<td>15</td>
+<td>Competency Grid Row Question - Defines, for each competency grid, one or more questions whose answer score will influence the competency score calculation.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_INDEXES/">TF_INDEXES</a></td>
+<td>19</td>
+<td>Indexes - TF_INDEXES<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_PARTYTYPEPORTRAITS/">HR_PARTYTYPEPORTRAITS</a></td>
+<td>17</td>
+<td>Party Type Portraits - This Entity represents, for each Party Type, all possible "Views" that it is possible to access to when accessing to the node detail from a Tree View.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_RESOURCES/">TF_RESOURCES</a></td>
+<td>25</td>
+<td></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_PAGE_CFGS/">TF_PAGE_CFGS</a></td>
+<td>38</td>
+<td>Page configuration - Entity TF_PAGE_CFGS<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_LICENSEPERMITVISA/">HR_LICENSEPERMITVISA</a></td>
+<td>21</td>
+<td>Licenses, Permits and Visas - Manages the list of documents for a Person, like Licenses, Work Permits or Visas.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_NAV_PROFILE_CFGS/">TF_NAV_PROFILE_CFGS</a></td>
+<td>22</td>
+<td>Navigation Profiles Configurations - TF_NAV_PROFILE_CFGS<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_COMPHYPOTHESISSPOT/">HR_COMPHYPOTHESISSPOT</a></td>
+<td>16</td>
+<td>Compensation Hypothesis Spot - This entity is used to see where scenario participants are placed against salary benchmarks before and after hypothesys. A “Spot” is a participant and includes the name, an additional dimension and the compensation amount.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_DASHBOARD_GALLERIES_ITEMS/">TF_DASHBOARD_GALLERIES_ITEMS</a></td>
+<td>12</td>
+<td>Dashboard Gallery Items - Dashboard Gallery Items<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_EVENT_FOLLOWUPS/">TF_EVENT_FOLLOWUPS</a></td>
+<td>29</td>
+<td>Event Followups - The Event Followups.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_SEC_ADV_FILTERS_ROLE/">TF_SEC_ADV_FILTERS_ROLE</a></td>
+<td>16</td>
+<td>Advanced Security Filters Role - Advanced Security Filters Role<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_SIMULATIONMODELS/">HR_SIMULATIONMODELS</a></td>
+<td>25</td>
+<td>Simulation Model -   A Simulation model includes all tools and best practices to manage a Simulation Scenario built on top of such model. For example, it defines how scenario participants will be initialised, which reporting dashboards will be used to analyse the “As Is” and “To Be” situations respectively, and which actions will allowed to plan participants hypothesis.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_INTEROP_RUNTIME_LOGS/">TF_INTEROP_RUNTIME_LOGS</a></td>
+<td>9</td>
+<td>Interop Runtime Logs - Interop Runtime Logs<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_JOB/">HR_JOB</a></td>
+<td>17</td>
+<td>Job - Contains a collection of information relating to a job. A job can be thought of as a template for a position. A position is an instance of a job. Jobs describe the nature of the work, whereas related positions represent the time, place, and organizational structure in which a person or persons actually perform the work. Positions usually have a specific budget associated with them.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_EXTERNAL_USERS/">TF_EXTERNAL_USERS</a></td>
+<td>17</td>
+<td>External Users - External Users<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_MAIL_LOGS/">TF_MAIL_LOGS</a></td>
+<td>11</td>
+<td>Mail logs - Mail logs entity<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_TOPIC_RESOURCES/">TF_TOPIC_RESOURCES</a></td>
+<td>18</td>
+<td>Topic resources entity - Topic resources<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_DW_NAMED_ENTITIES/">TF_DW_NAMED_ENTITIES</a></td>
+<td>19</td>
+<td>Intent Named Entities - Intent Named Entities<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_TEAMRATINGREVIEWER/">HR_TEAMRATINGREVIEWER</a></td>
+<td>15</td>
+<td>Team Rating Reviewer - This entity records the reviewer for each group of an appraisal cycle.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_USERS/">TF_USERS</a></td>
+<td>66</td>
+<td>Users - The TF_USERS Entity<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_STAGING_ABSACCRUAL/">HR_STAGING_ABSACCRUAL</a></td>
+<td>30</td>
+<td>Staging Individual Absence Accrual - This is an intermediate table between Talentia HCM and a Payroll system where accruals are temporarily stored before getting loaded into actual tables.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_ADV_GRID_RENDERERS/">TF_ADV_GRID_RENDERERS</a></td>
+<td>21</td>
+<td>Advanced Datagrid Renderer - Advanced Datagrid Renderer<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_ACTIVITYCOSTFINANCING/">HR_ACTIVITYCOSTFINANCING</a></td>
+<td>20</td>
+<td>Activity Cost Financing - Contains the activity costs financing.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_EMPCALENDAREXCEPTION/">HR_EMPCALENDAREXCEPTION</a></td>
+<td>15</td>
+<td>Employee Calendar Exception - This entity is used to define a calendar for an employee and a given period, that is different from the default one defined for them by their location<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_ARCA24ST_AGENDA/">HR_ARCA24ST_AGENDA</a></td>
+<td>23</td>
+<td>Arca24 Staging Table Agenda - Staging table for data coming from Arca24 - Agenda data.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_SALARYREVIEWITEM/">HR_SALARYREVIEWITEM</a></td>
+<td>29</td>
+<td>Salary Review Item - It’s a compensation item used for the salary review. Example, Base Salary.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_REMUNERATIONINPOINTSGRID/">HR_REMUNERATIONINPOINTSGRID</a></td>
+<td>31</td>
+<td>Compensation in points grid - Defines the pay grid in points<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_BLPROPERTY_EXCEPTIONS/">TF_BLPROPERTY_EXCEPTIONS</a></td>
+<td>13</td>
+<td>Audit Fields - Audit Fields<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_JOBCOMPETENCY/">HR_JOBCOMPETENCY</a></td>
+<td>16</td>
+<td>Job Competencies - This entity allows defining skills associated to a Job. These skills are descriptive and are not considered during the assessment to evaluate a job suitability.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_COLLECTIVEAGREEMENTPOINT/">HR_COLLECTIVEAGREEMENTPOINT</a></td>
+<td>15</td>
+<td>Collective Agreements Points - Collective Agreements Points Values Management<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_COURSECOSTFINANCING/">HR_COURSECOSTFINANCING</a></td>
+<td>18</td>
+<td>Course Costs Financing - Contains the financing rule about course by cost type.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_PROFQUALIFICATIONS/">HR_PROFQUALIFICATIONS</a></td>
+<td>24</td>
+<td>Professional Qualifications - This entity maintains a list of professional qualifications, entitlements or certifications, both current and expired, regardless of whether they were achieved during the current employment or before.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_USERPRODUCTTALECOSYSTEM/">HR_USERPRODUCTTALECOSYSTEM</a></td>
+<td>16</td>
+<td>Talentia Ecosystem Products Assignment - Talentia Ecosystem Products Assignment to User<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_USERS_PAT/">TF_USERS_PAT</a></td>
+<td>12</td>
+<td>Personal Access Tokens - Personal Access Tokens<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_MAINTENANCE/">TF_MAINTENANCE</a></td>
+<td>21</td>
+<td>Maintenance - Represents a planned or ongoing maintenance process for the application. It is designed to monitor and manage the different phases of the maintenance lifecycle, including preparation, execution, and completion.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_BLPHYSICAL_COLUMNS/">TF_BLPHYSICAL_COLUMNS</a></td>
+<td>23</td>
+<td></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_STAGING_DELETE_RESOURCES/">HR_STAGING_DELETE_RESOURCES</a></td>
+<td>25</td>
+<td>Documents to delete - STAGING_DELETE_RESOURCES<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_TEMPLATERULE_CATALOG/">TF_TEMPLATERULE_CATALOG</a></td>
+<td>16</td>
+<td>Template Rule Catalog - Template Rule Catalog<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_PERSONOTHERINFO/">HR_PERSONOTHERINFO</a></td>
+<td>16</td>
+<td>Person other information - Other Information about a Person.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_APPRAISALSECTION/">HR_APPRAISALSECTION</a></td>
+<td>52</td>
+<td>Appraisal Review Section - This entity represents a section of an individual appraisal review, where the section scores are recorded.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_GDPRREQUESTPERSON/">HR_GDPRREQUESTPERSON</a></td>
+<td>13</td>
+<td>GDPR Request Affected People - List of People referred to in a data privacy request .<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_PAYINADVANCEREQUEST/">HR_PAYINADVANCEREQUEST</a></td>
+<td>16</td>
+<td>Pay in Advance Request - A request to be paid in advance.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_ARCA24ST_APPLICATION/">HR_ARCA24ST_APPLICATION</a></td>
+<td>17</td>
+<td>Arca24 Staging Table Application - Staging table for data coming from Arca24 - Application data.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_LICENSE_MESSAGES/">TF_LICENSE_MESSAGES</a></td>
+<td>7</td>
+<td>License Messages - License Messages<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_ABSPLANENTITDETAIL/">HR_ABSPLANENTITDETAIL</a></td>
+<td>14</td>
+<td>Absence Plan Entitlement Detail - Individual absence plan detail.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_PROXY_SETTINGS/">TF_PROXY_SETTINGS</a></td>
+<td>9</td>
+<td>TF_PROXY_SETTINGS - TF_PROXY_SETTINGS<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_SHARED_RESOURCES/">TF_SHARED_RESOURCES</a></td>
+<td>13</td>
+<td>Shared Resources - The Shared Resources.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="HR_APPRAISALTYPE/">HR_APPRAISALTYPE</a></td>
+<td>30</td>
+<td>Appraisal Type - Defines information relating to an appraisal type such as the default form to be used for the specifc appraisal type and other properties, e.g. main component for the associated appraisals, eligibility group, security settings.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="TF_CHARTER_NODES/">TF_CHARTER_NODES</a></td>
+<td>18</td>
+<td>Charter Nodes - Charter Nodes<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+</tbody>
+</table>
+<h2 id="stored-procedures-and-functions">Stored procedures and functions</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>ReturnType</th>
+<th>Arguments</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>dbo.BASESALARYPENETRATION</td>
+<td>decimal</td>
+<td>@CR_ID bigint, @REFDATE datetime</td>
+<td>SQL scalar function</td>
+</tr>
+<tr>
+<td>dbo.BONUSPENETRATION</td>
+<td>decimal</td>
+<td>@CR_ID bigint, @REFDATE datetime</td>
+<td>SQL scalar function</td>
+</tr>
+<tr>
+<td>dbo.CR_PENETRATION</td>
+<td>decimal</td>
+<td>@CR_ID bigint, @PARTICCOM_ID bigint, @REFDATE datetime</td>
+<td>SQL scalar function</td>
+</tr>
+<tr>
+<td>dbo.fn_GetEntityName</td>
+<td>nvarchar</td>
+<td>@pEntityId char</td>
+<td>SQL scalar function</td>
+</tr>
+<tr>
+<td>dbo.fn_GetTableName</td>
+<td>nvarchar</td>
+<td>@pEntityId char</td>
+<td>SQL scalar function</td>
+</tr>
+<tr>
+<td>dbo.GETJSONPROP</td>
+<td>nvarchar</td>
+<td>@VALUE nvarchar, @PROPNAME nvarchar</td>
+<td>SQL scalar function</td>
+</tr>
+<tr>
+<td>dbo.GetTextIdFromText</td>
+<td></td>
+<td>@input nvarchar</td>
+<td>SQL table-valued-function</td>
+</tr>
+<tr>
+<td>dbo.HEADCOUNT_BY_LOCATION</td>
+<td>int</td>
+<td>@LOCATION_ID bigint, @REFDATE datetime</td>
+<td>SQL scalar function</td>
+</tr>
+<tr>
+<td>dbo.HR_APPLICANTSBYSTEPS_FILTER</td>
+<td></td>
+<td>@LogonPersonId bigint</td>
+<td>SQL table-valued-function</td>
+</tr>
+<tr>
+<td>dbo.HR_diff_minutes</td>
+<td>nvarchar</td>
+<td>@startDate datetime, @endDate datetime</td>
+<td>SQL scalar function</td>
+</tr>
+<tr>
+<td>dbo.HR_fn_AbsSeniorityCLS</td>
+<td>decimal</td>
+<td>@pCompRelId bigint, @pDate datetime</td>
+<td>SQL scalar function</td>
+</tr>
+<tr>
+<td>dbo.HR_fn_AbsSeniorityLS</td>
+<td>decimal</td>
+<td>@pCompRelId bigint, @pDate datetime</td>
+<td>SQL scalar function</td>
+</tr>
+<tr>
+<td>dbo.HR_fn_AbsWTPOrder</td>
+<td>int</td>
+<td>@pRefDate date, @WTPDAILYDETAILS_ID bigint</td>
+<td>SQL scalar function</td>
+</tr>
+<tr>
+<td>dbo.HR_fn_CustomAbsWTPOrder</td>
+<td>int</td>
+<td>@pRefDate date, @WTPDAILYDETAILS_ID bigint, @WTP_ID bigint</td>
+<td>SQL scalar function</td>
+</tr>
+<tr>
+<td>dbo.HR_fn_d_AbsAwardPlanSeniority</td>
+<td>decimal</td>
+<td>@pAbsencePlan bigint, @pSeniority decimal</td>
+<td>SQL scalar function</td>
+</tr>
+<tr>
+<td>dbo.HR_fn_d_AbsProRateAtDate</td>
+<td>decimal</td>
+<td>@comprelId bigint, @pRefDate datetime</td>
+<td>SQL scalar function</td>
+</tr>
+<tr>
+<td>dbo.HR_fn_VirtualDateTable</td>
+<td></td>
+<td>@pStartDate nvarchar, @pEndDate nvarchar</td>
+<td>SQL table-valued-function</td>
+</tr>
+<tr>
+<td>dbo.HR_ft_AbsAccrualInit</td>
+<td></td>
+<td>@pAccrualStartDate nvarchar, @pAccrualEndDate nvarchar, @comprelId bigint, @pAbsPlanId bigint, @pAllowanceStartDate nvarchar, @pAllowanceEndDate nvarchar</td>
+<td>SQL table-valued-function</td>
+</tr>
+<tr>
+<td>dbo.HR_ft_AbsWTPOrder</td>
+<td></td>
+<td>@pRefDate date, @WTPDAILYDETAILS_ID bigint</td>
+<td>SQL inline table-valued function</td>
+</tr>
+<tr>
+<td>dbo.HR_ft_CustomAbsWTPOrder</td>
+<td></td>
+<td>@pRefDate date, @WTPDAILYDETAILS_ID bigint, @WTP_ID bigint</td>
+<td>SQL inline table-valued function</td>
+</tr>
+<tr>
+<td>dbo.HR_ft_WTPDetailByPeriod</td>
+<td></td>
+<td>@pStartDate nvarchar, @pEndDate nvarchar, @comprelId bigint, @IsSyncCal char</td>
+<td>SQL table-valued-function</td>
+</tr>
+<tr>
+<td>dbo.HR_HCM_MY_TEAM_FILTER</td>
+<td></td>
+<td>@LogonPersonId bigint, @LogonProfileId bigint</td>
+<td>SQL table-valued-function</td>
+</tr>
+<tr>
+<td>dbo.HR_HIER_MANAGER_FORMNAME_PIT</td>
+<td>nvarchar</td>
+<td>@COMPANYRELATIONSHIP_ID bigint, @REFERENCEDATE date</td>
+<td>SQL scalar function</td>
+</tr>
+<tr>
+<td>dbo.HR_HIER_MANAGER_FORMNAME_PIT_1</td>
+<td>nvarchar</td>
+<td>@COMPANYRELATIONSHIP_ID bigint, @REFERENCEDATE date, @COMPANYRELATIONSHIP_EFFECTIVEFROM date, @COMPANYRELATIONSHIP_EFFECTIVETO date, @COMPANYRELATIONSHIP_PERSON_ID bigint</td>
+<td>SQL scalar function</td>
+</tr>
+<tr>
+<td>dbo.HR_HIER_MANAGER_PIT</td>
+<td>bigint</td>
+<td>@COMPANYRELATIONSHIP_ID bigint, @REFERENCEDATE date</td>
+<td>SQL scalar function</td>
+</tr>
+<tr>
+<td>dbo.HR_HIER_MANAGER_PIT_1</td>
+<td>bigint</td>
+<td>@COMPANYRELATIONSHIP_ID bigint, @REFERENCEDATE date, @COMPANYRELATIONSHIP_EFFECTIVEFROM date, @COMPANYRELATIONSHIP_EFFECTIVETO date, @COMPANYRELATIONSHIP_PERSON_ID bigint</td>
+<td>SQL scalar function</td>
+</tr>
+<tr>
+<td>dbo.HR_HIST_FLAT_STRORG</td>
+<td></td>
+<td>@SNAPSHOT_DATE date, @LANGUAGE_ID int</td>
+<td>SQL inline table-valued function</td>
+</tr>
+<tr>
+<td>dbo.HR_MY_PEERS</td>
+<td></td>
+<td>@PERSON_ID bigint</td>
+<td>SQL table-valued-function</td>
+</tr>
+<tr>
+<td>dbo.HR_MY_PEERS_ALLDEPLOYMENTS</td>
+<td></td>
+<td>@PERSON_ID bigint</td>
+<td>SQL table-valued-function</td>
+</tr>
+<tr>
+<td>dbo.HR_MY_POOLS</td>
+<td></td>
+<td>@LogonPersonId bigint</td>
+<td>SQL table-valued-function</td>
+</tr>
+<tr>
+<td>dbo.HR_MY_TEAM</td>
+<td></td>
+<td>@PERSON_ID bigint</td>
+<td>SQL table-valued-function</td>
+</tr>
+<tr>
+<td>dbo.HR_MY_TEAM_FILTER</td>
+<td></td>
+<td>@LogonPersonId bigint</td>
+<td>SQL table-valued-function</td>
+</tr>
+<tr>
+<td>dbo.HR_MY_TEAM_FILTER_1</td>
+<td></td>
+<td>@LogonPersonId bigint</td>
+<td>SQL table-valued-function</td>
+</tr>
+<tr>
+<td>dbo.HR_MY_TEAM_FILTER_2</td>
+<td></td>
+<td>@LogonPersonId bigint</td>
+<td>SQL table-valued-function</td>
+</tr>
+<tr>
+<td>dbo.HR_MY_TEAM_FILTER_DELEGATED</td>
+<td></td>
+<td>@LogonPersonId bigint</td>
+<td>SQL table-valued-function</td>
+</tr>
+<tr>
+<td>dbo.HR_MY_TEAM_STRUCTURE</td>
+<td></td>
+<td>@RootParty_ID bigint, @Structure_ID bigint, @StructureTYPE_ID bigint</td>
+<td>SQL table-valued-function</td>
+</tr>
+<tr>
+<td>dbo.HR_MY_TEAM_STRUCTURE_1</td>
+<td></td>
+<td>@RootParty_ID bigint, @Structure_ID bigint, @StructureTYPE_ID bigint</td>
+<td>SQL table-valued-function</td>
+</tr>
+<tr>
+<td>dbo.HR_MY_TEAM_STRUCTURE_2</td>
+<td></td>
+<td>@RootParty_ID bigint, @Structure_ID bigint, @StructureTYPE_ID bigint</td>
+<td>SQL table-valued-function</td>
+</tr>
+<tr>
+<td>dbo.HR_NextAnniversaryDate</td>
+<td>date</td>
+<td>@DATE date</td>
+<td>SQL scalar function</td>
+</tr>
+<tr>
+<td>dbo.HR_PARTY_TREE</td>
+<td></td>
+<td>@RootParty_ID bigint, @Structure_ID bigint</td>
+<td>SQL inline table-valued function</td>
+</tr>
+<tr>
+<td>dbo.HR_POOL_TREE</td>
+<td></td>
+<td>@RootParty_ID bigint</td>
+<td>SQL inline table-valued function</td>
+</tr>
+<tr>
+<td>dbo.HR_STRUCTURE_VIEW</td>
+<td></td>
+<td>@TableName nvarchar, @RootPartyId bigint, @EffectiveFrom date, @EffectiveTo date, @StructureId bigint, @IsLeaf smallint, @OperationId nvarchar, @EntitiSetId bigint</td>
+<td>SQL inline table-valued function</td>
+</tr>
+<tr>
+<td>dbo.HR_TraRequestHasFollowUp</td>
+<td>int</td>
+<td>@RequestId int</td>
+<td>SQL scalar function</td>
+</tr>
+<tr>
+<td>dbo.HR_UNIT_FILTER</td>
+<td></td>
+<td>@ORGUNIT_IDList nvarchar</td>
+<td>SQL table-valued-function</td>
+</tr>
+<tr>
+<td>dbo.HR_UNIT_TREE</td>
+<td></td>
+<td>@RootParty_ID bigint, @RefDate date</td>
+<td>SQL inline table-valued function</td>
+</tr>
+<tr>
+<td>dbo.HR_Z_GetAdmEvTransposedValue</td>
+<td>nvarchar</td>
+<td>@TaskId bigint, @RecordId bigint, @ItemCode nvarchar, @ItemReference nvarchar, @FieldType char, @FieldValue_Int bigint, @FieldValue_String nvarchar, @FieldValue_StringDesc nvarchar, @FieldValue_DateTime datetime, @FieldValue_Bool smallint, @FieldValue_Decimal decimal, @DefaultValue nvarchar</td>
+<td>SQL scalar function</td>
+</tr>
+<tr>
+<td>dbo.HR_Z_GetCompanyCode</td>
+<td>nvarchar</td>
+<td>@TaskID bigint, @PersonID bigint, @ReferenceDate datetime</td>
+<td>SQL scalar function</td>
+</tr>
+<tr>
+<td>dbo.HR_Z_GetEffDateOnClusterCode</td>
+<td>datetime</td>
+<td>@TaskID bigint, @PersonID bigint, @RecordID bigint, @ReferenceDate datetime, @ClusterCode char</td>
+<td>SQL scalar function</td>
+</tr>
+<tr>
+<td>dbo.HR_Z_GetEffectiveStartDate</td>
+<td>datetime</td>
+<td>@TaskID bigint, @PersonID bigint, @RecordID bigint, @ReferenceDate datetime, @EntityName nvarchar, @ClusterCode char</td>
+<td>SQL scalar function</td>
+</tr>
+<tr>
+<td>dbo.HR_Z_GetEmployeeID</td>
+<td>nvarchar</td>
+<td>@TaskID bigint, @PersonID bigint, @RecordID bigint, @ReferenceDate datetime</td>
+<td>SQL scalar function</td>
+</tr>
+<tr>
+<td>dbo.HR_Z_GetItemReference</td>
+<td>nvarchar</td>
+<td>@TaskId bigint, @RecordId bigint, @ItemCode nvarchar, @ItemReference nvarchar, @EntityName nvarchar, @FieldName nvarchar</td>
+<td>SQL scalar function</td>
+</tr>
+<tr>
+<td>dbo.HR_Z_GetTransposedFieldName</td>
+<td>nvarchar</td>
+<td>@TaskId bigint, @RecordId bigint, @EntityName nvarchar, @FieldName nvarchar</td>
+<td>SQL scalar function</td>
+</tr>
+<tr>
+<td>dbo.LENGHTOFSERVICE</td>
+<td>decimal</td>
+<td>@CR_ID bigint, @REFDATE datetime</td>
+<td>SQL scalar function</td>
+</tr>
+<tr>
+<td>dbo.MANAGERSINCE</td>
+<td>decimal</td>
+<td>@CR_ID bigint, @REFDATE datetime</td>
+<td>SQL scalar function</td>
+</tr>
+<tr>
+<td>dbo.TENUREPRIMARYJOB</td>
+<td>decimal</td>
+<td>@CR_ID bigint, @REFDATE datetime</td>
+<td>SQL scalar function</td>
+</tr>
+<tr>
+<td>dbo.TENUREPRIMARYPOSITION</td>
+<td>decimal</td>
+<td>@CR_ID bigint, @REFDATE datetime</td>
+<td>SQL scalar function</td>
+</tr>
+<tr>
+<td>dbo.TF_ALIGNALLLANGUAGES</td>
+<td></td>
+<td>@sourceLangId int</td>
+<td>SQL Stored Procedure</td>
+</tr>
+<tr>
+<td>dbo.TF_ALIGNAUDITFIELDS</td>
+<td></td>
+<td></td>
+<td>SQL Stored Procedure</td>
+</tr>
+<tr>
+<td>dbo.TF_ALIGNSPECIFICLANGUAGE</td>
+<td></td>
+<td>@SourceLangId int, @TargetLangId int</td>
+<td>SQL Stored Procedure</td>
+</tr>
+<tr>
+<td>dbo.TF_CHECK_SERIALIZED_MODEL_FLAG</td>
+<td>bit</td>
+<td>@serializedModel nvarchar, @flagName nvarchar</td>
+<td>SQL scalar function</td>
+</tr>
+<tr>
+<td>dbo.TF_GET_NESTED_PROP_CTX_VALUE</td>
+<td>nvarchar</td>
+<td>@VALUE nvarchar, @PROPNAME nvarchar, @CTXTYPE nvarchar, @CTXVALUE nvarchar</td>
+<td>SQL scalar function</td>
+</tr>
+<tr>
+<td>dbo.TF_GET_NESTED_PROPERTY_VALUE</td>
+<td>nvarchar</td>
+<td>@VALUE nvarchar, @PROPNAME nvarchar</td>
+<td>SQL scalar function</td>
+</tr>
+<tr>
+<td>dbo.TF_GET_PROPERTY_VALUE</td>
+<td>nvarchar</td>
+<td>@VALUE nvarchar, @PROPNAME nvarchar</td>
+<td>SQL scalar function</td>
+</tr>
+<tr>
+<td>dbo.TF_GET_TABLE_FROM_COLUMN</td>
+<td>nvarchar</td>
+<td>@columnId char</td>
+<td>SQL scalar function</td>
+</tr>
+<tr>
+<td>dbo.TF_HAS_CONTEXTUALIZATIONS</td>
+<td>bit</td>
+<td>@SERIALIZED_MODEL nvarchar</td>
+<td>SQL scalar function</td>
+</tr>
+<tr>
+<td>dbo.TF_HAS_CONTEXTUALIZED_PROPS</td>
+<td>bit</td>
+<td>@VALUE nvarchar, @PROPNAME nvarchar</td>
+<td>SQL scalar function</td>
+</tr>
+<tr>
+<td>dbo.TF_MARK_2_EXCLUDED_TRNSLTN</td>
+<td></td>
+<td>@LangId int</td>
+<td>SQL Stored Procedure</td>
+</tr>
+<tr>
+<td>dbo.TF_PROFILE_HAS_CUSTOM_AUTH</td>
+<td>bit</td>
+<td>@profileId bigint</td>
+<td>SQL scalar function</td>
+</tr>
+<tr>
+<td>dbo.TF_PROPERTY_LIST</td>
+<td></td>
+<td>@VALUE nvarchar</td>
+<td>SQL table-valued-function</td>
+</tr>
+<tr>
+<td>dbo.TF_REBUILD_AUDIT_TRIGGER</td>
+<td></td>
+<td>@Type int</td>
+<td>SQL Stored Procedure</td>
+</tr>
+<tr>
+<td>dbo.TF_SECGET_ACTUAL_PARENT_ID</td>
+<td>char</td>
+<td>@EntityName nvarchar</td>
+<td>SQL scalar function</td>
+</tr>
+<tr>
+<td>dbo.TF_TEXTRESOURCESTOTRANSLATE</td>
+<td></td>
+<td>@minManual int, @maxManual int, @minAuto int, @maxAuto int, @languageID int, @usersList nvarchar</td>
+<td>SQL table-valued-function</td>
+</tr>
+<tr>
+<td>dbo.TF_TRANSLATIONSTOTRANSLATE</td>
+<td></td>
+<td>@minManual int, @maxManual int, @minAuto int, @maxAuto int, @languageID int, @usersList nvarchar</td>
+<td>SQL table-valued-function</td>
+</tr>
+<tr>
+<td>dbo.TF_WFGETPREVACTORS</td>
+<td>nvarchar</td>
+<td>@wfid bigint</td>
+<td>SQL scalar function</td>
+</tr>
+<tr>
+<td>dbo.TF_WFGETPROCESSENTITIES</td>
+<td>nvarchar</td>
+<td>@id bigint</td>
+<td>SQL scalar function</td>
+</tr>
+</tbody>
+</table>
+<h2 id="relations">Relations</h2>
+<p><img alt="er" src="schema.svg" /></p>
+<hr />
+<blockquote>
+<p>Generated by <a href="https://github.com/k1LoW/tbls">tbls</a></p>
+</blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.top", "search.highlight"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

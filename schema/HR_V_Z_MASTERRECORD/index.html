@@ -1,0 +1,998 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Data Dictionary of application database">
+      
+      
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>HR_V_Z_MASTERRECORD - Database Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#hr_v_z_masterrecord" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Database Documentation" class="md-header__button md-logo" aria-label="Database Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Database Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              HR_V_Z_MASTERRECORD
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../" class="md-tabs__link">
+          
+  
+  
+  Database
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Database Documentation" class="md-nav__button md-logo" aria-label="Database Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Database Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Database
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Database
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Indice Tabelle
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#description" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Description
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#columns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Columns
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#referenced-tables" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Referenced Tables
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#relations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Relations
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="hr_v_z_masterrecord">HR_V_Z_MASTERRECORD</h1>
+<h2 id="description">Description</h2>
+<details>
+<summary><strong>Table Definition</strong></summary>
+
+
+<pre><code class="language-sql">-- Talentia Software - All right reserved
+-- Type: VIEW                     Name: HR_V_Z_MASTERRECORD
+-- Date: 09-04-2026 07:27:59 (UTC)
+-- 
+-- ChangeLogId: 00000000-0000-0000-0000-000000000000
+-- ChangeSetId: 0f1d5509-2789-40e3-9fb4-206bcd9c90e0
+-- Original file name: C:\repos\Talentia-Software\hcm-core/DB/ProductDB/EDM\Schema\Views\HR_V_Z_MASTERRECORD.xml
+
+
+CREATE VIEW [HR_V_Z_MASTERRECORD]
+ ( ID, TaskId, AdministrativeEventCode, ProcessReferenceDate, EmpCompanyCode, EmployeeID, ReferenceDate, RetrieveCode, ItemCode, ItemReference, ItemValue, ENTITY_NAME, FieldName, RecordId, ChangeDate, EffectiveDate, EffectiveEndDate, ItemOrder, SortOrder, FlowName, IsPrimary, DRIVERCODE, ZPayload, ListAgencyId ) 
+ AS 
+( SELECT DISTINCT
+    ROW_NUMBER() OVER (ORDER BY ZVF.TaskId, ZVF.EmpCompanyCode, ZVF.EmployeeID, ZVF.SortOrder, ZVF.ReferenceDate, ZVF.EffectiveEndDate, ZVF.EffectiveDate, ZVF.ChangeDate) AS ID,
+    ZVF.TaskId,
+    ZVF.AdministrativeEventCode,
+    ZVF.ProcessReferenceDate,
+    ZVF.EmpCompanyCode,
+    ZVF.EmployeeID,
+    ZVF.ReferenceDate,
+    ZVF.RetrieveCode,
+    ZVF.ItemCode,
+    ZVF.ItemReference,
+    ZVF.ItemValue,
+    ZVF.ENTITY_NAME,
+    ZVF.FieldName,
+    ZVF.RecordId,
+    ZVF.ChangeDate,
+    ZVF.EffectiveDate,
+    ZVF.EffectiveEndDate,
+    ZVF.ItemOrder,
+    ZVF.SortOrder,
+    ZVF.FlowName,
+    ZVF.IsPrimary,
+    ZVF.DRIVERCODE,
+    -- Payload to transmit
+    CAST(ZVF.EmpCompanyCode AS nvarchar(20)) + ';' +
+    CAST(ZVF.EmployeeId AS nvarchar(20)) + ';' +
+    CAST(ZVF.ReferenceDate AS nvarchar(8)) + ';' +
+    CAST(ZVF.RetrieveCode AS nvarchar(12)) + ';' +
+    CAST(ZVF.ItemCode AS nvarchar(12)) + ';' +
+    CAST(ZVF.ItemReference AS nvarchar(20)) + ';' +
+    CAST(COALESCE(ZVF.ItemValue, ' ') AS nvarchar(100)) AS ZPayload,
+    ZVF.ListAgencyId
+FROM
+(
+SELECT
+    VFD.TaskId,
+    VFD.AdministrativeEventCode,
+    VFD.ProcessReferenceDate,
+    -- Zucchetti key.
+    VFD.EmpCompanyCode,
+    VFD.EmployeeID,
+    CONVERT(nvarchar(8), VFD.ReferenceDate, 112) AS ReferenceDate,
+    VFD.RECEPTION_CODE AS RetrieveCode,
+    VFD.ItemCode,
+    -- The Item Reference may depend on the data retrieved: use a function.
+    dbo.HR_Z_GetItemReference
+    (
+        VFD.TaskID,
+        TEN.RECORD_ID,
+        VFD.ITEMCODE,
+        VFD.ITEMREFERENCE,
+        TEN.ENTITY_NAME,
+        TEN.FieldName
+    ) AS ItemReference,
+    -- The value comes from a function in order to return manipulated data or data as is.
+    ---- If NULL, return a blank char (in order to build the vertical reception correctly).
+    --COALESCE (
+        dbo.HR_Z_GetAdmEvTransposedValue
+            (
+                VFD.TaskId,
+                VFD.RecordID,
+                VFD.ItemCode,
+                VFD.ItemReference,
+                VFD.FIELD_TYPE,
+                TEN.FIELDVALUE_INT,
+                TEN.FIELDVALUE_STRING,
+                TEN.FIELDVALUE_STRING_DESC,
+                TEN.FIELDVALUE_DATETIME,
+                TEN.FIELDVALUE_BOOL,
+                TEN.FIELDVALUE_DECIMAL,
+                VFD.DEFAULTVALUE
+            --),
+            --' '
+    ) AS ItemValue,
+    -- CoreHR task data.
+    TEN.ENTITY_NAME,
+    TEN.FieldName,
+    TEN.RECORD_ID AS RecordId,
+    -- Dates.
+    COALESCE(TEN.CHANGEDATE, 
+        (
+            SELECT 
+                MAX(CHG.CHANGEDATE)
+            FROM
+                HR_TRANSPOSEDENTITY CHG
+            WHERE
+                CHG.TASK_ID = VFD.TaskID
+        ) ) AS ChangeDate,
+    COALESCE(TEN.EFFECTIVEFROM, '1900-01-01') AS EffectiveDate,
+    COALESCE(TEN.EFFECTIVETO, '2999-12-31') AS EffectiveEndDate,
+    -- Sort.
+    TEN.ITEMORDER AS ItemOrder,
+    VFD.SORTORDER AS SortOrder,
+    -- To be managed
+    VFD.ZFLOWNAME AS FlowName,
+    TEN.ISPRIMARY AS IsPrimary,
+    VFD.DRIVERCODE,
+    VFD.LISTAGENCY_ID AS ListAgencyId
+FROM
+    (
+        -- Extract the keys for the vertical representation.
+        SELECT
+            TaskID
+            , ProcessReferenceDate
+            , AdministrativeEventCode
+            , RootID
+            , RecordID
+            , EmpCompanyCode
+            , EmployeeID
+            , ReferenceDate
+            , ZFLOWNAME
+            , ITEMCODE
+            , ITEMREFERENCE
+            , RECEPTION_CODE
+            , ENTITY_NAME
+            , FIELD_NAME
+            , FIELD_TYPE
+            , DEFAULTVALUE
+            , SORTORDER
+            , ENTITYCLUSTERCODE
+            , DRIVERCODE
+            , LISTAGENCY_ID
+        FROM
+            (
+                -- Extract the keys for the entity-field pairs defined in the data dictionary.
+                SELECT DISTINCT 
+                    TRE.TASK_ID TaskID
+                    , PRC.REFERENCE_DATE ProcessReferenceDate
+                    , TRE.ADMINISTRATIVEEVENTCODE AdministrativeEventCode
+                    , TRE.ROOT_ID RootID
+                    , TRE.RECORD_ID RecordID
+                    , dbo.HR_Z_GetCompanyCode(TRE.TASK_ID, TRE.ROOT_ID, PRC.REFERENCE_DATE) EmpCompanyCode
+                    , dbo.HR_Z_GetEmployeeID(TRE.TASK_ID, TRE.ROOT_ID, TRE.RECORD_ID, PRC.REFERENCE_DATE) EmployeeID
+                    , dbo.HR_Z_GetEffectiveStartDate(TRE.TASK_ID, TRE.ROOT_ID, TRE.RECORD_ID, PRC.REFERENCE_DATE, TRE.ENTITY_NAME, ZFD.ENTITYCLUSTERCODE) ReferenceDate
+                    , ZFD.ZFLOWNAME
+                    , ZFD.ITEMCODE
+                    , ZFD.ITEMREFERENCE
+                    , ZFD.RECEPTION_CODE
+                    , ZFD.ENTITY_NAME
+                    , ZFD.FIELD_NAME
+                    , ZFD.FIELD_TYPE
+                    , ZFD.DEFAULTVALUE
+                    , ZFD.SORTORDER
+                    , ZFD.ENTITYCLUSTERCODE
+                    , ZFD.DRIVERCODE
+                    , TRE.LISTAGENCY_ID
+                FROM
+                    HR_TRANSPOSEDENTITY TRE
+                    --INNER JOIN TF_WFRT_TASKS TSK ON TSK.ID = TRE.TASK_ID
+                    --INNER JOIN TF_WFRT_PROCESSES PRC ON PRC.ID = TSK.INSTANCE_ID
+                    INNER JOIN TF_WFRT_PROCESSES PRC ON PRC.ID = TRE.TASK_ID
+                    INNER JOIN HR_Z_FLOWDEFINITION ZFD ON ZFD.ENTITY_NAME = TRE.ENTITY_NAME AND ZFD.FIELD_NAME = dbo.HR_Z_GetTransposedFieldName(TRE.TASK_ID, TRE.RECORD_ID, TRE.ENTITY_NAME, TRE.FIELD_NAME) AND ZFD.ZFLOWNAME IN ('ENT_COMMON_Z', 'EMP_MASTERRECORD_Z')
+                UNION
+                -- Extract the keys for the definitions in the data dictionary with no correspondence with an entity-field pair.
+                SELECT DISTINCT 
+                    TRE.TASK_ID TaskID
+                    , PRC.REFERENCE_DATE ProcessReferenceDate
+                    , ADMINISTRATIVEEVENTCODE AdministrativeEventCode
+                    , TRE.ROOT_ID RootID
+                    , TRE.ROOT_ID RecordID
+                    , dbo.HR_Z_GetCompanyCode(TRE.TASK_ID, TRE.ROOT_ID, PRC.REFERENCE_DATE) EmpCompanyCode
+                    , dbo.HR_Z_GetEmployeeID(TRE.TASK_ID, TRE.ROOT_ID, TRE.RECORD_ID, PRC.REFERENCE_DATE) EmployeeID
+                    , dbo.HR_Z_GetEffDateOnClusterCode(TRE.TASK_ID, TRE.ROOT_ID, TRE.RECORD_ID, PRC.REFERENCE_DATE, ZFD.ENTITYCLUSTERCODE) ReferenceDate
+                    , ZFD.ZFLOWNAME
+                    , ZFD.ITEMCODE
+                    , ZFD.ITEMREFERENCE
+                    , ZFD.RECEPTION_CODE
+                    , ZFD.ENTITY_NAME
+                    , ZFD.FIELD_NAME
+                    , ZFD.FIELD_TYPE
+                    , ZFD.DEFAULTVALUE
+                    , ZFD.SORTORDER
+                    , ZFD.ENTITYCLUSTERCODE
+                    , ZFD.DRIVERCODE
+                    , TRE.LISTAGENCY_ID
+                FROM 
+                    HR_TRANSPOSEDENTITY TRE
+                    --INNER JOIN TF_WFRT_TASKS TSK ON TSK.ID = TRE.TASK_ID
+                    --INNER JOIN TF_WFRT_PROCESSES PRC ON PRC.ID = TSK.INSTANCE_ID
+                    INNER JOIN TF_WFRT_PROCESSES PRC ON PRC.ID = TRE.TASK_ID
+                    --INNER JOIN HR_Z_FLOWDEFINITION ZFD ON ZFD.ENTITY_NAME IS NULL
+                    INNER JOIN HR_Z_FLOWDEFINITION ZFD ON ZFD.ITEMCODE in ('DUMMY','DUMMY1','IDTPSUBJ') AND ZFD.ZFLOWNAME IN ('ENT_COMMON_Z','EMP_MASTERRECORD_Z')
+            ) TEK
+    ) VFD
+    --
+    LEFT OUTER JOIN
+        (
+            SELECT
+                TPA.TASK_ID,
+                TPA.ENTITY_NAME,
+                -- Use a function to get the Field name, for those cases where it must be manipulated.
+                dbo.HR_Z_GetTransposedFieldName
+                    (
+                        TPA.TASK_ID,
+                        TPA.RECORD_ID,
+                        TPA.ENTITY_NAME,
+                        TPA.FIELD_NAME
+                    ) AS FieldName,
+                --
+                TPA.RECORD_ID,
+                TPA.ADMINISTRATIVEEVENTCODE,
+                TPA.PROCESS_STAGE,
+                TPA.ISFINALSTAGE,
+                TPA.FIELDVALUE_INT,
+                TPA.FIELDVALUE_STRING,
+                TPA.FIELDVALUE_STRING_DESC,
+                TPA.FIELDVALUE_DATETIME,
+                TPA.FIELDVALUE_BOOL,
+                TPA.FIELDVALUE_DECIMAL,
+                TPA.CHANGEDATE,
+                TPA.EFFECTIVEFROM,
+                TPA.EFFECTIVETO,
+                TPA.ITEMORDER,
+                TPA.ISCHANGED,
+                TPA.ISPRIMARY,
+                TPA.LISTAGENCY_ID
+            FROM
+                HR_TRANSPOSEDENTITY TPA
+        ) TEN ON TEN.TASK_ID = VFD.TaskId AND TEN.ENTITY_NAME = VFD.ENTITY_NAME AND TEN.FieldName = VFD.FIELD_NAME AND TEN.RECORD_ID = VFD.RecordID
+                 AND ((TEN.LISTAGENCY_ID IS NULL AND VFD.LISTAGENCY_ID IS NULL) OR (TEN.LISTAGENCY_ID = VFD.LISTAGENCY_ID))
+ ) ZVF
+
+-- Exclude the rows containing NULL values, not to pass through non-significant fields.
+-- This implies that 
+-- - only changed values will travel when in UPDATE mode
+-- - the target system will populate the missing fields when in INSERT mode
+WHERE
+    ZVF.ItemValue IS NOT NULL )
+
+</code></pre>
+
+
+</details>
+
+<h2 id="columns">Columns</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th>Nullable</th>
+<th>Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td>bigint</td>
+<td></td>
+<td>true</td>
+<td></td>
+</tr>
+<tr>
+<td>TaskId</td>
+<td>bigint</td>
+<td></td>
+<td>false</td>
+<td></td>
+</tr>
+<tr>
+<td>AdministrativeEventCode</td>
+<td>nvarchar(100)</td>
+<td></td>
+<td>true</td>
+<td></td>
+</tr>
+<tr>
+<td>ProcessReferenceDate</td>
+<td>datetime</td>
+<td></td>
+<td>true</td>
+<td></td>
+</tr>
+<tr>
+<td>EmpCompanyCode</td>
+<td>nvarchar(100)</td>
+<td></td>
+<td>true</td>
+<td></td>
+</tr>
+<tr>
+<td>EmployeeID</td>
+<td>nvarchar(100)</td>
+<td></td>
+<td>true</td>
+<td></td>
+</tr>
+<tr>
+<td>ReferenceDate</td>
+<td>nvarchar(8)</td>
+<td></td>
+<td>true</td>
+<td></td>
+</tr>
+<tr>
+<td>RetrieveCode</td>
+<td>nvarchar(12)</td>
+<td></td>
+<td>false</td>
+<td></td>
+</tr>
+<tr>
+<td>ItemCode</td>
+<td>nvarchar(12)</td>
+<td></td>
+<td>false</td>
+<td></td>
+</tr>
+<tr>
+<td>ItemReference</td>
+<td>nvarchar(20)</td>
+<td></td>
+<td>true</td>
+<td></td>
+</tr>
+<tr>
+<td>ItemValue</td>
+<td>nvarchar(100)</td>
+<td></td>
+<td>true</td>
+<td></td>
+</tr>
+<tr>
+<td>ENTITY_NAME</td>
+<td>nvarchar(100)</td>
+<td></td>
+<td>true</td>
+<td></td>
+</tr>
+<tr>
+<td>FieldName</td>
+<td>nvarchar(100)</td>
+<td></td>
+<td>true</td>
+<td></td>
+</tr>
+<tr>
+<td>RecordId</td>
+<td>bigint</td>
+<td></td>
+<td>true</td>
+<td></td>
+</tr>
+<tr>
+<td>ChangeDate</td>
+<td>datetime</td>
+<td></td>
+<td>true</td>
+<td></td>
+</tr>
+<tr>
+<td>EffectiveDate</td>
+<td>datetime</td>
+<td></td>
+<td>true</td>
+<td></td>
+</tr>
+<tr>
+<td>EffectiveEndDate</td>
+<td>datetime</td>
+<td></td>
+<td>true</td>
+<td></td>
+</tr>
+<tr>
+<td>ItemOrder</td>
+<td>int</td>
+<td></td>
+<td>true</td>
+<td></td>
+</tr>
+<tr>
+<td>SortOrder</td>
+<td>int</td>
+<td></td>
+<td>false</td>
+<td></td>
+</tr>
+<tr>
+<td>FlowName</td>
+<td>nvarchar(50)</td>
+<td></td>
+<td>false</td>
+<td></td>
+</tr>
+<tr>
+<td>IsPrimary</td>
+<td>smallint</td>
+<td></td>
+<td>true</td>
+<td></td>
+</tr>
+<tr>
+<td>DRIVERCODE</td>
+<td>nvarchar(50)</td>
+<td></td>
+<td>true</td>
+<td></td>
+</tr>
+<tr>
+<td>ZPayload</td>
+<td>nvarchar(198)</td>
+<td></td>
+<td>true</td>
+<td></td>
+</tr>
+<tr>
+<td>ListAgencyId</td>
+<td>bigint</td>
+<td></td>
+<td>true</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="referenced-tables">Referenced Tables</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Columns</th>
+<th>Comment</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="a.md">a</a></td>
+<td>0</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../HR_TRANSPOSEDENTITY/">HR_TRANSPOSEDENTITY</a></td>
+<td>22</td>
+<td>Transposed Entity - When TransposeDatasource rule is active, the entities of the datasource of the process workflow are transpose in this entity<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="Extract.md">Extract</a></td>
+<td>0</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../TF_WFRT_TASKS/">TF_WFRT_TASKS</a></td>
+<td>34</td>
+<td>Tasks - Workflow Runtime Tasks<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="../TF_WFRT_PROCESSES/">TF_WFRT_PROCESSES</a></td>
+<td>29</td>
+<td>Process Instances - Workflow Runtime Processes View<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+<tr>
+<td><a href="../HR_Z_FLOWDEFINITION/">HR_Z_FLOWDEFINITION</a></td>
+<td>20</td>
+<td>Zucchetti Flow Definition - Dictionary containing mappings between Zucchetti and HCM fields.<br /></td>
+<td>BASIC TABLE</td>
+</tr>
+</tbody>
+</table>
+<h2 id="relations">Relations</h2>
+<p><img alt="er" src="../HR_V_Z_MASTERRECORD.svg" /></p>
+<hr />
+<blockquote>
+<p>Generated by <a href="https://github.com/k1LoW/tbls">tbls</a></p>
+</blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.top", "search.highlight"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
