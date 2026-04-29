@@ -31,3 +31,8 @@
 .md-sidebar {
   width: 6.1rem;
 }
+
+.md-header__button.md-logo img {
+  width: 80px;
+  height: 80px;
+}
